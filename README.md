@@ -1,4 +1,4 @@
-# Composable Showcase
+# Composable Information System
 
 The repo is to build NLP training and inference pipelines using Forte that comes with switchable parts, and allows users to re-purpose it for different datasets and/or tasks. 
 
