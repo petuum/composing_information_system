@@ -1,212 +1,132 @@
-# Composable Showcase
+# Composing Information System - A Q&amp;A Engine
 
-The repo is to build NLP training and inference pipelines using Forte that comes with switchable parts, and allows users to re-purpose it for different datasets and/or tasks. 
+The repository shows how to build a Q&amp;A engine using Forte and existing NLP models, and allows users to quickly re-purpose it for different datasets and/or tasks. 
 
-The current showcase contains four training pipelines: general NER, bio-medical NER,
-wiki entity linking, and medical entity linking.
+The current showcase contains two pipelines: data index pipeline, and Q&A pipeline.
 
-## Tasks and Datasets
+## Dataset
 
-**General NER**
+We used COVID-19 Open Research Dataset Challenge (CORD-19) Dataset. It contains thousands of scientific and medical papers from the National Institutes of Health for COVID-19.
 
-* Task: NER in general domain.
-
-* Model: General BERT.
-
-* Dataset for model training :   
-    English data from CoNLL 2003 shared task. It contains four different types of named entities: PERSON, LOCATION, ORGANIZATION, and MISC.
-    It can be downloaded from [DeepAI website](https://deepai.org/dataset/conll-2003-english).
+Link: https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
 
 
-
-* Use Case:  ​Analyzing research papers on COVID-19​
-
-    * Materials to use for testing:  ​Research Papaers for COVID-19.​
-
-    * Model: BioBERT v1.1 (domain-specific language representation model pre-trained on large-scale biomedical corpora)​
-
-    * Dataset for model training: 
-    NER: CORD-NER dataset,  Entity-Linking: CORD-NERD Dataset​
-​
+## Task
+Given user input query, the pipeline will search the relevant information in CORD-19 dataset, and return answers which contains relation, sentence, as well as relevant medical concepts.
 
 
-**Bio-medical NER**
+## How to run the pipeline
+First, you need to create a virtual environment and git clone this repo, then in command line:
 
-* Task: NER in bio-medical domain.
+`pip install -r requirements.txt`
 
-* Model: BioBERT v1.1 (domain-specific language representation model pre-trained on large-scale biomedical corpora).
-
-* Dataset for model training :   
-    MTL-Bioinformatics-2016. Download and know more about this dataset on 
-    [this github repo](https://github.com/cambridgeltl/MTL-Bioinformatics-2016). 
+If you don't have Cython installed, you will need to `pip install Cython` first to avoid installation failure.
 
 
-**Wiki entity linking**
+### Build index
+* Prerequisite: ElasticSearch
 
-* Task: Entity linking in general domain.
+Please follow https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html to install ElasticSearch.
 
-* Model: Genral Bert.
+Then we need to have ElasticSearch running on backend. Do
 
-* Dataset for model training : 
-    AIDA CoNLL03 entity linking dataset. The entities are identified by YAGO2 entity name, by Wikipedia URL, or by Freebase mid.
-    It has to be used together with CoNLL03 NER dataset mentioned above. 
+`cd elasticsearch-7.11.1`
+`./bin/elasticsearch`
+
+to start the server.
+
+* Build Elasticsearch Indexer:
+
+For CORD-19 dataset we used the data in json format for index, which is in `document_parses/pdf_json`.
+
+You can change the config of ElasticSearch in `examples/pipeline/indexer/config.yml`. Then run
+
+`python examples/pipeline/indexer/cordindexer.py --data-dir [your_data_directory]`
     
-    First download CoNLL03 dataset which contains train/dev/test.
-    
-    Second, download aida-yago2-dataset.zip from [this website](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/ambiverse-nlu/aida/downloads).
-    
-    Third, in the downloaded folder, manually segment AIDA-YAGO2-annotations.tsv into three files corresponding to CoNLL03 train/dev/test,
-    then put them into train/dev/test folders.
+to index the files in `your_data_directory`. 
 
 
-**Medical entity linking**
 
-* Task: Entity linking in medical domain.
+### Build QA engine
+* Prerequisites: StanfordNLP 
+Please install following the instructions on official Link: https://stanfordnlp.github.io/CoreNLP/download.html.
 
-* Model: BioBERT v1.1 (domain-specific language representation model pre-trained on large-scale biomedical corpora).
+Then we need to have StanfordNLP server running on backend, you can run
 
-* Dataset for model training: 
-    MedMentions st21pv sub-dataset. It can be download from [this github repo](https://github.com/chanzuckerberg/MedMentions/tree/master/st21pv).
+`cd stanford-corenlp-4.2.0`
 
+`java -cp "*" -mx3g edu.stanford.nlp.pipeline.StanfordCoreNLPServer`
 
-**Question-Answering Engine**
-* Use case: Search and query on Covid-19 research papers
-
-    * Model: 
-       - Named Entity Recognition/NER, Entity linking(Scispacy)
-       https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_ner_bionlp13cg_md-0.3.0.tar.gz#egg=en_ner_bionlp13cg_md
-       https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_ner_jnlpba_md-0.3.0.tar.gz#egg=en_ner_jnlpba_md
-       https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-
-       - Open Information Extraction(AllenNLP)
-       "https://storage.googleapis.com/allennlp-public-models/openie-model.2020.03.26.tar.gz"
-       
-    * Dataset: 
-        Research Papaers for COVID-19, in json format.
-        
-        COVID-19 Open Research Dataset Challenge (CORD-19)
-        https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
-        
-    * Prerequisites:
-    - StanfordNLP installed and running on backend
-    Link: https://stanfordnlp.github.io/CoreNLP/download.html
-    
-    `cd stanford-corenlp-4.2.0`
-    
-    `java -cp "*" -mx3g edu.stanford.nlp.pipeline.StanfordCoreNLPServer`
-    
-    - ElasticSearch running on backend
-    
-    `cd elasticsearch-7.11.1`
-
-    `./bin/elasticsearch`
-    
-    * Build Elasticsearch Indexer:
-    
-    `python examples/pipeline/indexer/cordindexer.py --data-dir [your_data_directory]`
-    
-    * Start Searcher:
-    
-    `python examples/pipeline/inference/search_example_cord19research.py
-`
-
-
-## How to train your models
-
-* Below shows the steps to train a general NER model. You can modify config direcotry to train others.
-
-* Create a conda virtual environment and git clone this repo, then in command line:
-
-    `cd composable-showcase`
-
-    `export PYTHONPATH="$(pwd):$PYTHONPATH"`
-
-* Create an output directory.
-
-    `mkdir sample_output`
-
-* Run training script:
-
-    `python examples/tagging/main_train_tagging.py --config-dir examples/tagging/configs_ner/`
-
-* After training, you will find your trained models in the following directory. It contains the trained model, vocabulary, train state and training log. 
-
-    `ls sample_output/ner/`
+to start the server.
 
     
+* Run QA pipeline
 
-## How to do inference
+The QA pipeline uses Scispacy models for entity linking, and AllenNLP models for SRL and OpenIE task.
 
-* Download the pretrained models and vocabs from below list. Put model.pt and vocab.pkl into `predict_path` specified in `config_predict.yml`.
-Then run the following command.
+You can run
 
-    `python examples/tagging/main_predict_tagging.py --config-dir examples/tagging/configs_ner/`
+`python examples/pipeline/inference/search_cord19.py`
 
-    + General Ner : [__model__](https://drive.google.com/file/d/1WCSwDw8WEjshf1IUY4iMPQBV_HyhuwNm/view?usp=sharing), 
-    [__train_state__](https://drive.google.com/file/d/1cDmDNFDZLgZLr2BO4MeuMjD_eh4T3PQI/view?usp=sharing), 
-    [__vocab__](https://drive.google.com/file/d/18UFHFg9gfZbb9Sb5s8_h0eG2sd9jXn4H/view?usp=sharing)
-
-    + Bio-medical NER : [__model__](https://drive.google.com/file/d/1dL2PYSPb-HOiSBQeQiVD530uxmLGbfbP/view?usp=sharing), 
-    [__train_state__](https://drive.google.com/file/d/1bJq1RUGK1h3epjklFZEMGLY34SEO9Svh/view?usp=sharing), 
-    [__vocab__](https://drive.google.com/file/d/1yhQriZjABv3XA_0I4w9jD8k3n3SFvJqc/view?usp=sharing)
-
-    + Wiki entity linking : [__model__](https://drive.google.com/file/d/1injnv7s8a-PAhfwMN25kyzxh-FGwnWNZ/view?usp=sharing), 
-    [__train_state__](https://drive.google.com/file/d/1pttk34Fk3fWJz-Vfy3kCY8ET7qReJH84/view?usp=sharing), 
-    [__vocab__](https`://drive.google.com/file/d/19OVGetDQ7BJ1m1_FyxkDE2SI266XvNLv/view?usp=sharing)
-    
-    + Medical entity linking : [__model__](https://drive.google.com/file/d/1kBDItWrguZez0F57xmT90eHEucc2CjE-/view?usp=sharing), 
-    [__train_state__](https://drive.google.com/file/d/1qbL7gb3SMvgHUMhuD_-tQFFvXYBvV6Pl/view?usp=sharing), 
-    [__vocab__](https://drive.google.com/file/d/1UrcIF3ZwllWdee0wEbCYpZ6x9bGXwEdy/view?usp=sharing)
+to get started. It will take a while to initialize the pipeline.
 
 
+When you see `Enter your query here:`, you can start to ask questions, such as
+```
+'what does covid-19 cause', 
+'what does covid-19 affect', 
+'what caused liver injury', 
+'what caused renal involvement'
+```
 
-### Inferencing using two concatenated models
+The pipeline will process the query, then search the relations and output the result to human readable format.
 
-* You can use your trained bio-medical NER model and medical entity linking model to do inference on a new dataset
+Here is an example of the question 'what does covid-19 cause'. The output shows the potential relation, the source sentence and source article that the relation comes from, 
+as well as the relevant UMLS medical concepts in the relations.
 
-* Inference Dataset :
-    CORD-NERD dataset. Information about this dataset and downloadble links can be found [here](https://aistairc.github.io/BENNERD/).
+```
+•Relation:
+COVID-19	causes	infection in the pulmonary system
+•Source Sentence:
+COVID-19 enters the cell by penetrating ACE2 at low cytosolic pH and causes infection in the pulmonary system [2, 3] .(From Paper: , Can COVID-19 cause myalgia with a completely different mechanism? A hypothesis)
+•UMLS Concepts:
+ - covid-19
+	Name: COVID-19	CUI: C5203670	Learn more at: https://www.ncbi.nlm.nih.gov/search/all/?term=C5203670
+================================================================================
+```
 
-    `python examples/tagging/main_predict_cord.py --config-dir examples/tagging/configs_cord_test/`
+## Models
+
+The pipeline contains three major steps: __Query Understanding, Document Retrieval, and Answer Extraction__.
+
+### Query Understanding
+Forte analyzes user’s input question by annotating the basic language features using __NLTK__ word tokenizer, POS tagger and lemmatizer. 
+Then __AllenNLP’s SRE model__ was utilized to extract the arguments and predicate in the question, and which argument that the user is interested in. 
+This annotated question is transformed into a query and pass to the next step. 
 
 
-## Eveluation performance examples:
+### Document Retrieval
+The __ElasticSearch__ backend is fast and quickly filters information from a large corpus, 
+which is great for larger corpora with millions of documents. It is utilized as the search engine here. 
 
-* Below is the performance metrics of the General NER task.
+The query created in the last step was used to retrieve relevant articles from an index that’s stored in ElasticSearch. You could set the number of retrieved documents in `config.yml`.
 
-    
-    |       General NER          |                                                       |
-    |----------------------------|-------------------------------------------------------|
-    |   Overall         |accuracy:  98.98% precision:  93.56%; recall:  94.81%; FB1:  94.18|
-    |   LOC             | precision:  95.94%; recall:  96.41%; FB1:  96.17  18430|
-    |   MISC            | precision:  86.15%; recall:  89.97%; FB1:  88.02  9628|
-    |   ORG             | precision:  91.05%; recall:  91.99%; FB1:  91.52  13549|
-    |   PER             | precision:  96.89%; recall:  97.69%; FB1:  97.29  18563|
+The extracted documents was stored as datapack in Forte, and passed to the next step to generate final output.
 
 
+### Answer Extraction
+Given relevant document datapacks, the system helps to extract the relevant relations. 
 
-* Below is the performance metrics of the bio-medical NER task.
+Here, __ScispaCy models__ trained on biomedical text were utilized to do __sentence parsing__, __NER__, and __entity linking__ with UMLS concepts. 
+__AllenNLP’s OpenIE model__ was utilized for __relation extraction__. 
+__NLTK__ Lemmatizer was also used to process predicate of the relations.
 
-    
-    |       Bio-medical NER          |                                                      |
-    |--------------------------------|-------------------------------------------------------|
-    |   Overall         |accuracy:  98.41%; precision:  84.93%; recall:  89.01%; FB1:  86.92|
-    |   Chemical        | precision:  79.20%; recall:  86.34%; FB1:  82.62  1428|
-    |   Organism        | precision:  85.23%; recall:  73.87%; FB1:  79.14  3337|
-    |   Protein         | precision:  85.53%; recall:  97.15%; FB1:  90.97  11972|
-  
+Given all relations, the relation that matched user's query will be selected as candidate answer, which means the predicate lemma in the relation and user query's predicate lemma are the same, and the user query's argument was mentioned in the extracted relation.
 
-* Below is the performance metrics of the wiki entity linking task. 
-Due to the large number of classes in entity linking tasks, we are only showing the overall performance.
+Finally, the relations were polished by adding references and supporting information that’s useful for fact-checking and countering misinformation.
+So the source sentence and article were also provided in the result. 
+Besides, some terms in the relation could be linked to UMLS concepts, which brings standards for further interoperability or research, so they were also listed on the result.
 
-    |   Wiki entity linking          |                                                        |
-    |---------------------------------|-------------------------------------------------------|
-    |        Overall             | accuracy:  91.27%; precision:  51.86%; recall:  38.60%; FB1:  44.25|
-    
-* Below is the performance metrics of the medical entity linking task. 
-Since MedMentions dataset does not provide word boundaries (only has entity linking boundaries),
-the evaluation method here is to count extact match of entities.
+The final result was organized to three parts: __Relation, Source Sentence, and UMLS Concepts__ for reading purpose. 
 
-    |   Medical entity linking         |                                                        |
-    |---------------------------------|-------------------------------------------------------|
-    |       Exact match             |   precision:      26.25%;     recall:     22.24%;     f1:     24.07%     |
+

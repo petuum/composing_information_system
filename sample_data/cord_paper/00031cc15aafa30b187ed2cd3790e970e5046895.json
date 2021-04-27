@@ -1,0 +1,3975 @@
+{
+    "paper_id": "00031cc15aafa30b187ed2cd3790e970e5046895",
+    "metadata": {
+        "title": "Systematic Review and Meta-Analysis Kidney Dis Renal Injury by SARS-CoV-2 Infection: A Systematic Review Keywords SARS-CoV-2 \u00b7 COVID-19 \u00b7 Angiotensin-converting enzyme 2 \u00b7 Renal injury \u00b7 Mechanism",
+        "authors": [
+            {
+                "first": "Mo",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Clinical Research Center for Child Health and Disorders",
+                    "location": {
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Huaying",
+                "middle": [],
+                "last": "Xiong",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Clinical Research Center for Child Health and Disorders",
+                    "location": {
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Han",
+                "middle": [],
+                "last": "Chen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Clinical Research Center for Child Health and Disorders",
+                    "location": {
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Qiu",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Clinical Research Center for Child Health and Disorders",
+                    "location": {
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Xiong",
+                "middle": [],
+                "last": "Zhong Ruan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Centre for Lipid Research and Key Laboratory of Molecular Biology for Infectious Diseases (Ministry of Education)",
+                    "institution": "Chongqing Medical University",
+                    "location": {
+                        "settlement": "Chongqing",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Zhong",
+                "middle": [],
+                "last": "Xiong",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Ruan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Wang",
+                "middle": [
+                    "/"
+                ],
+                "last": "Xiong",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "/",
+                "middle": [],
+                "last": "Chen",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "/",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "/",
+                "middle": [],
+                "last": "Ruan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Kidney",
+                "middle": [],
+                "last": "Dis",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: SARS-CoV-2 infection can cause renal involvement, and severe renal dysfunction is more common among patients with chronic comorbid conditions, especially patients with chronic kidney disease. Angiotensin-converting enzyme 2 (ACE2) has been proven to be the major receptor of SARS-CoV-2 in kidneys, suggesting that ACE2-related changes may be involved in renal injury during the infection. In this review, we systematically reviewed the literature to summarize findings on the mechanism of renal injury caused by SARS-COV-2 infection, in order to provide a theoretical basis for renal protection therapy. Summary: For patients with SARS-CoV-2 infection, renal injury mainly manifests as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "increased serum creatinine, variable degrees of proteinuria and hematuria, and radiographic abnormalities of the kidneys. In this review, we summarize the pathogenesis of renal injury deriving from SARS-CoV-2 infection by focusing on its etiology, pathology, and clinical manifestations. The virus causes kidney injury by either direct infection or systemic effects, including host immune clearance and immune tolerance disorders, endothelium-mediated vasculitis, thrombus formation, glucose and lipid metabolism disorder, and hypoxia. Key Messages: Renal injury by SARS-CoV-2 is the result of multiple factors. Via highly expressed ACE2 in renal tissue, SARS-CoV-2 infection fundamentally initiates a mechanism of renal injury. Systemic effects such as host immune clearance and immune tolerance disorders, endothelial cell injury, thrombus formation, glucose and lipid metabolism disorder, and hypoxia aggravate this renal injury.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In December 2019, a cluster of occurrences of an acute respiratory disease, known as novel coronavirus pneumonia, was first reported in Wuhan, Hubei Province, China. On February 11, 2020, the WHO announced CO-VID-19 to be the official name for the disease, and SARS-CoV-2 to be the name of the new coronavirus that causes the disease [1] . Statistical data show that the outbreak of SARS-CoV-2 infection constitutes an epidemic threat to the world. The exponential increase in patients has led to more than 10 million confirmed cases worldwide, with more than 0.5 million deaths so far [2] . Besides respiratory syndromes, the disease could lead to multisystem involvement, such as myocarditis, gastrointestinal symptoms, and acute liver injury. There is accumulating evidence indicating that SARS-CoV2 infection may lead to acute kidney injury (AKI). Several clinical observations have shown characteristics of renal dysfunction such as increased serum creatinine (SCr), variable degrees of proteinuria and hematuria, and even renal fibrosis. There are many conflicting results from clinical phenotypes, and the mechanisms involved remain unclear.",
+            "cite_spans": [
+                {
+                    "start": 334,
+                    "end": 337,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 586,
+                    "end": 589,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This review aimed to summarize the pathologic features and clinical manifestations of renal injury caused by SARS-CoV-2 infection, our current understanding of the molecular mechanisms of renal damage caused by SARS-CoV-2 infection, and the potential strategies in clinical management for alleviating renal injury.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "SARS-CoV-2 belongs to the family of Coronaviridae and is an enveloped virus with a single-stranded, positivesense RNA genome. On transmission electron microscopy images, the virion of SARS-CoV-2 looks like a solar corona: the virus particle is pleomorphic, spherical, or oval with diameters of approximately 60-140 nm, and the spikes on the envelope range from 8 to 12 nm in length [3] . The single-stranded RNA genome is 29.9 kb in length, in total consisting of 6 major open reading frames, which encode 16 nonstructural proteins and 4 major structural proteins [4] . The structural proteins encoded by the genome of SARS-CoV-2 are spike (S), membrane (M), envelope (E), and nucleocapsid (N) proteins, which are elementary for virion assembly and infection [5] .",
+            "cite_spans": [
+                {
+                    "start": 382,
+                    "end": 385,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 564,
+                    "end": 567,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 759,
+                    "end": 762,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Etiology and Pathogenesis"
+        },
+        {
+            "text": "Lots of reports have demonstrated that angiotensinconverting enzyme 2 (ACE2) is the host cell receptor for SARS-CoV-2. The binding affinity is approximately 10-to 20-fold higher than for SARS-CoV, which shares the same cellular receptor [6] . ACE2 is a type I membrane protein that is widely expressed in various human tissues. Earlier studies have shown that ACE2 is highly expressed in the testes, gastrointestinal tract, kidneys, heart, lungs, and other tissues, indicating their susceptibility to SARS-CoV-2 infection [7] . A recent study investigated the differences in ACE2 gene expression according to race, age, sex, and smoking status.",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 240,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 522,
+                    "end": 525,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Etiology and Pathogenesis"
+        },
+        {
+            "text": "The functions of ACE2 in SARS-CoV-2 infection can be divided into two categories: a peptidase function and a peptidase-independent function. ACE2, a homologue of ACE, is a powerful negative peptide of the renin-angiotensin system (RAS) and balances the various functions of ACE. The RAS plays a key role in maintaining blood pressure homeostasis and water-salt balance. Renin, cleaving angiotensinogen, produces angiotensin I (Ang I), which is transformed by cleavage of ACE into Ang II. Ang II binds to two G protein-coupled receptors, angiotensin II receptor type 1 (AT1R) and angiotensin II receptor type 2 (AT2R), performing biological functions: vasoconstriction, elevating blood pressure, and promoting inflammation, oxidative stress and cell apoptosis. Evidence suggests that by degrading Ang II into Ang (1-7), ACE2 negatively regulates the activated RAS, and shows protective effects: vasodilation, as well as suppression of inflammation, oxidative stress and cell apoptosis. During SARS-CoV-2 infection, after binding to SARS-CoV-2, the external domain of ACE2 is cleaved, and the transmembrane domain is internalized, leading to downregulation of ACE2 and an increase in Ang II levels, thereby promoting the \"immunoinflammatory storm\" [8] (Fig. 1) .",
+            "cite_spans": [
+                {
+                    "start": 1246,
+                    "end": 1249,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1250,
+                    "end": 1258,
+                    "text": "(Fig. 1)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Etiology and Pathogenesis"
+        },
+        {
+            "text": "Additionally, ACE2 was recognized as a functional receptor for cellular entry of SARS-CoV-2. Like other coronaviruses, S proteins on the envelope of SARS-CoV-2 can be functionally divided into S1 and S2 subunits. S1 is crucial for binding to receptors, while S2 is responsible for membrane fusion of cell entry [9] . When S1 binds to the peptidase domain of ACE2 by the receptor-binding domain, the cleavage site on S2 is cleaved by host proteases, leading to membrane fusion between the virus and target cell, enhancing the S protein-driven viral infection (Fig. 2 ) [10] . Apart from direct membrane fusion, pH-dependent endocytosis may be another way for viral infection [11] . During cellular entry, the coronavirus is likely to bind to and internalize with ACE2, resulting in downregulation of the ACE2 protein and an increase in Ang II levels, promoting the inflammatory effects of the RAS, which is involved in acute lung injury and the severest form of acute respiratory distress syndrome [7, 8] . When SARS-CoV-2 invades the body, innate immune cells, as the first line of defense, start the immune response against the virus including immune clearance and anti-infection immune tolerance. Immune clearance is a response for the identification and clearance of coronaviruses, while anti-infection immune tolerance is a mechanism which controls the immune response to avoid immune overreaction. An imbalance between immune clearance and immune tolerance may lead to anti-infection immune intolerance, manifesting as immune overreaction, which causes organ injury by proinflammatory cytokines and an impaired adaptive immune response.",
+            "cite_spans": [
+                {
+                    "start": 311,
+                    "end": 314,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 568,
+                    "end": 572,
+                    "text": "[10]",
+                    "ref_id": null
+                },
+                {
+                    "start": 674,
+                    "end": 678,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 997,
+                    "end": 1000,
+                    "text": "[7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1001,
+                    "end": 1003,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 558,
+                    "end": 565,
+                    "text": "(Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Etiology and Pathogenesis"
+        },
+        {
+            "text": "SARS-CoV-2 infection via ACE2 may lead to local and systemic pathophysiological changes, including cellular immune disorder, cytokine storm, immune compound deposition, endothelial cell injury, thrombus formation, glucose and lipid metabolism disorder, and hypoxia, aggravating the renal injury. This review will focus on the mechanism of SARS-CoV-2-induced renal injury.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Etiology and Pathogenesis"
+        },
+        {
+            "text": "The primary pathologic investigation has focused on respiratory, hematopoietic and immune systems, with few data on the kidneys. Existing data have shown that the kidney is an organ easily affected by SARS-CoV-2 infection. Though both the renal parenchyma and the interstitium can be affected, the limited renal biopsy and autopsy records present significant acute tubule injury, revealing that interstitial injury is more common and severe than glomerular damage [12, 13] . The kidney autopsy results showed diffuse acute proximal tubular injury with loss of brush border and nonisometric vacuolation. The tubular cytoplasmic vacuoles were the most variable in size. Protein and pigment casts can be seen in the lumen of renal tubules [14] . Diffuse erythrocyte aggregation and obstruction were present in peritubular and glomerular capillary loops [12] . Occasional hemosiderin granules and pigmented casts were identified. The interstitium showed edema with an associated inflammatory infiltrate that predominantly consisted of lymphocytes and plasma cells with scattered eosinophils [15] . Distal tubules and collecting ducts showed only occasional cellular swelling and edematous expansion of the interstitial space without significant inflammation.",
+            "cite_spans": [
+                {
+                    "start": 464,
+                    "end": 468,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 469,
+                    "end": 472,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 736,
+                    "end": 740,
+                    "text": "[14]",
+                    "ref_id": null
+                },
+                {
+                    "start": 850,
+                    "end": 854,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1087,
+                    "end": 1091,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Renal Histopathologic Features"
+        },
+        {
+            "text": "The glomerular lesion was minor, and showing varying degrees of underlying morphologic changes, diabetic nephropathy, and ischemic glomeruli with hypertension [12] . The changes with endothelial injury include swelling, foamy-like change, subendothelial lucent expansion, and endothelial proliferation with deposits of IgG, IgA, IgM, and C3 by indirect immunofluorescence staining. Segmental microthrombus formation in glomerular capillary loops was observed with severe injury to the endothelium [12] . Occasional podocyte vacuolation and even detachment from the glomerular basement membrane were noted. Crescents and hypercellular or inflammatory lesions of glomeruli were not present. Ischemic changes with shrinkage of capillary loops with accumulation of plasma in Bowman's space were exhibited. Focal segmental glomerulosclerosis was observed in patients with diabetes. No obvious lymphocytes were seen in glomeruli, and no immune reactants were detected in glomeruli by immunofluorescence evaluation, suggesting that lymphocyte infiltration and immune reactions are uncommon in glomeruli after viral infection [13] . Several reports revealed collapsing glomerulopathy in kidney autopsies of African patients with SARS-CoV-2 infection [16, 17] , which was associated with high-risk apolipoprotein L1 (APOL1) variants.",
+            "cite_spans": [
+                {
+                    "start": 159,
+                    "end": 163,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 497,
+                    "end": 501,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1118,
+                    "end": 1122,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1242,
+                    "end": 1246,
+                    "text": "[16,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1247,
+                    "end": 1250,
+                    "text": "17]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Renal Histopathologic Features"
+        },
+        {
+            "text": "ACE2 staining revealed that ACE2 expression was prominent in proximal tubular cells, particularly in areas with severe acute tubule injury. In addition, ACE2 staining was focally strong in epithelial cells, as well as occasionally weaker in podocytes [12] . Electron microscopy demonstrated spherical virus particles characteristic of coronavirus in the tubular epithelium and podocytes. The diameter of the virus particles and the length of the spikes were similar to those of previously identified coronaviruses causing SARS and MERS (Middle East respiratory syndrome) [18] . SARS-CoV-2 nucleoprotein antigens could be seen in a nuclear or cytoplasmic pattern in kidney tubules from autopsies by an indirect fluorescence method [12, 13] . Moreover, it has been reported that SARS-CoV-2 RNA was detected in kidney tissues by quantitative reverse transcription PCR [19] .",
+            "cite_spans": [
+                {
+                    "start": 251,
+                    "end": 255,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 571,
+                    "end": 575,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 730,
+                    "end": 734,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 735,
+                    "end": 738,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 865,
+                    "end": 869,
+                    "text": "[19]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Renal Histopathologic Features"
+        },
+        {
+            "text": "A large retrospective cohort study reported that the most common symptoms were fever and dry cough. The frequency was 88.0 and 70.2%, respectively, followed by fatigue (42.8%) and sputum production (36.0%) [20] . The other, uncommon symptoms were headache (11.8%), sore throat (14.0%), gastrointestinal symptoms (anorexia, nausea, or vomiting [8.9%]), upper airway symptoms (rhinorrhea, sneeze, or nasal congestion [7.6%]), and diarrhea (6.1%). A majority of patients had lymphocytopenia and electrolyte imbalance including hypocalcemia, hypokalemia, and hyponatremia. Severe complications of SARS-CoV-2 infection included acute respiratory distress syndrome, shock, and acute renal failure [21] . About a quarter of patients have at least one underlying chronic disorder, including hypertension, diabetes, cardiovascular diseases, chronic obstructive pulmonary disease, and chronic kidney disease [22] . Numerous studies have suggested that renal functional impairment mainly manifests as kidney dysfunction (elevated blood urea nitrogen [BUN] and SCr), abnormal urinary analysis (proteinuria and hematuria), and radiographic abnormalities of the kidneys [23] [24] [25] [26] . The most common clinical presentation is proteinuria, which is found in more than half of the patients before or after admission, followed by hematuria, elevated BUN, and elevated SCr (33.7, 14.3, and 10.7%, respectively). A metaanalysis further revealed that patients presented with varying degrees of albuminuria (+ in 38.8% of the patients, and ++ or +++ in 10.6% of the patients). During SARS-CoV-2 infection, especially in critically ill patients, AKI was proved to be an important risk factor for mortality [23] . Among those with SARS-CoV-2 infection and AKI, 33.9% of the patients were reported dead after hospitalization, and the mortality of SARS-CoV-2 infection plus AKI was significantly higher than without renal injury (p < 0.001) [27] . Furthermore, inflammation and edema of the renal parenchyma, seen by CT scan, are equally common [23] . The main manifestations of renal injury are summarized in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 691,
+                    "end": 695,
+                    "text": "[21]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 898,
+                    "end": 902,
+                    "text": "[22]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1039,
+                    "end": 1044,
+                    "text": "[BUN]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1156,
+                    "end": 1160,
+                    "text": "[23]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1161,
+                    "end": 1165,
+                    "text": "[24]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1166,
+                    "end": 1170,
+                    "text": "[25]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1171,
+                    "end": 1175,
+                    "text": "[26]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1691,
+                    "end": 1695,
+                    "text": "[23]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1923,
+                    "end": 1927,
+                    "text": "[27]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 2027,
+                    "end": 2031,
+                    "text": "[23]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 2092,
+                    "end": 2099,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Clinical Manifestations"
+        },
+        {
+            "text": "It was found that the more severe the SARS-CoV-2 infection, the more pronounced was the renal injury [28] . However, the tests of serum BUN and SCr were not sensitive enough for early kidney impairment, though they were used to test renal function. It had been proved that urine microprotein, urine IgG, and urine transferrin were sensitive indicators of early glomerular injury, while urine \u03b1 1 -microglobulin could reflect renal tubular damage in the early stage [29] [30] [31] . Calculating the estimated glomerular filtration rate, endogenous creatinine clearance, and urine microalbumin/creatinine ratio may help in detecting early renal injury in infected patients [9] . ",
+            "cite_spans": [
+                {
+                    "start": 101,
+                    "end": 105,
+                    "text": "[28]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 465,
+                    "end": 469,
+                    "text": "[29]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 470,
+                    "end": 474,
+                    "text": "[30]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 475,
+                    "end": 479,
+                    "text": "[31]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 671,
+                    "end": 674,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Clinical Manifestations"
+        },
+        {
+            "text": "Some studies suggested that kidney damage in patients with SARS-CoV-2 infection was caused by SARS-CoV-2 infection and virus-induced cytokines such as IL-6 and IL-10 [24, 32] , but these explanations are incomplete. Renal impairment may be caused by multiple mechanisms. Here, we summarize the potential mechanisms of renal injury (Fig. 3) .",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 170,
+                    "text": "[24,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 171,
+                    "end": 174,
+                    "text": "32]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 331,
+                    "end": 339,
+                    "text": "(Fig. 3)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Potential Mechanisms of Renal Injury"
+        },
+        {
+            "text": "The available evidence indicates that SARS-CoV-2 binds to ACE2 through the S1 subunit, directly causing damage to intrinsic renal cells. Human tissue single-cell RNA sequencing data and ACE2 staining revealed that the kidneys and bladder are enriched with ACE2 [12, 33] , which results in susceptibility of the renal tissue to SARS-CoV-2. Clusters of coronavirus-like particles are found in the renal tubular epithelium and podocytes, and special SARS-CoV-2 nucleoproteins could be seen in a nuclear or cytoplasmic pattern via indirect fluorescence [12, 18] , which suggests that SARS-CoV-2 could directly infect renal cells. Autopsy results showed that after infection of the respiratory tract, the virus entered the blood and induced viremia [34] . Hence, we infer that the virus could reach the urinary system through blood circulation, bind to and internalize with ACE2 receptors, infect kidney cells expressing the ACE2 receptor, including renal tubular epithelial cells, podocytes, and others. However, according to current research, the viral load in the kidneys is low and unevenly distributed [12, 34] , so it cannot wholly explain the extensive kidney damage.",
+            "cite_spans": [
+                {
+                    "start": 261,
+                    "end": 265,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 266,
+                    "end": 269,
+                    "text": "33]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 549,
+                    "end": 553,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 554,
+                    "end": 557,
+                    "text": "18]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 744,
+                    "end": 748,
+                    "text": "[34]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1102,
+                    "end": 1106,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1107,
+                    "end": 1110,
+                    "text": "34]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Direct Renal Infection by SARS-CoV-2"
+        },
+        {
+            "text": "Host Immune Clearance and Immune Tolerance Disorders The severity of SARS-COV-2 infection depends on the balance between clearance of the virus and tolerance of the human immune system. Both disorders of immune clearance and anti-infection immune intolerance may be involved in viral damage to the body.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Macrophages are responsible for the identification and clearance of coronaviruses, and further for activating the downstream inflammatory signaling pathways. Subsequently, the cellular adaptive immune response is initiated. Helper T (Th) cells can be induced to differentiate into Th1 cells and Th2 cells; the former can activate cytotoxic T cells, which destroy virus-contaminated cells, just like natural killer (NK) cells; then, Th2 cells assist B lym-phocytes in producing antibodies that inhibit viral replication [35, 36] . This is the immune clearance process of anti-infection after SARS-CoV-2 invasion, accompanied by the production and release of various inflammatory cytokines, which assist the innate and adaptive immune response by participating in the process of the body's antiviral activity.",
+            "cite_spans": [
+                {
+                    "start": 519,
+                    "end": 523,
+                    "text": "[35,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 524,
+                    "end": 527,
+                    "text": "36]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Having an immune clearance disorder means that the pathogen is not detected and cleared, forming an infectious spread. Massive viral replication may result in an excessive intensity of immune cell response, leading to a severe inflammatory response and clinical symptoms. Previous studies have found that during the acute phase of SARS-CoV-2 infection, dendritic cell, monocyte and T-cell responses are broadly suppressed, which suggests weakening of immune response inception and viral clearance [36] . Meanwhile, high concentrations of viral nucleic acid (RNA), due to the weakened immune clearance, lead to activation of the interferon (IFN)-1 signaling pathway and JAK-STAT signaling pathway, and consequently to the production of a high level of inflammatory cytokines, causing damage to the body [37] . Activation of the IFN-1 signaling pathway can lead to the production of an autoreactive adaptive immune response, which can aggravate the tissue damage. Furthermore, the host's anti-infection immune intolerance directly results in an overactive immune response via cellular immune disorder, a cytokine storm, and immune compound, leading to multiple organ failure, including the kidneys, liver, and heart.",
+            "cite_spans": [
+                {
+                    "start": 497,
+                    "end": 501,
+                    "text": "[36]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 802,
+                    "end": 806,
+                    "text": "[37]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Usually, virus-infected cells are killed by CD8+ T cells and NK cells. However, patients with SARS-CoV-2 infection were found to have lymphopenia dominated by CD8+ T-cell depletion [38, 39] , which is a cellular immune disorder, resulting in insufficient killing of virusinfected target cells through cytotoxicity. Besides, because of the feedback mechanism, lymphopenia stimulates the overproduction of inflammatory cytokines, which causes severe damage to tissues and organs. As for NK cells, which can nonspecifically kill virus-infected cells, it has been proved that NK cells are strongly activated in acute SARS-CoV-2 infection, and they highly express perforin, NKG2C, and Ksp37 in severe cases. An unsupervised NK-cell response and excessive cytotoxic granules may contribute to tissue injury [40] . Collectively, disturbance of the cellular immune system is considered to be one of the reasons for the kidney damage observed.",
+            "cite_spans": [
+                {
+                    "start": 181,
+                    "end": 185,
+                    "text": "[38,",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 186,
+                    "end": 189,
+                    "text": "39]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 801,
+                    "end": 805,
+                    "text": "[40]",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Uncontrolled cytokine production during the above immune process will lead to a cytokine storm, which is a fatal immunopathologic disorder [41] . During infection, Kidney Dis DOI: 10.1159/000512683 activation of lymphocytes induces the release of inflammatory cytokines to destroy the infected cells, but the exaggerated cytokine release can lead to extensive endothelial dysfunction, disseminated intravascular coagulation, and multiple organ dysfunction syndrome in patients [42] . Studies have suggested that in SARS-CoV-2 patients, cytokine expression -e.g., of IFN-\u03b3, interleukin (IL)-6, IL-10, granulocyte colony-stimulating factor, and monocyte-chemotactic protein 3 -was elevated compared with healthy controls [43] . In the kidneys, there is obvious inflammatory infiltration of the renal interstitium, which predominantly consists of lymphocytes and plasma cells, with some eosinophils [15] . It also indicates that activated lymphocytes migrate to kidney tissues in order to destroy infected renal cells and release inflammatory cytokines, finally resulting in local inflammation and tissue injury. In addition, cytotoxic particles such as perforin, granulysin, and proinflammatory cytokines which are highly expressed in lymphocytes, also contribute to kidney damage [44] .",
+            "cite_spans": [
+                {
+                    "start": 139,
+                    "end": 143,
+                    "text": "[41]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 477,
+                    "end": 481,
+                    "text": "[42]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 719,
+                    "end": 723,
+                    "text": "[43]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 896,
+                    "end": 900,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1279,
+                    "end": 1283,
+                    "text": "[44]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Besides cellular immunity and a cytokine storm, immune complex deposition may also cause kidney damage. Renal pathology in SARS-CoV-2 infected patients suggests that the damage is mainly located to the interstitium, with minor glomerular lesions. Podocyte-related injuries are the main manifestations of glomerular lesions such as focal segmental glomerulosclerosis and collapsing glomerulopathy [12] , which are associated with viral infection due to ACE2 expression in podocytes. However, in addition to podocyte damage, severe endothelial damage was also observed, including swelling, foamy changes, and subcutaneous transmittal expansion. No inflammatory cell infiltration was found in glomeruli, while IgG, IgM, and trace C3 were found in the granular tissues of the capillary wall by direct or indirect immunofluorescence and electron microscopy [14] , suggesting that immune complex deposition is one of the causes of glomerular injury. Deposition of immune complexes along glomerular capillaries leads to immune complex-associated nephritis, the mechanism of which may be associated with immune complexes activating the complement system, leading to kidney injury [45] .",
+            "cite_spans": [
+                {
+                    "start": 396,
+                    "end": 400,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 852,
+                    "end": 856,
+                    "text": "[14]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1172,
+                    "end": 1176,
+                    "text": "[45]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Endothelial Cell Injury Electron microscopic examination shows endothelial injury to the glomeruli of kidneys, including cell swelling with foam-like changes, subendothelial expansion, and endothelial proliferation [45] . It is supposed that the virus could directly damage endothelial cells by binding to them, especially tubular epithelial cells, which express high levels of ACE2. Because of vascular endothelial injury and a cytokine storm, many critical patients have vasculitis-like manifestations or even gangrene on their extremities. Pathologic examinations reveal small vessel hyperplasia, vessel wall thickening, stenosis of the lumen, occlusion, and focal hemorrhage [44] . Vasculitis may be the underlying mechanism of vascular damage.",
+            "cite_spans": [
+                {
+                    "start": 215,
+                    "end": 219,
+                    "text": "[45]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 679,
+                    "end": 683,
+                    "text": "[44]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Systemic Effects of SARS-CoV-2 Infection on the Kidneys"
+        },
+        {
+            "text": "Most patients with severe SARS-CoV-2 infection have hypercoagulability and disseminated intravascular coagulation, presenting with thrombosis and thrombocytopenia. In addition, there were two pathological studies of caducous kidneys revealing segmental microthrombi in the glomeruli of SARS-CoV-2 patients [12, 14] . The mechanism of coagulation remains unclear, but studies have demonstrated that endothelial injury leads to upregulation of tissue factors, thereby activating exogenous coagulation pathways [45] . As the first response of the host immune system to SARS-CoV-2 infection, the complement system plays an important role in accelerating platelet adhesion and aggregation, endothelial cell injury, and thrombosis. Thrombocytopenia, common in patients with severe SARS-CoV-2 infection, may also be associated with decreased platelet consumption due to extensive coagulation activation. The kidney is damaged by the formation of extensive microthrombi.",
+            "cite_spans": [
+                {
+                    "start": 306,
+                    "end": 310,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 311,
+                    "end": 314,
+                    "text": "14]",
+                    "ref_id": null
+                },
+                {
+                    "start": 508,
+                    "end": 512,
+                    "text": "[45]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Thrombus Formation"
+        },
+        {
+            "text": "During the pandemic of SARS-CoV-2 infection, many patients have experienced unexplained edemata in the extremities and lungs [46] , and some patients developed acute severe hyponatremia [47, 48] . This suggests that these patients have water and salt metabolism disorder, which is a strong risk factor for AKI. The mechanism is unclear, but it was first speculated to be related to dysfunction of the RAS. In SARS-CoV-2 infection, ACE2 expression is decreased, which increases Ang II formation, leading to tissue edema. In addition to the RAS disorder, IL-6 is released by monocytes and macrophages, which leads to electrolyte imbalance and increases the circulation volume by inducing the nonosmotic release of vasopressin. A retrospective study has found that IL-6 is negatively associated with hyponatremia, while hyponatremia appears to be associated with more adverse outcomes and more severe disease [49] .",
+            "cite_spans": [
+                {
+                    "start": 125,
+                    "end": 129,
+                    "text": "[46]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 186,
+                    "end": 190,
+                    "text": "[47,",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 191,
+                    "end": 194,
+                    "text": "48]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 906,
+                    "end": 910,
+                    "text": "[49]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Hyponatremia and Edema"
+        },
+        {
+            "text": "Glucose and Lipid Metabolism Disorder Among patients, coexistence with chronic diseases is a prominent phenomenon, of which hypertension, dia-8 DOI: 10.1159/000512683 betes, cardiovascular and cerebrovascular diseases, malignant tumors, chronic kidney disease, and other diseases more commonly occur [20, 22] . People with diabetes have significantly higher rates of serious events [50] . The cause is unknown, but we speculate that it may be related to the glucose and lipid metabolism disorder associated with these chronic diseases, which happens to be a risk factor for kidney damage. It has been reported that tubular ACE2 protein staining is decreased in patients with diabetes and hypertension compared with healthy persons [51, 52] . During SARS-CoV-2 infection, membranal ACE2 expression is further reduced due to binding to the virus, which may be a possible explanation for the increased susceptibility to kidney injury observed in patients with diabetes and hypertension.",
+            "cite_spans": [
+                {
+                    "start": 300,
+                    "end": 304,
+                    "text": "[20,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 305,
+                    "end": 308,
+                    "text": "22]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 382,
+                    "end": 386,
+                    "text": "[50]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 731,
+                    "end": 735,
+                    "text": "[51,",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 736,
+                    "end": 739,
+                    "text": "52]",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Hyponatremia and Edema"
+        },
+        {
+            "text": "Hypoxia of the Kidneys The lungs are the main target organ of SARS-CoV-2, which could lead to hypoxia due to dysfunction of ventilation and diffusion. In the kidneys, hypoxia may contribute to AKI [53] . Hypoxemia reduces renal blood flow by a number of mechanisms, including stimulation of adrenergic nerves and disturbances in nitric oxide metabolism. Severe hypoxia and ischemia can both result in microvasculature dysfunction. This can impact adjacent intrinsic cells and capillaries, extending the regions of hypoxia, leading to organ failure [54, 55] .",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 201,
+                    "text": "[53]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 548,
+                    "end": 552,
+                    "text": "[54,",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 553,
+                    "end": 556,
+                    "text": "55]",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Hyponatremia and Edema"
+        },
+        {
+            "text": "Other Effects Rhabdomyolysis has been reported in SARS-CoV-2 patients [56] [57] [58] , and the renal anatomy of SARS-CoV-2 patients has shown high levels of creatine phosphokinase staining [12] , suggesting that rhabdomyolysis may be involved in the occurrence of AKI. Furthermore, hypertension, diarrhea, heart failure, and some drugs could all lead to kidney injury in infected patients.",
+            "cite_spans": [
+                {
+                    "start": 70,
+                    "end": 74,
+                    "text": "[56]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 75,
+                    "end": 79,
+                    "text": "[57]",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 80,
+                    "end": 84,
+                    "text": "[58]",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 189,
+                    "end": 193,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Hyponatremia and Edema"
+        },
+        {
+            "text": "Currently, there are no specific therapies for the treatment of SARS-CoV-2 infection. We should pay more attention to the treatment of renal lesions and the protection of renal function of severely infected patients. Given the current clinical studies reporting that patients with combined chronic disease and SARS-CoV-2 infection were easier to develop AKI, these patients need to strengthen management of their fluid balance and closely observe the urine volume, color of urine, any signs of ede-ma, and blood pressure; avoid the usage of nephrotoxic drugs; and enhance their monitoring of early biological diagnostic indices for identifying AKI, such as blood and/ or urine neutrophil gelatinase-associated lipocalin. AKI could be diagnosed following one of the following conditions: (1) SCr is increased by \u226526.5 \u03bcmol/L within 48 h;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Management"
+        },
+        {
+            "text": "(2) SCr has been increased to 1.5 times the baseline value within the previous 7 days; (3) the urine volume is < 0.5 mL/kg/h for 6 h [59, 60] .",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[59,",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 138,
+                    "end": 141,
+                    "text": "60]",
+                    "ref_id": "BIBREF63"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Management"
+        },
+        {
+            "text": "Possible effective antiviral therapy, symptomatic treatment, and promoting renal functional recovery are the principles of renal management. In addition, it has been proved that immunosuppressive drugs such as cyclosporin and mycophenolic acid may be good candidates for therapeutic medicines against renal damage by SARS-CoV-2 [61, 62] , and specific inhibitors of IL-6 appear to be beneficial in severely infected cases [43] . However, it may be reasonable to further study these agents in controlled trials. Tocilizumab, as a needle-mediated monoclonal antibody against IL-6 receptor, is being tested in a preclinical trial (ChiCTR2000029765). The results of this study are much anticipated and expected. Since ACE2 is a functional receptor of SARS-CoV-2, it has been found that human recombinant soluble ACE2 can competitively bind to SARS-CoV-2, thereby reducing the organ damage caused by SARS-CoV-2 entering target cells. In vitro studies have shown that human recombinant soluble ACE2 can significantly block SARS-CoV-2 infection in human renal organs in a dose-dependent manner and is an effective way to protect renal function in the future [63] .",
+            "cite_spans": [
+                {
+                    "start": 328,
+                    "end": 332,
+                    "text": "[61,",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 333,
+                    "end": 336,
+                    "text": "62]",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 422,
+                    "end": 426,
+                    "text": "[43]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1151,
+                    "end": 1155,
+                    "text": "[63]",
+                    "ref_id": "BIBREF66"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Management"
+        },
+        {
+            "text": "For those SARS-CoV-2 patients exhibiting renal impairment, it is of great significance to carry out blood purification and other renal replacement therapies in time in case of severe SARS-CoV-2 infection complicated by AKI. Blood purification technologies include plasmapheresis, adsorption, perfusion, and hemofiltration, especially continuous renal replacement therapy (CRRT), since CRRT has played an important role in the rescue and treatment of patients with SARS, MERS, and other cases of sepsis [64, 65] . CRRT is recommended for use as soon as possible in severely infected patients manifesting macroalbuminuria on admission, as it may remove inflammatory cytokines and protect renal function, particularly in those patients with elevated SCr levels [23] . The therapeutics listed above would be helpful to patients infected with SARS-CoV-2, but their efficacy needs to be further studied and confirmed. Kidney Dis DOI: 10.1159/000512683",
+            "cite_spans": [
+                {
+                    "start": 502,
+                    "end": 506,
+                    "text": "[64,",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 507,
+                    "end": 510,
+                    "text": "65]",
+                    "ref_id": "BIBREF68"
+                },
+                {
+                    "start": 758,
+                    "end": 762,
+                    "text": "[23]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Management"
+        },
+        {
+            "text": "In SARS-CoV-2 patients, viral infection and replication are probably the main etiologies of renal dysfunction. SARS-CoV-2 may cause renal injury either by direct renal infection or via systemic effects such as host immune clearance and immune tolerance disorders, endothelial cell injury, thrombus formation, glucose and lipid metabolism disorder, and hypoxia. The mechanism of renal injury caused by SARS-CoV-2 has not yet been fully clarified. However, our current understanding suggests that the ACE2 signaling pathway plays a key role in mediating renal injury. It is important to monitor kidney injury in the management of SARS-CoV-2. The earlier treatments achieve a better clinical outcome. Patients with AKI are recommended to receive CRRT in order to both protect renal function and remove inflammatory cytokines, which may accelerate the process of disease recovery.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "A novel coronavirus outbreak of global health concern",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Horby",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Hayden",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "470--473",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Coronavirus disease. 2019 (COVID-19) Situation Report -162",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "CoV-2: An Emerging Coronavirus that Causes a Global Threat",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sars-",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Biol Sci",
+            "volume": "16",
+            "issn": "10",
+            "pages": "1678--85",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Coronavirus disease 2019 (COVID-19): a clinical update",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front Med",
+            "volume": "14",
+            "issn": "2",
+            "pages": "126--161",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Emerging coronaviruses: genome structure, replication, and pathogenesis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "92",
+            "issn": "4",
+            "pages": "418--441",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wrapp",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Corbett",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Goldsmith",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Abiona",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "367",
+            "issn": "6483",
+            "pages": "1260--1263",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "ACE2 in Brain Physiology and Pathophysiology: Evidence from Transgenic Animal Models",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Alenina",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bader",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Neurochem Res",
+            "volume": "44",
+            "issn": "6",
+            "pages": "1323--1332",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The Immunobiology of SARS*",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Subbarao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Annu Rev Immunol",
+            "volume": "25",
+            "issn": "1",
+            "pages": "443--72",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Niu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "565--74",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Structural basis for the recognition of the SARS-CoV-2 by full-length human ACE2",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "367",
+            "issn": "6485",
+            "pages": "1444--1452",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Pathogenesis of severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Peiris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Curr Opin Immunol",
+            "volume": "17",
+            "issn": "4",
+            "pages": "404--414",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Renal histopathological analysis of 26 postmortem findings of patients with CO-VID-19 in China",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Kidney Int",
+            "volume": "98",
+            "issn": "1",
+            "pages": "219--246",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Human Kidney Is a Target for Novel Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Infection. medRxiv",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Diao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.03.04.20031120"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Collapsing Glomerulopathy in a Patient with COVID-19",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Larsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Bourne",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Saqqa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sharshir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Kidney Int Rep",
+            "volume": "5",
+            "issn": "6",
+            "pages": "935--944",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Acute Kidney Injury due to Collapsing Glomerulopathy following COVID-19 Infection",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Peleg",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kudose",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "&apos;agati",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Siddall",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ahmad",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kisselev",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Kidney Int Rep",
+            "volume": "5",
+            "issn": "6",
+            "pages": "940--945",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "AKI and Collapsing Glomerulopathy Associated with COVID-19 and APOL1 High-Risk Genotype",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Larsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hernandez-Arroyo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mmb",
+                    "middle": [],
+                    "last": "Mohamed",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Caza",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharshir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Soc Nephrol",
+            "volume": "31",
+            "issn": "8",
+            "pages": "1688--95",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Pathological findings of CO-VID-19 associated with acute respiratory distress syndrome",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "4",
+            "pages": "420--422",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Autopsy Findings and Venous Thromboembolism in Patients with COVID-19: A Prospective Cohort Study",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wichmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sperhake",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "L\u00fctgehetmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Steurer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Edler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Heinemann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ann Intern Med",
+            "volume": "173",
+            "issn": "4",
+            "pages": "268--77",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Clinical Characteristics of Coronavirus Disease 2019 (COVID-19): An Updated Systematic Review. medRxiv",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zhong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.03.07"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Clinical characteristics of 2019 novel coronavirus infection in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.02.06.2002097"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Comorbidity and its impact on 1,590 patients with COVID-19 in China: a Nationwide Analysis. medRxiv",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.02.25"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Caution on Kidney Dysfunctions of 2019-nCoV Patients. medRxiv. 2020. Available from",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.02.08"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Kidney impairment is associated with in-hospital death of COVID-19 patients. medRxiv",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.02.18.2002324"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Renal Involvement and Early Prognosis in Patients with COVID-19 Pneumonia",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Soc Nephrol",
+            "volume": "31",
+            "issn": "6",
+            "pages": "1157--65",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Prevalence and impact of acute renal impairment on COVID-19: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care",
+            "volume": "24",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a single-centered, retrospective, observational study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Respir Med",
+            "volume": "8",
+            "issn": "5",
+            "pages": "475--81",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Analysis of early renal injury in COVID-19 and diagnostic value of multiindex combined detection. medRxiv",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Fan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.03.07"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Determination and its significance of the ratio of urine microalbumin to urine cretinine in patients with nephrolithiasis complicated with renal insufficiency",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Quantitative and qualitative evaluation of plasma and urine \u03b11-microglobulin in healthy donors and patients with different haemolytic disorders and haemochromatosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Nordberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Allhorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Winqvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Akerstr\u00f6m",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Olsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Clin Chim Acta",
+            "volume": "386",
+            "issn": "1-2",
+            "pages": "31--38",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Urinary transferrin pre-emptively identifies the risk of renal damage posed by subclinical tubular alterations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Casanova",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Vicente-Vicente",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hern\u00e1ndez-S\u00e1nchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Prieto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Rihuete",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ramis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Biomed Pharmacother",
+            "volume": "121",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Overlapping and discrete aspects of the pathology and pathogenesis of the emerging human pathogenic coronaviruses SARS-CoV, MERS-CoV, and 2019-nCoV",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sutter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Virol",
+            "volume": "92",
+            "issn": "5",
+            "pages": "491--495",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Single-cell RNA-seq data analysis on the receptor ACE2 expression reveals the potential risk of different human organs vulnerable to 2019-nCoV infection",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front Med",
+            "volume": "14",
+            "issn": "2",
+            "pages": "185--92",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Multiorgan and Renal Tropism of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Puelles",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "L\u00fctgehetmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lindenmeyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sperhake",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Allweiss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "383",
+            "issn": "6",
+            "pages": "590--592",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Immunobiology and immunotherapy of COVID-19: a clinically updated overview",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Esmaeilzadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Elahi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Cell Physiol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Acute SARS-CoV-2 Infection Impairs Dendritic Cell and T Cell Responses. Immunity",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "53",
+            "issn": "",
+            "pages": "864--77",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Targeting JAK-STAT Signaling to Control Cytokine Release Syndrome in COV-ID-19",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Ye",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Trends Pharmacol Sci",
+            "volume": "41",
+            "issn": "8",
+            "pages": "531--574",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Longitudinal characteristics of lymphocyte responses and cytokine profiles in the peripheral blood of SARS-CoV-2 infected patients",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "EBioMedicine",
+            "volume": "55",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Immune response in CO-VID-19: addressing a pharmacological challenge by targeting pathways triggered by SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Catanzaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Fagiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Racchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Corsini",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Govoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lanni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Signal Transduct Target Ther",
+            "volume": "5",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Natural killer cell immunotypes related to COVID-19 disease severity",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Maucourant",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Filipovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ponzetta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Aleman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cornillet",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hertwig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Immunol",
+            "volume": "5",
+            "issn": "50",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Weathering the Cytokine Storm in COV-ID-19: Therapeutic Implications",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Iannaccone",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Scacciavillani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Del",
+                    "middle": [],
+                    "last": "Buono",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Camilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ronco",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lavie",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cardiorenal Med",
+            "volume": "10",
+            "issn": "5",
+            "pages": "277--87",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Is there a role for blood purification therapies targeting cytokine storm syndrome in critically severe COVID-19 patients? Ren Fail",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "42",
+            "issn": "",
+            "pages": "483--491",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Exuberant elevation of IP-10, MCP-3 and IL-1ra during SARS-CoV-2 infection is associated with disease severity and fatal outcome. medRxiv",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.03.02.20029975"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "The use of anti-inflammatory drugs in the treatment of people with severe coronavirus disease 2019 (COVID-19): the perspectives of clinical immunologists from China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Immunol",
+            "volume": "214",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "The case of complement activation in COVID-19 multiorgan impact",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Noris",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Benigni",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Remuzzi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Kidney Int",
+            "volume": "98",
+            "issn": "2",
+            "pages": "314--336",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Acral edema during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Valtue\u00f1a",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ruiz-S\u00e1nchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Volo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Manchado-L\u00f3pez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Garayar-Cantero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Dermatol",
+            "volume": "59",
+            "issn": "9",
+            "pages": "1155--1162",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Clinical features, laboratory characteristics, and outcomes of patients hospitalized with coronavirus disease 2019 (COVID-19): early report from the United States",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Aggarwal",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Garcia-Telles",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Aggarwal",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lavie",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lippi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Henry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Diagnosis (Berl)",
+            "volume": "7",
+            "issn": "2",
+            "pages": "91--97",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Acute symptomatic hyponatremia in setting of SIADH as an isolated presentation of COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Habib",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sardar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sajid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "IDCases",
+            "volume": "21",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "IL-6, and SARS-CoV-2 (COVID-19) infection: may all fit together?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Berni",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Malandrino",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Parenti",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Maggi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Poggesi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Peri",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hyponatremia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Endocrinol Invest",
+            "volume": "43",
+            "issn": "8",
+            "pages": "1137--1146",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Characteristics and Outcomes of COVID-19 Patients in New York City's Public Hospital System. Version 3. medRxiv",
+            "authors": [
+                {
+                    "first": "Kalyanaraman",
+                    "middle": [],
+                    "last": "Marcello",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dolle",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Grami",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Adule",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Tatem",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.29"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Expression of ACE and ACE2 in individuals with diabetic kidney disease and healthy controls",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mizuiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hemmi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Arita",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ohashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Miyagi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Am J Kidney Dis",
+            "volume": "51",
+            "issn": "4",
+            "pages": "613--636",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Systematic profiling of ACE2 expression in diverse physiological and pathological conditions for COVID-19/SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Cell Mol Med",
+            "volume": "24",
+            "issn": "16",
+            "pages": "9478--82",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "COVID-19 pandemic and troponin: indirect myocardial injury, myocardial inflammation or myocarditis? Heart",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Imazio",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Klingel",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kindermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Brucato",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Rosa",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Adler",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "106",
+            "issn": "",
+            "pages": "1127--1158",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Chronic hypoxia as a mechanism of progression of chronic kidney diseases: from hypothesis to novel therapeutics",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Fine",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Norman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Kidney Int",
+            "volume": "74",
+            "issn": "7",
+            "pages": "867--72",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Lung-Kidney Cross-Talk in the Critically Ill Patient",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Husain-Syed",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Slutsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ronco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "194",
+            "issn": "4",
+            "pages": "402--416",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Rhabdomyolysis as a Presentation of",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Suwanwongse",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Shabarek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Novel Coronavirus Disease. Cureus",
+            "volume": "12",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Kidney Dis",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000512683"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Pediatric COVID-19-associated rhabdomyolysis: a case report",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gefen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Palumbo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Singer",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Castellanos-Reyes",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sethna",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Pediatr Nephrol",
+            "volume": "35",
+            "issn": "8",
+            "pages": "1517--1537",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Rhabdomyolysis as an initial presentation in a patient diagnosed with COVID-19",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Valente-Acosta",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Moreno-Sanchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Fueyo-Rodriguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Palomar-Lever",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ Case Rep",
+            "volume": "13",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "KDIGO clinical practice guidelines for acute kidney injury",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Khwaja",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Nephron Clin Pract",
+            "volume": "120",
+            "issn": "4",
+            "pages": "179--84",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "A crucial role of angiotensin converting enzyme 2 (ACE2) in SARS coronavirusinduced lung injury",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kuba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nat Med",
+            "volume": "11",
+            "issn": "8",
+            "pages": "875--884",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Suppression of coronavirus replication by cyclophilin inhibitors",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sato",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sasaki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Viruses",
+            "volume": "5",
+            "issn": "5",
+            "pages": "1250--60",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Inhibition of SARS-CoV-2 Infections in Engineered Human Tissues Using Clinical-Grade Soluble Human ACE2",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Monteil",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kwon",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Prado",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hagelkr\u00fcys",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wimmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stahl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "181",
+            "issn": "4",
+            "pages": "905--913",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Acute renal impairment in coronavirus-associated severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Kidney Int",
+            "volume": "67",
+            "issn": "2",
+            "pages": "698--705",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Clinical course and outcomes of critically ill patients with Middle East respiratory syndrome coronavirus infection",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Arabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Arifi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Balkhy",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Najm",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Aldawood",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ghabashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Ann Intern Med",
+            "volume": "160",
+            "issn": "6",
+            "pages": "389--97",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "SARS-CoV-2 binding with angiotensin-converting enzyme (ACE) 2 and internalization. For cellular entry, SARS-CoV-2 binds to and internalizes with ACE2 by the S1 subunit. Membrane fusion is mediated via activation of spikes by proteases, and viral RNAs are released into the cytoplasm, finishing the infection with and replication of SARS-CoV-",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Possible mechanisms of renal injury in patients with SARS-CoV-2 infection. Viral infection may be one important reason for renal injury, and systemic effects such as host immune clearance and immune tolerance disorders, endothelial cell injury, thrombus formation, glucose and lipid metabolism disorder, and hypoxia aggravate this renal injury. 6 DOI: 10.1159/000512683",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "Kidney Dis DOI: 10.1159/000512683",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Key parameters of clinical manifestations Imaging abnormality: inflammation and edema of the renal parenchyma by CT scan. HU, hematuria; PU, proteinuria; BUN, blood urea nitrogen; SCr, serum creatinine; AKI, acute kidney injury; N, not mentioned. S y s te m ic e ff e c ts D ir e c t in f e c t io n",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank Han Chen, Cheng Zhong, Xueying Yang, and Qian Hu for their help in literature and data collection. Besides, we would thank all of the medical staff at the Department of Nephrology, Children's Hospital of Chongqing Medical University, for their support in writing this article.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The authors have no conflicts of interest to disclose.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of Interest Statement"
+        },
+        {
+            "text": "Financial support for this work was provided by the COVID-19 Emergency Research Project of Chongqing Medical University (CQMUNCP0310) to Mo Wang as the PI and the National Key R&D Program of China (2018YFC1312700).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding Sources"
+        },
+        {
+            "text": "Xiong Zhong Ruan and Qiu Li designed this study and revised the manuscript; Mo Wang, Huaying Xiong, and Han Chen did the literature search and wrote the draft of this paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author Contributions"
+        }
+    ]
+}

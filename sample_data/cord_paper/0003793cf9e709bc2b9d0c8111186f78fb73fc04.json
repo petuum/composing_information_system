@@ -1,0 +1,617 @@
+{
+    "paper_id": "0003793cf9e709bc2b9d0c8111186f78fb73fc04",
+    "metadata": {
+        "title": "Title: Rethinking high-risk groups in COVID-19",
+        "authors": [
+            {
+                "first": "Anastasia",
+                "middle": [],
+                "last": "Vishnevetsky",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Massachusetts General Hospital",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [],
+                "last": "Levy",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "How do we protect our 'high-risk' patient populations? This was the dominant focus of our coronavirus disease 2019 (COVID-19) neurology departmental meeting at the start of the epidemic weeks ago, where a neurologist in his late 50s assured us we were at minimal danger from coronavirus, and our efforts should focus on protecting our high-risk patients. But do we know exactly who these 'high-risk' people are? Although there was limited data to guide them, our hospital, the CDC, 1 and various medical associations repeated the intuitive refrain that 'high risk' patients are the 'immunocompromised and elderly.'",
+            "cite_spans": [
+                {
+                    "start": 482,
+                    "end": 483,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "A hospital-wide high-risk patient working group was established early on, consisting of neuroimmunologists and other physicians across disciplines that care for immunocompromised individuals. Specific guidance for immunocompromised patients regarding COVID-19 was pushed out quickly. Appointments for immunocompromised patients were converted to virtual visits or deferred if possible, before appointments for other patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The inclusion of immunocompromised patients in the 'high-risk population' for COVID-19 is intuitive-immunosuppression should make a person more likely to contract an infection and may prolong the disease course. However, the data thus far has not borne this out. Early analyses of large Chinese cohorts have identified risk factors such as older age, hypertension, chronic respiratory diseases, and cardiovascular diseases, but not immunosuppression, as risk factors for disease severity in COVID-19. 2 In addition, data on prior related coronavirus outbreaks in MERS 3 and SARS 4 did not show any evidence of increased risk of infection or morbidity in immunocompromised populations.",
+            "cite_spans": [
+                {
+                    "start": 501,
+                    "end": 502,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "With the current outbreak, reports of 2 heart transplant recipients 5 and the first renal transplant recipient 6 with COVID-19 infection showed a clinical course, recovery, and laboratory profile similar to that of immunocompetent patients. A pediatric liver transplant center in Italy reported no significant pulmonary disease from COVID-19 amongst their patients with autoimmune liver disease, on chemotherapy, or those who were post-transplant. 7 An analysis from China did note increased rates of infection and morbidity in cancer patients, 8 however, it did not adjust for age, included patients many years out from their cancer treatments, and has been the subject of several responses that contest the conclusion of increased risk to cancer patients. 9,10 Indeed, one response raised the point that decreased access to quality medical care, rather than the virus itself, is the primary danger facing cancer patients in the current pandemic. 10 No data exists regarding other transplant, rheumatologic or neuroimmunological conditions, which itself prompts the question of whether these patients are indeed at higher risk than the general population.",
+            "cite_spans": [
+                {
+                    "start": 448,
+                    "end": 449,
+                    "text": "7",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 545,
+                    "end": 546,
+                    "text": "8",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 948,
+                    "end": 950,
+                    "text": "10",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Not only has evidence that immunosuppression causes increased risk in COVID-19 been lacking, there is also a theoretical argument that immunosuppression may be therapeutic. A hyperinflammatory response to COVID-19 may cause a cytokine storm syndrome, driving severe and deadly cases of COVID-19. 11 Clinical investigations into the utility of various immunosuppressive agents in COVID-19, including tocilizumab (an IL-6 inhibitor), Janus kinus (JAK) inhibitors, and others are ongoing. 12 Instead of focusing on immunosuppression, we need to re-consider who qualifies as an 'elderly' person in regards to COVID-19 risk. Advanced older age as a risk factor for COVID-19 infection and death has been well substantiated. Over 1 out of 5 patients in Italy over the age of 80 succumbed to the disease, 13 and according to the CDC, 31-70% of confirmed COVID-19 patients over the age of 85 in the United States require hospitalization. 1 Lay press articles paint the at risk elderly as 'our grandparents,' 'nursing home residents,' or 'retirees.' And yet, while the very elderly in their 80s are most severely affected by the disease, the median age of hospitalized patients with severe COVID-19 in a large retrospective study in China was only 52 years. 14 The case fatality rate for individuals in the 60-69 age group was an unreassuring 3.5% in Italy and 3.6% in China, and hospitalizations in this age group are extremely common. 13 Morbidity may peak in society's oldest members, but anyone older than 50 is far from safe, and many in this group represent our health care workers, grocery store employees, government leaders, caregivers, and other members of society serving essential functions in the midst of this crisis. Unlike immunocompromised individuals, average adults in their 50s or 60s may never have thought of themselves as vulnerable; thus, messaging about their elevated risk should be targeted and unambiguous.",
+            "cite_spans": [
+                {
+                    "start": 296,
+                    "end": 298,
+                    "text": "11",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 486,
+                    "end": 488,
+                    "text": "12",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 797,
+                    "end": 799,
+                    "text": "13",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 929,
+                    "end": 930,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1427,
+                    "end": 1429,
+                    "text": "13",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The data regarding risk factors for poor outcomes in COVID-19 is far from definitive-as we learn more about this disease, we may find that certain cancers, neuroimmunologic conditions, or immunosuppressive agents do indeed increase morbidity. The medical complexity of some immunocompromised patients may itself lead to higher risk for nosocomial infections or complications related to hospitalization. Those in their 80s and 90s are at the highest risk from this infection, and we must do everything we can to protect them. However, as health professionals focus on 'immunocompromised and elderly' patients in our public health messaging, we send an implicit message, that others have made explicit, that those outside of these groups are safer. Paradoxically, the physician in his late 50s speaking about protecting high-risk immunocompromised patients at our hospital meeting, may himself be at higher risk than many of the immunocompromised patients he seeks to protect. These issues are consequential-some multiple sclerosis patients are considering delays in their immunosuppressive regimens due to the pandemic, older healthcare workers are coming out of retirement to work on the frontlines, and there is ongoing debate in government about the who will be at risk when we reopen society. It is time to urgently begin the discussion within the medical community on how to target accurate messaging to those at highest risk.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "COVID-19)",
+            "authors": [],
+            "year": 2019,
+            "venue": "Centers for Disease Control and Prevention",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Prevalence of comorbidities in the novel Wuhan coronavirus (COVID-19) infection: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2020.03.017"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "MERS transmission and risk factors: a systematic review",
+            "authors": [
+                {
+                    "first": "J-E",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jung",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-E",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BMC Public Health",
+            "volume": "18",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12889-018-5484-8"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Short term outcome and risk factors for adverse clinical outcomes in adults with severe acute respiratory syndrome (SARS)",
+            "authors": [
+                {
+                    "first": "Jwm",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "First Cases of COVID-19 in Heart Transplantation From China",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Heart Lung Transplant",
+            "volume": "",
+            "issn": "0",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.healun.2020.03.006"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Successful recovery of COVID-19 pneumonia in a renal transplant recipient with long-term immunosuppression",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Am J Transplant",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/ajt.15869"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Coronaviruses and immunosuppressed patients. The facts during the third epidemic",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "D&apos;antiga",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Liver Transpl",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/lt.25756"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Cancer patients in SARS-CoV-2 infection: a nationwide analysis in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Oncol",
+            "volume": "21",
+            "issn": "3",
+            "pages": "30096--30102",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1470-2045(20"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Risk of COVID-19 for cancer patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jin",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Oncol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Risk of COVID-19 for patients with cancer",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Oncol",
+            "volume": "",
+            "issn": "0",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1470-2045(20)30149-2"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "COVID-19: consider cytokine storm syndromes and immunosuppression. The Lancet. 2020;0(0)",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Mcauley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sanchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tattersall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Manson",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30628-0"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Ongoing Clinical Trials for the Management of the COVID-19 Pandemic",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Lythgoe",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Middleton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Trends Pharmacol Sci",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tips.2020.03.006"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Coronavirus Disease 2019 (COVID-19) in Italy",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Livingston",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bucher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.4344"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Clinical characteristics of coronavirus disease 2019 in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {},
+    "back_matter": [
+        {
+            "text": "Anastasia Vishnevetsky -Writing, original draft preparation Michael Levy -Writing, Review & Editing",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author Statement:"
+        }
+    ]
+}

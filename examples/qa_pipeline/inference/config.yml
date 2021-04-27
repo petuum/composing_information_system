@@ -1,0 +1,48 @@
+reader:
+  pack_name: "query"
+
+query_creator:
+  size: 10
+  field: "content"
+  query_pack_name: "query"
+
+indexer:
+  query_pack_name: "query"
+  index_config:
+    index_name: "elastic_index"
+    hosts: "localhost:9200"
+    algorithm: "bm25"
+  field: "content"
+  response_pack_name_prefix: "passage"
+  indexed_text_only: False
+
+spacy1:
+  processors: "sent_segment, ent_link"
+  lang: "en_ner_bionlp13cg_md"
+  use_gpu: False
+
+spacy2:
+  processors: "ent_link"
+  lang: "en_ner_jnlpba_md"
+  use_gpu: False
+
+allennlp_query:
+  'processors': "tokenize, pos, srl"
+  'tag_formalism': "srl"
+  'overwrite_entries': False
+  'allow_parallel_entries': True
+  'srl_url': "https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz"
+  'cuda_devices': [0, 1]
+  'infer_batch_size': 1
+
+allennlp:
+  'processors': "tokenize, srl"
+  'tag_formalism': "srl"
+  'overwrite_entries': False
+  'allow_parallel_entries': True
+  'srl_url': "https://storage.googleapis.com/allennlp-public-models/openie-model.2020.03.26.tar.gz"
+  'cuda_devices': [0, 1]
+  'infer_batch_size': 50
+
+response:
+  'query_pack_name': "query"
