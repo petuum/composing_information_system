@@ -21,10 +21,10 @@ First, you need to create a virtual environment and git clone this repo, then in
 
 `pip install -r requirements.txt`
 
-If you don't have Cython installed, you will need to `pip install Cython` first to avoid installation failure.
+> Note: If you don't have Cython installed, you will need to `pip install Cython` first to avoid installation failure.
 
 
-### Build index
+### Create index
 * Prerequisite: ElasticSearch
 
 Please follow https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html to install ElasticSearch.
@@ -106,14 +106,21 @@ Forte analyzes user’s input question by annotating the basic language features
 Then __AllenNLP’s SRE model__ was utilized to extract the arguments and predicate in the question, and which argument that the user is interested in. 
 This annotated question is transformed into a query and pass to the next step. 
 
+> Note: This step is expected to extract the user expected relation and it is relied on AllenNLP's SRE result.
+So the question has to contain two arguments and one predicate successfully caught by the model, otherwise this step will fail.
+You can check the section above to see the pattern of sample queries.
+
 
 ### Document Retrieval
 The __ElasticSearch__ backend is fast and quickly filters information from a large corpus, 
-which is great for larger corpora with millions of documents. It is utilized as the search engine here. 
+which is great for larger corpora with millions of documents. We use it as search engine here. 
 
-The query created in the last step was used to retrieve relevant articles from an index that’s stored in ElasticSearch. You could set the number of retrieved documents in `config.yml`.
+The query created in the last step was used to retrieve relevant articles from an index that’s stored in ElasticSearch. 
 
 The extracted documents was stored as datapack in Forte, and passed to the next step to generate final output.
+
+> Note: You can set the search configs in `indexer/config.yml`, for example, `query_creator.size` controls the number of retrieved documents, `query_creator.query_pack_name` will set the name of query datapack in pipeline. 
+But you have to keep `indexer.index_config` consistent with Create Index step to make the search work.
 
 
 ### Answer Extraction
