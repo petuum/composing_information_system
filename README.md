@@ -2,7 +2,8 @@
 
 The repository shows how to build a Q&amp;A engine using Forte and existing NLP models, and allows users to quickly re-purpose it for different datasets and/or tasks. 
 
-The current showcase contains two pipelines: data index pipeline, and Q&A pipeline.
+Given user's query, the Q&amp;A engine helps to search and extract relations in the dataset and generate organized output. 
+It contains two pipelines: one is data index pipeline, which is to index the dataset, the other is Q&amp;A inference pipeline, which is to do search based on user's input query and output relations.
 
 ## Dataset
 
@@ -31,6 +32,7 @@ Please follow https://www.elastic.co/guide/en/elasticsearch/reference/current/ta
 Then we need to have ElasticSearch running on backend. Do
 
 `cd elasticsearch-7.11.1`
+
 `./bin/elasticsearch`
 
 to start the server.
