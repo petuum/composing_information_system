@@ -1,4 +1,4 @@
-# Composing Information System - A Q&amp;A Engine
+# Composable Information System - A Q&amp;A Engine
 
 The repository shows how to build a Q&amp;A engine using Forte and existing NLP models, and allows users to quickly re-purpose it for different datasets and/or tasks. 
 
