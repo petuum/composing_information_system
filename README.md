@@ -17,14 +17,13 @@ Given user input query, the pipeline will search the relevant information in COR
 
 
 ## How to run the pipeline
-First, you need to create a virtual environment and git clone this repo, then in command line:
+### Preparation
+* First, you need to create a virtual environment and git clone this repo, then in command line:
 
 `pip install -r requirements.txt`
 
 > Note: If you don't have Cython installed, you will need to `pip install Cython` first to avoid installation failure.
 
-
-### Create index
 * Prerequisite: ElasticSearch
 
 Please follow https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html to install ElasticSearch.
@@ -37,20 +36,8 @@ Then we need to have ElasticSearch running on backend. Do
 
 to start the server.
 
-* Build Elasticsearch Indexer:
-
-For CORD-19 dataset we used the data in json format for index, which is in `document_parses/pdf_json`.
-
-You can change the config of ElasticSearch in `examples/pipeline/indexer/config.yml`. Then run
-
-`python examples/pipeline/indexer/cordindexer.py --data-dir [your_data_directory]`
-    
-to index the files in `your_data_directory`. 
-
-
-
-### Build QA engine
 * Prerequisites: StanfordNLP 
+
 Please install following the instructions on official Link: https://stanfordnlp.github.io/CoreNLP/download.html.
 
 Then we need to have StanfordNLP server running on backend, you can run
@@ -61,9 +48,23 @@ Then we need to have StanfordNLP server running on backend, you can run
 
 to start the server.
 
-    
-* Run QA pipeline
 
+### Create Index
+
+In this step we will build Elasticsearch indexer.
+
+For CORD-19 dataset we used the data in json format for index, which is in `document_parses/pdf_json`.
+
+You can change the config of ElasticSearch in `examples/pipeline/indexer/config.yml`. Then run
+
+`python examples/pipeline/indexer/cordindexer.py --data-dir [your_data_directory]`
+    
+to index the files in `your_data_directory`. 
+
+
+### Build QA engine
+
+In this step we will start the QA pipeline in the command line.
 The QA pipeline uses Scispacy models for entity linking, and AllenNLP models for SRL and OpenIE task.
 
 You can run
@@ -97,9 +98,9 @@ COVID-19 enters the cell by penetrating ACE2 at low cytosolic pH and causes infe
 ================================================================================
 ```
 
-## Models
+## Pipeline Introduction
 
-The pipeline contains three major steps: __Query Understanding, Document Retrieval, and Answer Extraction__.
+The pipeline contains three major steps: Query Understanding, Document Retrieval, and Answer Extraction.
 
 ### Query Understanding
 Forte analyzes user’s input question by annotating the basic language features using __NLTK__ word tokenizer, POS tagger and lemmatizer. 
