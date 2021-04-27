@@ -1,0 +1,13 @@
+data_path: "../datasets/MTL-Bioinformatics-2016/data/BioNLP11ID-IOB/test/"
+predict_path: "./sample_output/ner_bio/"
+entry_type: "onto.medical.MedicalEntityMention"
+
+reader:
+  class_name: "showcase.readers.CoNLL03Reader"
+  config:
+    file_ext: 'tsv'
+    num_sent_per_doc: 10
+    doc_break_str: ""
+    column_format: ["word", "entity_label"]
+    entity_mention_class: "onto.medical.MedicalEntityMention"
+

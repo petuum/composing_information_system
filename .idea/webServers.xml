@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1a1c4acb-e4cc-4711-8032-436571140cf0" name="10.30.40.112" url="http://10.30.40.112">
+        <fileTransfer host="10.30.40.112" port="22" rootFolder="/home/jingzhi.pang" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

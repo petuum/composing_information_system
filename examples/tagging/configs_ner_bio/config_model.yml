@@ -1,0 +1,45 @@
+pretrained_model_name: "biobert-v1.1-pubmed"
+
+tp_request:
+  scope: "ft.onto.base_ontology.Sentence"
+  feature_scheme: 
+    input_tag:
+      type: "data_input"
+      extractor:
+        class_name: "forte.data.extractors.SubwordExtractor"
+        config:
+          entry_type: "ft.onto.base_ontology.Subword"
+          vocab_method: "indexing"
+          need_pad: False
+          vocab_use_unk: False
+          pretrained_model_name: "biobert-v1.1-pubmed"
+    output_tag:
+      type: "data_output"
+      extractor:
+        class_name: "forte.data.extractors.BioSeqTaggingExtractor"
+        config:
+          entry_type: "onto.medical.MedicalEntityMention"
+          attribute: "ner_type"
+          tagging_unit: "ft.onto.base_ontology.Subword"
+          vocab_method: "indexing"
+          vocab_use_unk: False
+          is_bert: True
+          pad_value: -100
+        vocab_path:
+
+processors: 
+  subword_tokenizer:
+    class_name: "forte.processors.nlp.SubwordTokenizer"
+    config:
+      pretrained_model_name: "biobert-v1.1-pubmed"
+
+predictor:
+  batch_size: 1
+  do_eval: True
+
+evaluator:
+  class_name: "forte.evaluation.ner_evaluator.CoNLLNEREvaluator"
+  config:
+    entry_type: "onto.medical.MedicalEntityMention"
+    attribute: "ner_type"
+    tagging_unit: "ft.onto.base_ontology.Token"

@@ -1,0 +1,32 @@
+{
+    "name": "wiki",
+    "imports": [
+      "base_ontology.json"
+    ],
+    "additional_prefixes": [
+      "onto.wiki"
+    ],
+    "definitions": [
+      {
+        "entry_name": "onto.wiki.WikiEntityMention",
+        "parent_entry": "ft.onto.base_ontology.EntityMention",
+        "description": "A span based annotation class WikiEntityMention, used to represent an Entity Mention with wiki link",
+        "attributes": [
+            {
+                "name": "yago2_entity",
+                "type": "str"
+            },
+            {
+                "name": "wiki_url",
+                "type": "str"
+            },
+            {
+                "name": "wiki_id",
+                "type": "int"
+            }
+        ]
+    }
+    ]
+  }
+  
+  

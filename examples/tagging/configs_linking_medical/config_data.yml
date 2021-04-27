@@ -1,0 +1,13 @@
+train_path: "../datasets/MedMentions/st21pv/train/"
+val_path: "../datasets/MedMentions/st21pv/dev/"
+
+output_path: "./sample_output/linking_medical/"
+
+reader:
+  class_name: "showcase.readers.MedMentionsReader"
+  config:
+
+num_epochs: 10
+train_batch_size: 4
+num_train_data: 25850
+warmup_proportion: 0.1

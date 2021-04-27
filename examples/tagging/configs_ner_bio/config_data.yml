@@ -1,0 +1,18 @@
+train_path: "../datasets/MTL-Bioinformatics-2016/data/BioNLP11ID-IOB/train/"
+val_path: "../datasets/MTL-Bioinformatics-2016/data/BioNLP11ID-IOB/dev/"
+
+output_path: "./sample_output/ner_bio"
+
+reader:
+  class_name: "showcase.readers.CoNLL03Reader"
+  config:
+    file_ext: 'tsv'
+    num_sent_per_doc: 10
+    doc_break_str: ""
+    column_format: ["word", "entity_label"]
+    entity_mention_class: "onto.medical.MedicalEntityMention"
+
+num_epochs: 10
+train_batch_size: 16
+num_train_data: 2496
+warmup_proportion: 0.1

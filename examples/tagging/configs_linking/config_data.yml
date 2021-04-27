@@ -1,0 +1,16 @@
+train_path: "../datasets/conll2003/train/"
+val_path: "../datasets/conll2003/dev/"
+
+output_path: "./sample_output/linking/"
+
+reader:
+  class_name: "showcase.readers.CoNLL03LinkReader"
+  config:
+    file_ext: 'conll'
+    doc_break_str: "-DOCSTART-"
+    column_format: ["word", null, null, "entity_label"]
+
+num_epochs: 10
+train_batch_size: 16
+num_train_data: 14041
+warmup_proportion: 0.1

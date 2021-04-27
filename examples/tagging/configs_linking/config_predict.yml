@@ -1,0 +1,10 @@
+data_path: "../datasets/conll2003/test/"
+predict_path: "./sample_output/linking/"
+entry_type: "onto.wiki.WikiEntityMention"
+
+reader:
+  class_name: "showcase.readers.CoNLL03LinkReader"
+  config:
+    file_ext: 'conll'
+    doc_break_str: "-DOCSTART-"
+    column_format: ["word", null, null, "entity_label"]
