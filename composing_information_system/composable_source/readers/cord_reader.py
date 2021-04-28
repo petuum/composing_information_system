@@ -23,8 +23,8 @@ from forte.data.data_pack import DataPack
 from forte.data.data_utils_io import dataset_path_iterator
 from forte.data.base_reader import PackReader
 from ft.onto.base_ontology import Document, Title
-from onto.cord19research import Abstract, Body
-from onto.medical import MedicalEntityMention
+from composing_information_system.onto import Abstract, Body
+from composing_information_system.onto import MedicalEntityMention
 
 __all__ = [
     "CORDNERDReader",

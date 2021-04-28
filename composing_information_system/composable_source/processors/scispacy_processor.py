@@ -24,7 +24,7 @@ from forte.common.resources import Resources
 from forte.data.data_pack import DataPack
 from forte.processors.base import PackProcessor
 from ft.onto.base_ontology import Sentence
-from onto.medical import MedicalEntityMention, UMLSConceptLink
+from composing_information_system.onto import MedicalEntityMention, UMLSConceptLink
 
 __all__ = [
     "SciSpacyProcessor",

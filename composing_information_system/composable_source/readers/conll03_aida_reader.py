@@ -22,7 +22,7 @@ from forte.data.data_utils_io import dataset_path_iterator
 from forte.data.base_reader import PackReader
 from forte.common.exception import ProcessorConfigError
 from ft.onto.base_ontology import Document, Sentence, Token
-from onto.wiki import WikiEntityMention
+from composing_information_system.onto import WikiEntityMention
 
 __all__ = [
     "CoNLL03LinkReader"
