@@ -1,0 +1,24 @@
+25763772|t|DCTN4 as a modifier of chronic Pseudomonas aeruginosa infection in cystic fibrosis
+25763772|a|Pseudomonas aeruginosa (Pa) infection in cystic fibrosis (CF) patients is associated with worse long-term pulmonary disease and shorter survival.
+25763772	0	5	DCTN4	T116,T123	C4308010
+25763772	23	63	chronic Pseudomonas aeruginosa infection	T047	C0854135
+25763772	67	82	cystic fibrosis	T047	C0010674
+25763772	83	120	Pseudomonas aeruginosa (Pa) infection	T047	C0854135
+25763772	124	139	cystic fibrosis	T047	C0010674
+25763772	141	143	CF	T047	C0010674
+25763772	145	153	patients	T101	C0030705
+25763772	179	188	long-term	T079	C0443252
+25763772	189	206	pulmonary disease	T047	C0024115
+25763772	211	227	shorter survival	T169	C0220921
+
+25847295|t|Nonylphenol diethoxylate inhibits apoptosis induced in PC12 cells
+25847295|a|Nonylphenol and short-chain nonylphenol ethoxylates such as NP2 EO are present in aquatic environment.
+25847295	25	33	inhibits	T052	C3463820
+25847295	34	43	apoptosis	T043	C0162638
+25847295	44	51	induced	T169	C0205263
+25847295	55	65	PC12 cells	T025	C0085262
+25847295	66	77	Nonylphenol	T131	C1254354
+25847295	82	117	short-chain nonylphenol ethoxylates	T131	C1254354
+25847295	126	132	NP2 EO	T131	C1254354
+25847295	137	144	present	T033	C0150312
+25847295	148	167	aquatic environment	T067	C0563034

@@ -1,0 +1,15 @@
+26476440|t|Promoting lifestyle behaviour change and well-being in hospital patients: a pilot study of an evidence-based psychological intervention
+26476440|a|Lifestyle risk behaviours show an inverse social gradient, clustering in vulnerable groups.
+26476440	0	9	Promoting	T052	C0033414
+26476440	10	36	lifestyle behaviour change	T054	C0870811
+26476440	41	51	well-being	T033	C0424578
+26476440	55	72	hospital patients	T101	C0021562
+26476440	76	87	pilot study	T062	C0031928
+26476440	109	122	psychological	T169	C0205486
+26476440	123	135	intervention	T061	C0184661
+26476440	146	161	risk behaviours	T055	C0086931
+26476440	170	177	inverse	T080	C0439850
+26476440	178	184	social	T169	C0728831
+26476440	185	193	gradient	T081	C0812409
+26476440	195	205	clustering	T081	C1704332
+26476440	209	226	vulnerable groups	T098	C1257890

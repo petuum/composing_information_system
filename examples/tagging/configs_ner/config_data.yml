@@ -1,0 +1,18 @@
+train_path: "../datasets/conll2003/train/"
+val_path: "../datasets/conll2003/dev/"
+
+output_path: "./sample_output/ner/"
+
+reader:
+  class_name: "showcase.readers.CoNLL03Reader"
+  config:
+    file_ext: 'conll'
+    num_sent_per_doc: -1
+    doc_break_str: "-DOCSTART-"
+    column_format: ["word", null, null, "entity_label"]
+    entity_mention_class: "ft.onto.base_ontology.EntityMention"
+
+num_epochs: 10
+train_batch_size: 32
+num_train_data: 14041
+warmup_proportion: 0.1

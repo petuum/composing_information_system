@@ -1,0 +1,8 @@
+data_path: "../datasets/MedMentions/st21pv/test/"
+predict_path: "./sample_output/linking_medical/"
+entry_type: "onto.medical.MedicalEntityMention"
+
+reader:
+  class_name: "showcase.readers.MedMentionsReader"
+  config:
+

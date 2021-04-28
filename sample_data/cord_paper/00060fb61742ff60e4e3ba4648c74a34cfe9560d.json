@@ -1,0 +1,599 @@
+{
+    "paper_id": "00060fb61742ff60e4e3ba4648c74a34cfe9560d",
+    "metadata": {
+        "title": "",
+        "authors": [
+            {
+                "first": "Jesi",
+                "middle": [],
+                "last": "Kim",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": "es:jesi_kim@hms.harvard.eduj.kim"
+            },
+            {
+                "first": "Todd",
+                "middle": [],
+                "last": "Thomsen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": "tthomsen@mah.harvard.edu"
+            },
+            {
+                "first": "Naomi",
+                "middle": [],
+                "last": "Sell",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": "naomi.sell@mgh.harvard.edu"
+            },
+            {
+                "first": "Andrew",
+                "middle": [
+                    "J"
+                ],
+                "last": "Goldsmith",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Harvard Medical School",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "The outbreak of a novel coronavirus disease has led to the current global health crisis. As of late March, there have been over 315,000 cases worldwide and over 25,000 cases in the United States [1] . COVID-19 has been of concern to many health care workers (HCW's) in the emergency department (ED), due to potential exposure and the possibility of transmitting the virus to other patients and family members. Currently, personal protection equipment (PPE) recommendations are in flux and it is unclear if patients outside of \"flu-like symptoms\" require PPE [2] . Furthermore, as increasing asymptomatic and atypical presentations develop, clear guidance is needed for HCW's. In China, asymptomatic and atypical presentations with gastrointestinal symptoms have been reported [3] , and it has been suggested that up to 10% of COVID-19 patients present with gastrointestinal symptoms. However, due to limited data and an unknown true disease prevalence, it is unclear what percentage of patients present atypically without respiratory symptoms [4] . In addition, a study showed that up to 18% of patients had no radiographic or CT abnormality [5] . As studies continue to demonstrate more patients who present asymptomatically or atypically, our need for increased guidance on PPE grows. We present a case report of a man who was referred to the ED for abdominal and testicular pain who was subsequently found to test positive for COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 195,
+                    "end": 198,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 558,
+                    "end": 561,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 776,
+                    "end": 779,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1043,
+                    "end": 1046,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1142,
+                    "end": 1145,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A 42 year-old-male was referred by his primary care physician (PCP) to the ED for further evaluation of 8 days of abdominal, testicular, and back pain. The patient originally presented to his PCP's office one week prior, where he was diagnosed with constipation and sent home on a bowel regimen. The pain intermittently continued with waxing and waning severity for 8 days prompting his ED presentation. The patient described his symptoms as a constant stabbing pain that originated from his groin and migrated to his abdomen, flank, back, and chest. Additionally, he reported subjective fevers two days before presentation. On review of systems, he denied any rhinorrhea, sore throat, cough, shortness of breath, nausea or vomiting.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Case report"
+        },
+        {
+            "text": "On arrival to the ED, the patient was afebrile and hemodynamically stable. The physical exam revealed diffuse abdominal tenderness without guarding or rebound and the testicular exam revealed no abnormal findings. The remainder of the patient's physical exam was otherwise normal. Standard blood work, a chest radiograph (Fig. 1) , and abdominal CT scan (Figs. 2 and 3) were obtained. The patient's blood laboratory values were benign including a normal white blood count. His chest radiograph revealed no abnormal findings as read by radiology. The CT of his abdomen and pelvis captured the lung bases which revealed pulmonary ground glass opacification and consolidation consistent with pneumonia in addition to possible colitis of the sigmoid and distal descending colon. The patient was subsequently started on cefpodoxime and azithromycin for treatment of both his colitis and pneumonia and discharged home with instruction to follow up with his PCP.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 321,
+                    "end": 329,
+                    "text": "(Fig. 1)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Case report"
+        },
+        {
+            "text": "Two days later, the patient's PCP telephoned the primary ED team to notify the team that the patient had tested positive for COVID-19. The team was notified that one day prior to his ED visit, the patient had received COVID-19 testing due to his attendance at a biotechnology conference two weeks prior that was known to be the nidus of the Massachusetts outbreak. On the day of his ED visit, the patient had been seated in the waiting room for 2 h prior to being roomed. Unfortunately, full PPE was never donned prior to his examination.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Case report"
+        },
+        {
+            "text": "Asymptomatic and atypical presentations of COVID-19 will continue to present to the ED as the number of COVID-19 cases rise. The patient described in this case report was not demonstrating any respiratory symptoms nor was the team aware that the patient was recently tested prior to his ED visit therefore, proper PPE was not worn by the treating HCW's. As a result, over 25 patients and HCW's were notified of their potential exposure.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The patient's radiological findings were enough to cause us to pause in this case. As reported, the sensitivity of CT scans is 97% with as compared to the gold standard of a positive RT-PCR result American Journal of Emergency Medicine xxx (xxxx) xxx [6] . A combination of GGO and consolidative opacities is the most common radiologic finding on chest CT and can be found in up to 88% of cases with COVID-19 [5] [6] [7] [8] . In addition, multilobar and posterior involvements have been observed [8] . Unfortunately, given the date of presentation, atypical features and lack of communication we were not able to piece the findings to the patient's symptoms at that time.",
+            "cite_spans": [
+                {
+                    "start": 251,
+                    "end": 254,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 409,
+                    "end": 412,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 413,
+                    "end": 416,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 417,
+                    "end": 420,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 421,
+                    "end": 424,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 497,
+                    "end": 500,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The atypical presentation and lack of communication in this case led to unnecessary HCW's exposures and risk. As community spread becomes more prevalent and PPE shortages continue, it is up to the health care team to assess the level of risk [2, 8] . However, it is the authors' opinion that given the of risk of COVID-19 to HCW's and continued atypical presentations that PPE to include a face mask should be considered for every patient depending on the incidence of COVID-19 within their community. As we continue in this health crisis it is critical that communication continues to be of the utmost importance [9] . In this case, communication could have protected dozens of patients and HCW's. It should be noted that this case was at the beginning of the United States outbreak when national and institutional standards were in their infancy, and new adaptations to these standards are being made daily. We present this case as a lesson learned from the front lines and to bring awareness of atypical COVID-19 cases as they continue to present.",
+            "cite_spans": [
+                {
+                    "start": 242,
+                    "end": 245,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 246,
+                    "end": 248,
+                    "text": "8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 614,
+                    "end": 617,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Asymptomatic and atypical presentations of COVID-19 have been described, but the frequency is unknown [10] . HCW's need to be vigilant of atypical presentations of COVID-19 and consider full PPE for all patients as community spread increases.",
+            "cite_spans": [
+                {
+                    "start": 102,
+                    "end": 106,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Presentations"
+        },
+        {
+            "text": "None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Financial support"
+        },
+        {
+            "text": "JK: drafted the manuscript. NS: edited manuscript and assisted in final draft. AJG: provided mentorship and edited manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author contributions"
+        },
+        {
+            "text": "The authors report no conflict of interest. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of competing interest"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "An interactive web-based dashboard to track COVID-19 in real time",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "3099",
+            "issn": "20",
+            "pages": "30120--30121",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Interim infection prevention and control recommendations for patients with suspected or confirmed coronavirus disease 2019 (COVID-19) in healthcare settings",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Early transmission dynamics in Wuhan, China, of novel coronavirus-infected pneumonia",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2001316"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Novel coronavirus infection and gastrointestinal tract",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Fang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Dig Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1751-2980.12851"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Clinical characteristics of coronavirus disease 2019 in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2002032"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Correlation of chest CT and RT-PCR testing in coronavirus disease 2019 (COVID-19) in China: a report of 1014 cases",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Radiology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1148/radiol.2020200642"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Coronavirus disease 2019 (COVID-19): a systematic review of imaging findings in 919 patients",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Salehi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Abedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Balakrishnan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "AJRI",
+            "volume": "215",
+            "issn": "",
+            "pages": "1--7",
+            "other_ids": {
+                "DOI": [
+                    "10.2214/AJR.20.23034"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Covid-19 -navigating the uncharted",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fauci",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lane",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Redfield",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMe2002387"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Priorities for the US health community responding to COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Adalja",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Toner",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Inglesby",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.3413"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A familial cluster of pneumonia associated with the 2019 novel coronavirus indicating person-to-person transmission: a study of a family cluster. The Lancet",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kok",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "395",
+            "issn": "",
+            "pages": "30154--30163",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30154-9"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Normal chest radiograph of both (A) posterior-anterior (B) and lateral view.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Computed tomography of patient with GGO in the posterior right lower lobe and consolidation in the right middle lobe (i.e. arrow).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Computed tomography of patient with mild colonic mural thickening in the sigmoid colon (i.e. arrow).",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": []
+}

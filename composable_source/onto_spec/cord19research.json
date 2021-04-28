@@ -1,0 +1,18 @@
+{
+  "name": "cord19research",
+  "imports": [
+    "base_ontology.json"
+  ],
+  "definitions": [
+    {
+      "entry_name": "ft.onto.cord19research.Abstract",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "description": "A span based annotation `Abstract`, used to represent the abstract part of research paper."
+    },
+    {
+      "entry_name": "ft.onto.cord19research.Body",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "description": "A span based annotation `Body`, used to represent body part of research paper."
+    }
+  ]
+}

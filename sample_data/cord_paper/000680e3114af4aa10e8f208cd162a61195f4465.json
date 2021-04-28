@@ -1,0 +1,370 @@
+{
+    "paper_id": "000680e3114af4aa10e8f208cd162a61195f4465",
+    "metadata": {
+        "title": "Community frailty response service: the ED at your front door",
+        "authors": [
+            {
+                "first": "Rosa",
+                "middle": [],
+                "last": "Mcnamara",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Kerri",
+                "middle": [],
+                "last": "Donnelly",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Nichola",
+                "middle": [],
+                "last": "Boyle",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "David",
+                "middle": [],
+                "last": "Menzies",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Rebecca",
+                "middle": [],
+                "last": "Hollywood",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Elizabeth",
+                "middle": [],
+                "last": "Little",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Eoin",
+                "middle": [],
+                "last": "Tiernan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Karen",
+                "middle": [],
+                "last": "Donohoe",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Aidan",
+                "middle": [],
+                "last": "Delaney",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Fionnuala",
+                "middle": [],
+                "last": "Duffy",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Eoin",
+                "middle": [],
+                "last": "Feeney",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Shane",
+                "middle": [],
+                "last": "O&apos;hanlon",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We describe the expansion and adaptation of a frailty response team to assess older people in their usual place of residence. The team had commenced a weekend service to a limited area in February 2020. As a consequence of demand related to the COVID-19 pandemic, we expanded it and adapted the model of care to provide a 7-day service to our entire catchment area. Five hundred and ninety two patient reviews have been completed in the first 105 days of operation with 43 patients transferred to hospital for further investigation or management following assessment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "A large proportion of short-stay admissions in older adults may be avoidable. 1 Accordingly, there has been a move to provide more immediate care to older people, particularly those living with frailty, in the community. Previously described models including extended role Paramedics attending emergency calls involving older people 2 3 have shown that some presentations may be safely managed in their own home. We set out to develop a bespoke weekend service to assess older people who fell at home, performing a timely multidisciplinary comprehensive assessment on site. As the COVID-19 pandemic began, we expanded our new service to meet evolving needs.",
+            "cite_spans": [
+                {
+                    "start": 78,
+                    "end": 79,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 333,
+                    "end": 336,
+                    "text": "2 3",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "St Vincent's University Hospital is located in a suburb of Dublin. Its emergency department (ED) accepts patients aged 14 years and older and has over 57 000 annual attendances. It is a receiving facility for major trauma and acute stroke and covers urban and rural areas in southeast County Dublin and County Wicklow.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SETTING"
+        },
+        {
+            "text": "In February 2020, our department made a successful bid for government funding of \u20ac185 000 to pilot a community weekend frailty and falls response service. This service included a National Ambulance Service (NAS), advanced paramedic (AP), an emergency medicine (EM) registrar and a senior occupational therapist (OT), in conjunction with local consultants in geriatric and EM. The remit was to attend emergency (999/112) calls to the NAS involving older adults for whom hospital admission might be avoided by providing comprehensive assessment in their own homes. Patients were not able to selfrefer; the ambulance service triaged calls. All three team members travelled and attended calls together. The AP provided initial assessment, scene management and worked with the doctor to complete clinical assessment and targeted investigations. The doctor had responsibility for arranging alternative care pathways if necessary. The OT provided assessment of cognition and function within the home environment, provided education to both patients and carers, organised equipment and linked with community services. All team members had to be in agreement if a patient was not to be conveyed to the ED. The service ran successfully for seven weekends.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "STRATEGY"
+        },
+        {
+            "text": "As a result of the COVID-19 pandemic, we noted fewer older people presenting to our ED (10% reduction from the same period in 2019), and several delayed presentations of conditions such as hip fracture and stroke. Local paramedics reported that older people declined transport to hospital more frequently. Care homes in our area raised concerns with us about their ability to manage an outbreak, and reported reduced access to face-to-face primary care services.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "STRATEGY"
+        },
+        {
+            "text": "We proposed to expand the service from 2 to 7 days a week, and to increase the area that we covered from County Wicklow (a neighbouring county with a large rural area and a population of 142 400 people) to encompass the entire catchment area of the hospital, which added a large mainly urban area for a total catchment of almost 320 000 people.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "STRATEGY"
+        },
+        {
+            "text": "Our service was already equipped with near patient blood testing and point of care ultrasound (POCUS). We also had essential equipment (eg, walking aids, raised toilet seats) to maximise patients' independence in their mobility and transfers at home. When the service expanded, a transport monitor, portable ECG machine and two hybrid cars (with insurance and fuel) were loaned to us by local companies pro bono, having been contacted directly by members of hospital staff. This allowed rapid commencement of the scaled-up service without the need for any additional procurement.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "STRATEGY"
+        },
+        {
+            "text": "The expanded service began on 10 April 2020 with a doctor and an OT from our hospital group working the existing shift pattern of 8:00 to 18:00 hours. Medical cover was provided from an enhanced rota staffed by registrars and now also consultants in emergency or geriatric medicine. The two OTs on the team expanded to a 7-day rota. We were unable to secure extension of AP cover to 7 days due to competing demands during the pandemic, but weekend provision was successfully maintained. We made our service more accessible by introducing new referral pathways from the three hospitals in our community area, local paramedics (including patients that declined transfer to the ED) and our nursing home liaison service. General practitioners are able to access the service via a new 'geriatrician of the day' telephone system, which triages calls to the appropriate care service.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EXPERIENCE"
+        },
+        {
+            "text": "Training was provided that was tailored to the individual team member's needs. Geriatric medicine trainees were upskilled on wound care and fracture management. Both geriatric and EM trainees received instruction on POCUS. OTs were trained to process blood samples taken by the doctor or paramedic, and they also drove the car. Education on assessment of older Report from the front people with frailty in the community, and management of aggression and personal safety was offered to all team members. Personal protective equipment including high-vis jackets, reinforced toe shoes and hard hats were available. During COVID-19, staff members wore gloves, apron and a surgical mask for routine contact.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EXPERIENCE"
+        },
+        {
+            "text": "Where there was contact with suspected or confirmed COVID-19 cases, surgical gowns, gloves, FFP3 masks and eye protection were worn.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EXPERIENCE"
+        },
+        {
+            "text": "Patients were registered in the ED information system via telephone. This facilitated completion of an electronic patient record accessed via tablet PC. Patients had the same access to onward referral pathways as in the ED and could be directly transferred to local hospitals depending on their needs. Clinical governance was overseen by the ED with immediate clinical advice available from consultants in emergency and geriatric medicine. A consultant in palliative medicine also joined the team providing direct access to advice and coordination of care across settings in the community and in hospital. Feedback was provided to the referring clinician after assessment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EXPERIENCE"
+        },
+        {
+            "text": "It quickly became clear that there was an unmet need for infection control support related to the pandemic, as the team were contacted by several care homes and rehabilitation facilities. We also identified a need for medical support where multiple patients were unwell in care homes, sometimes where access to community services had become more limited as the pandemic progressed. Examples included assessment of acute delirium, dehydration, infection and advice on oxygen administration for patients with COVID-19 (see box 1 for example case). There were many questions about managing reactive behaviours in people with dementia in both private homes and in care homes, sometimes related to COVID-19 infection but in other cases due to restrictions imposed by the lockdown. In partnership with our geriatricians and infectious disease consultants, the hospital also offered additional outreach visits to care facilities to provide expertise on site.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "EXPERIENCE"
+        },
+        {
+            "text": "The service attended to 592 patient reviews in the first 105 days of operation. Fortythree patients were transferred to hospital for further investigation or management, giving a 92% non-conveyance rate. Forty-one of those transferred to hospital required admission(95.3%). We undertook 21 additional visits to care homes to offer general clinical advice and infection control support. Twenty-two per cent (118) calls related to patients in care homes. The team averaged 130 km of travel per day and saw on average 5.6 patients per 10 hours shift. Some doctors on the team reported appreciating having the OT available to help with cognitive assessments, especially where mental capacity was a concern and treatment was being declined. Eighty-two patients received repeat visits after variable intervals depending on their clinical needs, for reassessment. This allowed a higher threshold for conveyance of patients whose risk assessment was considered to be borderline, with a shared decision-making framework used. We were also able to bridge gaps where other services were not immediately available, for example, setting up a syringe driver for urgent symptom control. Three patients died in their own homes, with the team providing palliative care support. While the service was not formally evaluated, no complaints or concerns were received.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "OUTCOMES"
+        },
+        {
+            "text": "The COVID-19 pandemic triggered support for the rapid scaling up of a weekend service to a 7-day service with expanded referral pathways and scope of practice. It is likely that demand will remain, even as services resume more usual patterns of activity. Strategies to provide alternatives to acute hospital admission may become even more important during this phase. Funding will be sought locally to maintain our care model of holistic comprehensive assessment brought to the patient. We recently began to seek anonymised feedback from patients and this will be evaluated as part of our service governance and to inform development. We also plan to undertake an independent formal clinical outcomes evaluation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "LIMITATIONS AND FUTURE DIRECTIONS"
+        },
+        {
+            "text": "Twitter David Menzies @david_menzies, Rebecca Hollywood @Rebecca999, Elizabeth Little @Leezalit and Shane O'Hanlon @drohanlon Acknowledgements The team would like to express their appreciation for the staff members who volunteered their time to work on the service, in addition to their already busy jobs. We would also like to thank the National Ambulance ServiceNAS, Toyota Ireland, Flash point systems, Mobile Medical Diagnostics and Medicore Medical Services.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "LIMITATIONS AND FUTURE DIRECTIONS"
+        },
+        {
+            "text": "Contributors RM, DM, FD and SOH service conception and development, RM and SOH wrote draft, KeD, KaD AD, NB and EL data gathering. EF, ET, RH and DM contributed to manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Collaborators Fergus MurrayGareth Fitzpatrick."
+        },
+        {
+            "text": "Funding This study was supported by Slaintecare Integration Fund (project ID 388).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Collaborators Fergus MurrayGareth Fitzpatrick."
+        },
+        {
+            "text": "Patient and public involvement Patients and/or the public were not involved in the design, or conduct, or reporting, or dissemination plans of this research.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests None declared."
+        },
+        {
+            "text": "Patient consent for publication Obtained.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests None declared."
+        },
+        {
+            "text": "A GP referral was received by the team (via the on-call geriatrician) for a 79-year-old female with acute functional decline and bilateral knee pain. She was being treated for a suspected urinary tract infection, having reported urinary urgency. Medical and functional assessment was completed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Box 1 Example case."
+        },
+        {
+            "text": "Problems identified: \u25ba Bilateral knee pain with tenderness on examination. \u25ba Increased difficulty standing, transferring from bed to chair and mobilising. \u25ba Increased dependence on family for self-care and domestic activities. \u25ba Potential for increased selfmedication due to ongoing knee pain, which may impact on confusion and increase risk of falls. \u25ba Pain was due to a flare up of chronic symptoms of osteoarthritis. Solution: \u25ba Blood sample taken and urine sample sent and reviewed by team. \u25ba Steroid injection administered to both knees, using ultrasound guidance. \u25ba Medication review with plan to rationalise analgesia and reduce opioids. \u25ba Provision of glide-about commode, toileting equipment and safe installation. \u25ba Education on safe transfer technique with patient and family. \u25ba Education on importance of engaging in activities of daily living and functional mobility. \u25ba District nurse referral for home supports. \u25ba Wheelchair provided to enable patient to access essential regular appointments. \u25ba Liaison with GP regarding medications. \u25ba Follow-up visit completed 4 days later to ensure managing functional needs and pain controlled. \u25ba Urine culture was clear so antibiotics were stopped. \u25ba Patient remained at home. GP, general practitioner.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Box 1 Example case."
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Urgent care axis for the older adult: where is best to target interventions?",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Bunn",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Croft",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "O&apos;keeffe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Emergency Medicine Journal",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/emermed-2018-207505"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Effectiveness of paramedic practitioners in attending 999 calls from elderly people in the community: cluster randomised controlled trial",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mason",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Knowles",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Colwell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "BMJ",
+            "volume": "335",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.39343.649097.55"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Home Visit-Based community Paramedicine and its potential role in improving patient-centered primary care: a Grounded theory study and framework",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Dainty",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Seaton",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Drennan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Health Serv Res",
+            "volume": "53",
+            "issn": "",
+            "pages": "3455--70",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1475-6773.12855"
+                ]
+            }
+        }
+    },
+    "ref_entries": {},
+    "back_matter": [
+        {
+            "text": "This article is made freely available for use in accordance with BMJ's website terms and conditions for the duration of the covid-19 pandemic or until otherwise determined by BMJ. You may use, download and print the article for any lawful, non-commercial purpose (including text and data mining) provided that all copyright notices and trade marks are retained.\u00a9 Author(s) (or their employer(s)) 2020. No commercial re-use. See rights and permissions. Published by BMJ. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+create_index:
+  batch_size: 10000
+  fields:
+    - doc_id
+    - content
+  indexer:
+    name: "ElasticSearchIndexer"
+    hparams:
+      index_name: "elastic_index"
+      hosts: "localhost:9200"
+      algorithm: "bm25"
+    other_kwargs:
+      request_timeout: 60
+      refresh: true
