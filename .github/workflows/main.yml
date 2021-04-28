@@ -60,7 +60,7 @@ jobs:
           flake8 composing_information_system/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --exclude=*/cliner/*
       - name: Lint with pylint
         run: |
-          pylint .
+          pylint composing_information_system/
       - name: Lint with mypy
         run: |
           mypy .
