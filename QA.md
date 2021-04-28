@@ -22,6 +22,10 @@ Given user input query, the pipeline will search the relevant information in COR
 
 `pip install -r requirements.txt`
 
+`cd composing_information_system/`
+
+`export PYTHONPATH="$(pwd):$PYTHONPATH"`
+
 > Note: If you don't have Cython installed, you will need to `pip install Cython` first to avoid installation failure.
 
 * Prerequisite: ElasticSearch
@@ -33,18 +37,6 @@ Then we need to have ElasticSearch running on backend. Do
 `cd elasticsearch-7.11.1`
 
 `./bin/elasticsearch`
-
-to start the server.
-
-* Prerequisites: StanfordNLP 
-
-Please install following the instructions on official Link: https://stanfordnlp.github.io/CoreNLP/download.html.
-
-Then we need to have StanfordNLP server running on backend, you can run
-
-`cd stanford-corenlp-4.2.0`
-
-`java -cp "*" -mx3g edu.stanford.nlp.pipeline.StanfordCoreNLPServer`
 
 to start the server.
 
