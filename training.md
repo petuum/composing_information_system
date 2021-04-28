@@ -70,7 +70,7 @@ wiki entity linking, and medical entity linking.
 
 * Create a conda virtual environment and git clone this repo, then in command line:
 
-    `cd composable-showcase`
+    `cd composing_information_system/`
 
     `export PYTHONPATH="$(pwd):$PYTHONPATH"`
 
