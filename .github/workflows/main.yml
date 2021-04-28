@@ -49,9 +49,9 @@ jobs:
           cd ..
           # Remove them to avoid confusing pytest.
           rm -rf texar-pytorch
-      - name: Install the project
+      - name: Install the requirements
         run: |
-          pip install --progress-bar off .
+          pip install --progress-bar off -r requirements.txt
       - name: Lint with flake8
         run: |
           # stop the build if there are Python syntax errors or undefined names
