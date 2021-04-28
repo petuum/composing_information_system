@@ -68,7 +68,7 @@ wiki entity linking, and medical entity linking.
 
 * Below shows the steps to train a general NER model. You can modify config direcotry to train others.
 
-* Create a conda virtual environment and git clone this repo, then in command line:
+* Create a conda virtual environment and git clone this repo and go into the repo, then in command line:
 
     `cd composing_information_system/`
 
