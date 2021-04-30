@@ -13,6 +13,10 @@
 # limitations under the License.
 
 # pylint: disable=attribute-defined-outside-init
+"""
+Query Creator to do NLP analysis for user input and generate query
+for ElasticSearch
+"""
 from typing import Any, Dict, Tuple
 
 from forte.data.data_pack import DataPack

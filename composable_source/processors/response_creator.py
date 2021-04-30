@@ -11,7 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+"""
+Create human readable output as response
+"""
 import logging
 from collections import defaultdict
 from typing import Tuple, Dict, Set, List, DefaultDict, Any
@@ -21,7 +23,7 @@ from forte.data.data_pack import DataPack
 from forte.data.multi_pack import MultiPack
 from forte.processors.base import PackProcessor
 from ft.onto.base_ontology import Token, Sentence, PredicateLink, Title
-from composing_information_system.onto import MedicalEntityMention
+from onto.medical import MedicalEntityMention
 from composable_source.utils.utils import query_preprocess, get_arg_text
 
 logger = logging.getLogger(__name__)
@@ -34,6 +36,10 @@ URL_PREFIX = 'https://www.ncbi.nlm.nih.gov/search/all/?term='
 
 
 class ResponseCreator(PackProcessor):
+    r"""
+    Given datapacks, ResponseCreator output the results in human readable
+    format, containing relation, source sentence, and UMLS concepts
+    """
     # pylint: disable=useless-super-delegation
     def initialize(self, resources: Resources, configs: Config):
         super().initialize(resources, configs)
@@ -66,8 +72,8 @@ class ResponseCreator(PackProcessor):
         ent = arg1 if is_answer_arg0 else arg0
         self._process_results(input_pack, ent, verb_lemma, is_answer_arg0)
 
-    def _process_results(self, input_pack: MultiPack, ent: str,
-                         verb_lemma: str, is_answer_arg0=True):
+    def _process_results(self, input_pack: MultiPack, ent: str, verb_lemma: str,
+                         is_answer_arg0=True):
         """
         Output relations given input pack and user's interested entity
         :param input_pack: Datapack
@@ -84,16 +90,16 @@ class ResponseCreator(PackProcessor):
         output_titles: DefaultDict[int, Dict[str, Tuple[str, str]]] \
             = defaultdict(dict)
 
-        for p, pack in enumerate(input_pack.packs):
+        for pack_idx, pack in enumerate(input_pack.packs):
             if pack.pack_name == self.configs.query_pack_name:
                 continue
 
-            result = self._process_datapack(p, pack, ent,
+            result = self._process_datapack(pack_idx, pack, ent,
                                                    verb_lemma, is_answer_arg0)
-            for key, r in result.items():
-                output_relations[key] = r[0]
-                output_titles[p][key] = r[1]
-                output_concepts[p][key] = r[2]
+            for key, item in result.items():
+                output_relations[key] = item[0]
+                output_titles[pack_idx][key] = item[1]
+                output_concepts[pack_idx][key] = item[2]
 
         intro_relation = u'\u2022Relation:'
         intro_source = u'\u2022Source Sentence:'
@@ -102,8 +108,8 @@ class ResponseCreator(PackProcessor):
         relations = list({x[0] for x in output_relations.values()})
         relations.sort(key=lambda x: (x[3], x[4]))
 
-        for r in relations:
-            triplet = '\t'.join(r[0:3])
+        for item in relations:
+            triplet = '\t'.join(item[0:3])
             paper_number = output_relations[triplet][1]
             sentence, paper_title = output_titles[paper_number][triplet]
 
@@ -120,7 +126,7 @@ class ResponseCreator(PackProcessor):
                 info = sep.join(desc)
                 print(f'{leading}{umls_ent}{sep}{info}')
 
-    def _process_datapack(self, p: int, pack: DataPack, ent: str,
+    def _process_datapack(self, pack_idx: int, pack: DataPack, ent: str,
                           verb_lemma: str, is_answer_arg0: bool):
         title = pack.get_single(entry_type=Title).text
         result: DefaultDict[str, List[Any]] = defaultdict(list)
@@ -153,29 +159,28 @@ class ResponseCreator(PackProcessor):
                 if (ent in arg1.lower() and is_answer_arg0):
                     triplets.append((arg0, pred, arg1, len(arg1), len(arg0)))
 
-                result = self._collect_triplet_info(triplets, result, pack,
-                                    sentence, p, sent_text, title, arg0, arg1)
+                med_entities = self._get_med_ent(pack, sentence, arg0, arg1)
+                result = self._collect_triplet_info(triplets, result, pack_idx,
+                                                sent_text, title, med_entities)
 
         return result
 
     def _collect_triplet_info(self,
                               triplets: List[Tuple[str, str, str, int, int]],
                               result: DefaultDict[str, List[Any]],
-                              pack: DataPack, sentence: Sentence, p: int,
-                              sent_text: str, title: str, arg0: str, arg1: str):
+                              pack_idx: int, sent_text: str, title: str,
+                              med_entities: List[MedicalEntityMention]):
         if not triplets:
             return result
 
         for triplet in triplets:
             key = '\t'.join(triplet[0:3])
-            result[key].append([triplet, p])
+            result[key].append([triplet, pack_idx])
             result[key].append((sent_text, title))
 
             entity_dict = defaultdict(set)
 
-            for med_ent in pack.get(MedicalEntityMention, sentence):
-                if med_ent.text.lower() not in (arg0.lower() or arg1.lower()):
-                    continue
+            for med_ent in med_entities:
                 for umls in med_ent.umls_entities:
                     sent = f"Name: {umls.name}\t" \
                            f"CUI: {umls.cui}\t" \
@@ -184,3 +189,13 @@ class ResponseCreator(PackProcessor):
 
             result[key].append(entity_dict)
         return result
+
+    def _get_med_ent(self, pack: DataPack, sentence: Sentence,
+                     arg0: str, arg1: str):
+        entities: List[MedicalEntityMention] = []
+
+        for med_ent in pack.get(MedicalEntityMention, sentence):
+            if med_ent.text.lower() not in (arg0.lower() or arg1.lower()):
+                continue
+            entities.append(med_ent)
+        return entities
