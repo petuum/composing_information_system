@@ -14,3 +14,6 @@
 from composable_source.processors.delete_overlap_entries import *
 from composable_source.processors.nltk_sent_seg_entity_cautious import *
 from composable_source.processors.predictors import *
+from composable_source.processors.elasticsearch_query_creator import *
+from composable_source.processors.response_creator import *
+from composable_source.processors.scispacy_processor import *

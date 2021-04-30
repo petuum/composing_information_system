@@ -12,3 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from composable_source.trainers.tagging_trainer import *
+from composable_source.trainers.utils import *
