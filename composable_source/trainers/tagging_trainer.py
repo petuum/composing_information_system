@@ -26,8 +26,8 @@ from tqdm import tqdm
 from forte.pipeline import Pipeline
 from forte.data.data_pack import DataPack
 from forte.trainer.base.trainer import BaseTrainer
-from composable_source.processors import BertPredictor
-from composable_source.trainers.utils import (
+from composable_source.processors.predictors import BertPredictor
+from composable_source.utils.utils_trainer import (
     build_lr_decay_scheduler, compute_loss, create_class)
 
 
@@ -35,6 +35,9 @@ logger = logging.getLogger(__name__)
 
 
 class TaggingTrainer(BaseTrainer):
+    """
+    Trainer for tagging
+    """
     def __init__(self,
                  config_data: Dict,
                  config_model: Dict,
@@ -76,8 +79,12 @@ class TaggingTrainer(BaseTrainer):
 
         return pack_iterator
 
-    # Build model
     def build_model(self, num_classes):
+        """
+        Build model
+        :param num_classes:
+        :return:
+        """
         pretrained_model = self.config_model["pretrained_model_name"]
         self.model = \
             BERTClassifier(
@@ -88,8 +95,15 @@ class TaggingTrainer(BaseTrainer):
                 })
         self.model.to(self.device)
 
-    # training epoch
     def train_epoch(self, batch_iter, optim, lr_scheduler, pad_value):
+        """
+        training epoch
+        :param batch_iter:
+        :param optim:
+        :param lr_scheduler:
+        :param pad_value:
+        :return:
+        """
         train_err: int = 0
         train_total: float = 0.0
         train_sentence_len_sum: float = 0.0
@@ -111,8 +125,12 @@ class TaggingTrainer(BaseTrainer):
                 torch.sum(batch["input_tag"]["masks"][0]).item()
         return train_err, train_total, train_sentence_len_sum
 
-    # Build Predictor
     def build_predictor(self, vocab_path):
+        """
+        Build Predictor
+        :param vocab_path:
+        :return:
+        """
         predictor = BertPredictor()
         predictor_config = self.config_model["predictor"]
         (self.config_model["tp_request"]
@@ -124,9 +142,16 @@ class TaggingTrainer(BaseTrainer):
         predictor.load(self.model)
         return predictor, predictor_config
 
-    # Build Validation Pipeline
     def build_val_pl(self, predictor, evaluator,
                      evaluator_config, predictor_config):
+        """
+        Build Validation Pipeline
+        :param predictor:
+        :param evaluator:
+        :param evaluator_config:
+        :param predictor_config:
+        :return:
+        """
         val_reader, val_reader_config = create_class(
             self.config_data["reader"]["class_name"],
             self.config_data["reader"]["config"])
@@ -141,8 +166,12 @@ class TaggingTrainer(BaseTrainer):
         val_pl.add(component=evaluator, config=evaluator_config)
         return val_pl
 
-    # Save vocabulary for prediction use
     def save_vocab(self, train_preprocessor):
+        """
+        Save vocabulary for prediction use
+        :param train_preprocessor:
+        :return:
+        """
         output_vocab_path = os.path.join(self.config_data["output_path"],
                                          "vocab.pkl")
         with open(output_vocab_path, "wb") as vocab_file:

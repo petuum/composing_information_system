@@ -32,24 +32,12 @@ def query_preprocess(input_pack: DataPack):
         is_answer_arg0: should subject(arg0) or object(arg1) be returned as answer
     """
     sentence = input_pack.get_single(Sentence)
-
-    relations = defaultdict(dict)
-    text_mention_mapping = {}
-
-    # get all srl relations
-    for link in input_pack.get(PredicateLink, sentence):
-        verb = link.get_parent()
-        verb_text = verb.text
-        argument = link.get_child()
-        argument_text = argument.text
-
-        text_mention_mapping[verb_text] = verb
-        text_mention_mapping[argument_text] = argument
-        relations[verb_text][link.arg_type] = argument_text
+    relations, text_mention_mapping = collect_relations(input_pack, sentence)
 
     arg0, arg1, predicate = None, None, None
     for verb_text, entity in relations.items():
-        arg0, arg1, predicate = collect_mentions(text_mention_mapping, entity, verb_text)
+        arg0, arg1, predicate = collect_mentions(text_mention_mapping,
+                                                 entity, verb_text)
         if not arg0 and not arg1:
             continue
 
@@ -76,6 +64,29 @@ def query_preprocess(input_pack: DataPack):
 
     return sentence, arg0.text if arg0 else '', arg1.text if arg1 else '', \
            predicate.text, verb_lemma, is_answer_arg0
+
+
+def collect_relations(input_pack, sentence):
+    """
+    Collect arguments and verb from the given sentence
+    :param input_pack: datapack
+    :param sentence: input sentence
+    :return:
+    """
+    relations = defaultdict(dict)
+    text_mention_mapping = {}
+
+    # get all srl relations
+    for link in input_pack.get(PredicateLink, sentence):
+        verb = link.get_parent()
+        verb_text = verb.text
+        argument = link.get_child()
+        argument_text = argument.text
+
+        text_mention_mapping[verb_text] = verb
+        text_mention_mapping[argument_text] = argument
+        relations[verb_text][link.arg_type] = argument_text
+    return relations, text_mention_mapping
 
 
 def collect_mentions(text_mention_mapping, relation, verb_text):

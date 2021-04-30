@@ -60,7 +60,7 @@ jobs:
           flake8 composable_source/ examples/ tests/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Lint with pylint
         run: |
-          pylint composable_source/ examples/ tests/ --generated-members="torch.*" --max-args=10 --max-parents=10
+          pylint composable_source/ examples/ tests/ --generated-members="torch.*" --max-args=10 --max-parents=10 --max-locals=25 --max-statements=100
       - name: Lint with mypy
         run: |
           mypy .

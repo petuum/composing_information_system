@@ -11,7 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""NLTK sentence tokenizer with cautions of EntityMention boundaries."""
+"""
+NLTK sentence tokenizer with cautions of EntityMention boundaries.
+"""
 
 __all__ = [
     "NLTKSentSegEntityCautious",
@@ -46,6 +48,11 @@ class NLTKSentSegEntityCautious(PackProcessor):
         self.sent_splitter = PunktSentenceTokenizer()
 
     def _process(self, input_pack: DataPack):
+        """
+        Process input pack
+        :param input_pack:
+        :return:
+        """
         entity_mentions: List[Annotation] = \
                 list(input_pack.get(self.entity_mention_type))
         current_begin = 0
@@ -54,11 +61,11 @@ class NLTKSentSegEntityCautious(PackProcessor):
                 Sentence(input_pack, current_begin, end)
                 current_begin = end + 1
 
-    def _is_within_entity(self,
-                          entity_mentions: List[Annotation],
+    @staticmethod
+    def _is_within_entity(entity_mentions: List[Annotation],
                           position: int) -> bool:
         """
-        Determin if a position is within any entity mention span.
+        Determine if a position is within any entity mention span.
         Args:
             Inputs:
                 entity_mentions (List[Annotation]): a list of entity mentions
@@ -74,6 +81,13 @@ class NLTKSentSegEntityCautious(PackProcessor):
 
     @classmethod
     def default_configs(cls):
+        """
+        This defines a basic config structure for NLTKSentSegEntityCautious.
+        Returns:
+            dictionary with the default config for this processor.
+        Following are the keys for this dictionary:
+            - entity_mention_type: entity mention's type, default is 'None'
+        """
         configs = super().default_configs()
         configs.update({
             "entity_mention_type": None,

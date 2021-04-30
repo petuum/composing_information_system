@@ -24,7 +24,7 @@ from forte.data.multi_pack import MultiPack
 from forte.processors.base import PackProcessor
 from ft.onto.base_ontology import Token, Sentence, PredicateLink, Title
 from onto.medical import MedicalEntityMention
-from composable_source.utils.utils import query_preprocess, get_arg_text
+from composable_source.utils.utils_processor import query_preprocess, get_arg_text
 
 logger = logging.getLogger(__name__)
 
@@ -42,15 +42,20 @@ class ResponseCreator(PackProcessor):
     """
     # pylint: disable=useless-super-delegation
     def initialize(self, resources: Resources, configs: Config):
+        """
+        init ResponseCreator
+        """
         super().initialize(resources, configs)
 
     @classmethod
     def default_configs(cls):
         """
         This defines a basic config structure for ResponseCreator.
-        :return: A dictionary with the default config for this processor.
+        Returns:
+            dictionary with the default config for this processor.
         Following are the keys for this dictionary:
-            - query_pack_name: the query datapack's name
+            - query_pack_name: the query datapack's name,
+                 default value is 'query'
         """
         config = super().default_configs()
         config.update({
@@ -165,8 +170,8 @@ class ResponseCreator(PackProcessor):
 
         return result
 
-    def _collect_triplet_info(self,
-                              triplets: List[Tuple[str, str, str, int, int]],
+    @staticmethod
+    def _collect_triplet_info(triplets: List[Tuple[str, str, str, int, int]],
                               result: DefaultDict[str, List[Any]],
                               pack_idx: int, sent_text: str, title: str,
                               med_entities: List[MedicalEntityMention]):
@@ -190,7 +195,8 @@ class ResponseCreator(PackProcessor):
             result[key].append(entity_dict)
         return result
 
-    def _get_med_ent(self, pack: DataPack, sentence: Sentence,
+    @staticmethod
+    def _get_med_ent(pack: DataPack, sentence: Sentence,
                      arg0: str, arg1: str):
         entities: List[MedicalEntityMention] = []
 

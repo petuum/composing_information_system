@@ -43,6 +43,7 @@ class FinancialNewsReader(PackReader):
         """
         return dataset_path_iterator(text_directory, self.configs.file_ext)
 
+    # pylint: disable=no-self-use
     def _cache_key_function(self, text_file: str) -> str:
         return os.path.basename(text_file)
 

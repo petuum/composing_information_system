@@ -12,4 +12,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from composable_source.evaluators.tagging_evaluator import *
-from composable_source.evaluators.utils import *

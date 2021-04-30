@@ -44,6 +44,7 @@ class MedMentionsReader(PackReader):
         PMID StartIndex EndIndex MentionTextSegment SemanticTypeID EntityID
         ...
     """
+    # pylint: disable=no-self-use
     def _collect(self, med_mentions_directory) -> Iterator[Any]:
         r"""Iterator over med_mentions files in the data_source.
         Args:
@@ -53,10 +54,12 @@ class MedMentionsReader(PackReader):
         logging.info("Reading MedMentions from %s", med_mentions_directory)
         return dataset_path_iterator(med_mentions_directory, 'txt')
 
+    # pylint: disable=no-self-use
     def _cache_key_function(self, collection: str) -> str:
         return os.path.basename(collection)
 
-    def _word_tokenizer(self, input_pack: DataPack, text):
+    @staticmethod
+    def _word_tokenizer(input_pack: DataPack, text):
         tokenizer = TreebankWordTokenizer()
         for begin, end in tokenizer.span_tokenize(text):
             Token(input_pack, begin, end)

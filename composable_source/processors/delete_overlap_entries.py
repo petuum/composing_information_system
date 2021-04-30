@@ -11,7 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""A processor to delete overlap entries."""
+"""
+A processor to delete overlap entries.
+"""
 
 __all__ = [
     "DeleteOverlapEntry",
@@ -34,6 +36,9 @@ class DeleteOverlapEntry(PackProcessor):
     """
     # pylint: disable=attribute-defined-outside-init,unused-argument
     def initialize(self, resources: Resources, configs: Config):
+        """
+        Initialization
+        """
         super().initialize(resources, configs)
 
         self.resources = resources
@@ -53,7 +58,8 @@ class DeleteOverlapEntry(PackProcessor):
             else:
                 entry_spans.append(entry.span)
 
-    def _is_overlap(self, interval1: Span, interval2: Span) -> bool:
+    @staticmethod
+    def _is_overlap(interval1: Span, interval2: Span) -> bool:
         """
         Determine whether two intervals overlap with each other.
         """
@@ -63,6 +69,11 @@ class DeleteOverlapEntry(PackProcessor):
 
     @classmethod
     def default_configs(cls):
+        """This defines a basic config structure for DeleteOverlapEntry
+        Returns:
+            A dictionary with the default config for this processor.
+            entry_type: entry's type, default is None.
+        """
         configs = super().default_configs()
         configs.update({
             "entry_type": None,

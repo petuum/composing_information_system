@@ -21,7 +21,7 @@ from forte.common.resources import Resources
 from forte.data.base_pack import PackType
 from forte.evaluation.base import Evaluator
 from forte.utils import get_class
-from composable_source.evaluators.utils import count_exact_match
+from composable_source.utils.utils_eval import count_exact_match
 
 
 class BertEvaluatorEntry(Evaluator):
@@ -60,6 +60,13 @@ class BertEvaluatorEntry(Evaluator):
 
     @classmethod
     def default_configs(cls):
+        """This defines a basic config structure for BertEvaluatorEntry
+        Returns:
+            A dictionary with the default config for this processor.
+            entry_type: entry's type, default is None.
+            tagging_unit: the unit for tagging task, default is None
+            attribute: default is ""
+        """
         config = super().default_configs()
         config.update({
             'entry_type': None,

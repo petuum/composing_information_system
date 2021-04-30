@@ -88,5 +88,11 @@ def compute_loss(model, logits, labels):
 
 
 def create_class(class_name, class_config):
+    r"""
+    Create class instance
+    :param class_name:
+    :param class_config:
+    :return:
+    """
     class_instance = get_class(class_name)()
     return class_instance, class_config

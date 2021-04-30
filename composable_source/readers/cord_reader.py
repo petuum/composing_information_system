@@ -49,6 +49,7 @@ class CORDNERDReader(PackReader):
         logging.info("Reading CORD_NERD from %s", text_directory)
         return dataset_path_iterator(text_directory, self.configs.file_ext)
 
+    # pylint: disable=no-self-use
     def _cache_key_function(self, text_file: str) -> str:
         return os.path.basename(text_file)
 
@@ -125,9 +126,11 @@ class CORDReader(PackReader):
         logging.info("Reading CORD-19 research data from %s", text_directory)
         return dataset_path_iterator(text_directory, self.configs.file_ext)
 
+    # pylint: disable=no-self-use
     def _cache_key_function(self, text_file: str) -> str:
         return os.path.basename(text_file)
 
+    # pylint: disable=no-self-use
     def _parse_pack(self, file_path: str) -> Iterator[DataPack]:
         logging.info("Start Processing %s.", file_path)
 
