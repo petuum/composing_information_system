@@ -37,6 +37,7 @@ class NLTKSentSegEntityCautious(PackProcessor):
     """
     # pylint: disable=attribute-defined-outside-init,unused-argument
     def initialize(self, resources: Resources, configs: Config):
+        """initialization"""
         super().initialize(resources, configs)
 
         self.resources = resources

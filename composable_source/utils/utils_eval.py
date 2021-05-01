@@ -22,6 +22,13 @@ from forte.data.ontology import Annotation
 def count_exact_match(refer_tag: List[Annotation],
                       pred_tag: List[Annotation],
                       attribute: str) -> int:
+    """
+    Count the number of match
+    :param refer_tag:
+    :param pred_tag:
+    :param attribute:
+    :return:
+    """
     count = 0
     seen = set()
     for tag in refer_tag:

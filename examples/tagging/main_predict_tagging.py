@@ -20,7 +20,7 @@ from forte.pipeline import Pipeline
 from forte.utils import get_class
 from ft.onto.base_ontology import Sentence
 from composable_source.processors import BertPredictor
-from composable_source.trainers.utils import create_class
+from composable_source.utils.utils_trainer import create_class
 
 
 class PredictPipeline:

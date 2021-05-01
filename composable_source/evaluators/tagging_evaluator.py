@@ -89,6 +89,7 @@ class BertEvaluatorEntry(Evaluator):
                     "%d %d %d\n" % (exact_match, refer_count, pred_count)
             )
 
+    # pylint: disable = C0103
     def get_result(self) -> Dict:
         exact_match = 0.0
         pred_count = 0.0

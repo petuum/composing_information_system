@@ -85,10 +85,15 @@ class ElasticSearchQueryCreator(QueryProcessor):
             - query_pack_name: query datapack's name, default is 'query'
         """
         """
-        This defines a basic config structure for E.
-        :return: A dictionary with the default config for this processor.
+        This defines a basic config structure for ElasticSearchQueryCreator.
+        Returns:
+            dictionary with the default config for this processor.
         Following are the keys for this dictionary:
-
+            - size: the size that will be used in ElasticSearch query, 
+            default is 1000.
+            - field: Field name that will be used when creating the new
+                datapack.
+            - query_pack_name: the query datapack's name, default is 'query'.
         """
         config = super().default_configs()
         config.update({
