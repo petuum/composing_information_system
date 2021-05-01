@@ -1,6 +1,6 @@
+from collections import defaultdict
 from ft.onto.base_ontology import Token, Sentence, PredicateLink
 from forte.data.data_pack import DataPack
-from collections import defaultdict
 
 
 def query_preprocess(input_pack: DataPack):
@@ -12,7 +12,8 @@ def query_preprocess(input_pack: DataPack):
         arg1: object in query
         predicate: verb in query
         verb_lemma: verb lemma
-        is_answer_arg0: should subject(arg0) or object(arg1) be returned as answer
+        is_answer_arg0: should subject(arg0) or object(arg1) be returned
+        as answer
     """
     sentence = input_pack.get_single(Sentence)
 
@@ -32,11 +33,10 @@ def query_preprocess(input_pack: DataPack):
 
     arg0, arg1, predicate = None, None, None
     for verb_text, entity in relations.items():
-        arg0, arg1, predicate = collect_mentions(text_mention_mapping, entity, verb_text)
+        arg0, arg1, predicate = collect_mentions(text_mention_mapping,
+                                                 entity, verb_text)
         if not arg0 and not arg1:
             continue
-        else:
-            break
 
     if not arg0 and not arg1:
         raise Exception('AllenNLP SRL cannot extract the two arguments or the '
@@ -46,10 +46,8 @@ def query_preprocess(input_pack: DataPack):
     verb_lemma, is_answer_arg0 = None, None
 
     # check pos tag and lemma for tokens
-    for j, token in enumerate(input_pack.get(entry_type=Token,
-                                             range_annotation=sentence,
-                                             components=['forte_wrapper.nltk.nltk_processors.NLTKWordTokenizer']
-                                             )):
+    for token in input_pack.get(entry_type=Token, range_annotation=sentence,
+         components=['forte_wrapper.nltk.nltk_processors.NLTKWordTokenizer']):
         # find WH words
         if token.pos in {"WP", "WP$", "WRB", "WDT"}:
             if arg0.begin <= token.begin and arg0.end >= token.end:
