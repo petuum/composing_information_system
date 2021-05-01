@@ -11,9 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""
-Utils for tagging trainer.
-"""
 import functools
 import torch
 import torch.nn.functional as F
@@ -88,11 +85,5 @@ def compute_loss(model, logits, labels):
 
 
 def create_class(class_name, class_config):
-    r"""
-    Create class instance
-    :param class_name:
-    :param class_config:
-    :return:
-    """
     class_instance = get_class(class_name)()
     return class_instance, class_config

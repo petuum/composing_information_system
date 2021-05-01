@@ -1,0 +1,16 @@
+__pycache__/
+*.egg
+.pytest_cache/
+.idea/
+.DS_Store
+*.swo
+*.swp
+**.idea/**
+
+
+# OS generated files #
+.DS_Store
+
+# Python files
+__pycache__
+*.pyc

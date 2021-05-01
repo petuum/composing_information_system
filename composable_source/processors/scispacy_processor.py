@@ -11,9 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""
-A Processor wrapper for SciSpacy
-"""
 from typing import Optional
 
 import spacy
@@ -38,20 +35,14 @@ class SciSpacyProcessor(PackProcessor):
     """
     A wrapper for spaCy processors
     """
+
     def __init__(self):
-        """
-        Initialization
-        """
         super().__init__()
         self.processors: str = ""
         self.nlp: Optional[Language] = None
         self.lang_model: str = ''
 
     def set_up(self):
-        """
-        set up the nlp pipeline
-        :return:
-        """
         try:
             self.nlp = spacy.load(self.lang_model)
         except OSError:
@@ -60,13 +51,14 @@ class SciSpacyProcessor(PackProcessor):
 
         if 'ent_link' in self.processors:
             linker = EntityLinker(resolve_abbreviations=True, name="umls")
+
             self.nlp.add_pipe(linker)
+            # self.nlp.add_pipe("scispacy_linker",
+            #                   config={"resolve_abbreviations": True,
+            #                           "linker_name": "umls"})
 
     # pylint: disable=unused-argument
     def initialize(self, resources: Resources, configs: Config):
-        """
-        Initialization for processor
-        """
         self.processors = configs.processors
         self.lang_model = configs.lang
         self.set_up()

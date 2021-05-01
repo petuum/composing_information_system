@@ -13,16 +13,12 @@
 # limitations under the License.
 
 # pylint: disable=attribute-defined-outside-init
-"""
-Query Creator to do NLP analysis for user input and generate query
-for ElasticSearch
-"""
 from typing import Any, Dict, Tuple
 
 from forte.data.data_pack import DataPack
 from forte.data.multi_pack import MultiPack
 from forte.processors.base import QueryProcessor
-from composable_source.utils.utils_processor import query_preprocess
+from composable_source.utils.utils import query_preprocess
 
 __all__ = [
     "ElasticSearchQueryCreator"
@@ -74,27 +70,6 @@ class ElasticSearchQueryCreator(QueryProcessor):
 
     @classmethod
     def default_configs(cls) -> Dict[str, Any]:
-        """
-        This defines a basic config structure for ElasticSearchQueryCreator.
-        Returns:
-            dictionary with the default config for this processor.
-        Following are the keys for this dictionary:
-            - size: the size to use in ElasticSearch query, default is 1000
-            - field: Field name that will be used when creating the new
-                datapack, default is 'content'
-            - query_pack_name: query datapack's name, default is 'query'
-        """
-        """
-        This defines a basic config structure for ElasticSearchQueryCreator.
-        Returns:
-            dictionary with the default config for this processor.
-        Following are the keys for this dictionary:
-            - size: the size that will be used in ElasticSearch query, 
-            default is 1000.
-            - field: Field name that will be used when creating the new
-                datapack.
-            - query_pack_name: the query datapack's name, default is 'query'.
-        """
         config = super().default_configs()
         config.update({
             "size": 1000,

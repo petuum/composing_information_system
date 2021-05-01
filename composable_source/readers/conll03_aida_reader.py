@@ -11,9 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""
-reader for the CoNLL03 dataset
-"""
 import logging
 import os
 from typing import (Any, Iterator, List, Optional, NamedTuple,
@@ -96,7 +93,6 @@ class CoNLL03LinkReader(PackReader):
     """
 
     class ParsedFields(NamedTuple):
-        """class defined for fields"""
         word: str
         entity_label: Optional[str] = None
 
@@ -104,7 +100,6 @@ class CoNLL03LinkReader(PackReader):
     _REQUIRED_FIELDS = ["word", "entity_label"]
 
     def initialize(self, resources: Resources, configs: Config):
-        """initialization"""
         super().initialize(resources, configs)
 
         if configs.column_format is None:
@@ -190,7 +185,6 @@ class CoNLL03LinkReader(PackReader):
         logging.info("Reading .conll from %s", conll_directory)
         return dataset_path_iterator(conll_directory, self.configs.file_ext)
 
-    # pylint: disable=no-self-use
     def _cache_key_function(self, collection: str) -> str:
         return os.path.basename(collection)
 
@@ -282,8 +276,8 @@ class CoNLL03LinkReader(PackReader):
             yield pack
         linking_file.close()
 
-    @staticmethod
     def _process_entity_annotations(
+            self,
             pack: DataPack,
             label: Optional[str],
             word_begin: int,

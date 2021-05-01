@@ -18,7 +18,7 @@ import unittest
 
 from composable_source.readers import CORDReader
 from ft.onto.base_ontology import Document, Title
-from composing_information_system.onto import Abstract, Body
+from onto.cord19research import Abstract, Body
 from forte.data.data_pack import DataPack
 from forte.pipeline import Pipeline
 

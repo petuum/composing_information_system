@@ -11,9 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""
-NLTK sentence tokenizer with cautions of EntityMention boundaries.
-"""
+"""NLTK sentence tokenizer with cautions of EntityMention boundaries."""
 
 __all__ = [
     "NLTKSentSegEntityCautious",
@@ -37,7 +35,6 @@ class NLTKSentSegEntityCautious(PackProcessor):
     """
     # pylint: disable=attribute-defined-outside-init,unused-argument
     def initialize(self, resources: Resources, configs: Config):
-        """initialization"""
         super().initialize(resources, configs)
 
         self.resources = resources
@@ -49,24 +46,19 @@ class NLTKSentSegEntityCautious(PackProcessor):
         self.sent_splitter = PunktSentenceTokenizer()
 
     def _process(self, input_pack: DataPack):
-        """
-        Process input pack
-        :param input_pack:
-        :return:
-        """
         entity_mentions: List[Annotation] = \
                 list(input_pack.get(self.entity_mention_type))
         current_begin = 0
         for _, end in self.sent_splitter.span_tokenize(input_pack.text):
-            if not self._is_within_entity(entity_mentions, end):
+            if not self.is_within_entity(entity_mentions, end):
                 Sentence(input_pack, current_begin, end)
                 current_begin = end + 1
 
-    @staticmethod
-    def _is_within_entity(entity_mentions: List[Annotation],
-                          position: int) -> bool:
+    def is_within_entity(self,
+                         entity_mentions: List[Annotation],
+                         position: int) -> bool:
         """
-        Determine if a position is within any entity mention span.
+        Determin if a position is within any entity mention span.
         Args:
             Inputs:
                 entity_mentions (List[Annotation]): a list of entity mentions
@@ -82,13 +74,6 @@ class NLTKSentSegEntityCautious(PackProcessor):
 
     @classmethod
     def default_configs(cls):
-        """
-        This defines a basic config structure for NLTKSentSegEntityCautious.
-        Returns:
-            dictionary with the default config for this processor.
-        Following are the keys for this dictionary:
-            - entity_mention_type: entity mention's type, default is 'None'
-        """
         configs = super().default_configs()
         configs.update({
             "entity_mention_type": None,
