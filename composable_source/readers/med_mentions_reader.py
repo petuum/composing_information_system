@@ -65,6 +65,7 @@ class MedMentionsReader(PackReader):
         logging.info("Processing %s.", collection)
         doc = open(collection, "r", encoding="utf8")
         text, pack_name = "", ""
+        pack: DataPack = DataPack()
         for line in doc:
             # Each paper or document ends with a blank line
             if not line.strip('\n') and text != "":
