@@ -39,8 +39,7 @@ class PredictPipeline:
         self.ner_predictor_config = config["ner_predict"]
         self.linking_predictor_config = config["linking_predict"]
 
-    @staticmethod
-    def build_predictor(model, predictor_config):
+    def build_predictor(self, model, predictor_config):
         """
         Build predictor.
         """
@@ -66,15 +65,15 @@ class PredictPipeline:
                         self.build_predictor(self.linking_model,
                                              self.linking_predictor_config)
         reader = get_class(self.reader["class_name"])()
-        ppl: Pipeline = Pipeline()
-        ppl.set_reader(reader, config=self.reader["config"])
+        pl: Pipeline = Pipeline()
+        pl.set_reader(reader, config=self.reader["config"])
         for processor in self.processors.values():
-            ppl.add(component=get_class(processor["class_name"])(),
+            pl.add(component=get_class(processor["class_name"])(),
                    config=processor["config"])
-        ppl.add(component=ner_predictor, config=ner_predictor_config)
-        ppl.add(component=linking_predictor, config=linking_predictor_config)
-        ppl.initialize()
-        return ppl
+        pl.add(component=ner_predictor, config=ner_predictor_config)
+        pl.add(component=linking_predictor, config=linking_predictor_config)
+        pl.initialize()
+        return pl
 
 
 if __name__ == "__main__":

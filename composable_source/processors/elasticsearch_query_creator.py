@@ -46,7 +46,7 @@ class ElasticSearchQueryCreator(QueryProcessor):
         query, arg0, arg1, verb, _, is_answer_arg0 = \
             query_preprocess(input_pack)
 
-        if arg0 == '' or arg1 == '':
+        if not arg0 or not arg1:
             processed_query = query
 
         if is_answer_arg0 is None:
