@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Tuple, Dict, Set, List, DefaultDict, Any
+from typing import Dict, DefaultDict
 from ft.onto.base_ontology import Token, Sentence, PredicateLink
 from forte.data.data_pack import DataPack
 
