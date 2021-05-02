@@ -80,7 +80,7 @@ class MedMentionsReader(PackReader):
             # and the abstract includes '|a|'.
             elif '|t|' in line or '|a|' in line:
                 if text == "":
-                    pack: DataPack = DataPack()
+                    pack = DataPack()
                     pack_name = line.split('|')[0]
                 text += '|'.join(line.split('|')[2:])
             elif len(line.split('\t')) == 6:
