@@ -41,7 +41,8 @@ def query_preprocess(input_pack: DataPack):
 
     # if arg0 == '' and arg1 == '':
 
-    assert isinstance(arg0, Annotation) and isinstance(arg1, Annotation), (
+    assert isinstance(arg0, Annotation) and isinstance(arg1, Annotation) and \
+           isinstance(predicate, Annotation), (
         'AllenNLP SRL cannot extract the two arguments or the '
         'predicate in your query, please check our examples '
         'or rephrase your question')
