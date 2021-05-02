@@ -47,7 +47,7 @@ def query_preprocess(input_pack: DataPack):
         'or rephrase your question')
 
     # if not isinstance(arg0, Annotation) and not isinstance(arg1, Annotation):
-    #     raise Exception('AllenNLP SRL cannot extract the two arguments or the '
+    #   raise Exception('AllenNLP SRL cannot extract the two arguments or the '
     #                     'predicate in your query, please check our examples '
     #                     'or rephrase your question')
 
