@@ -5,6 +5,5 @@ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_ner_bionlp
 https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_ner_jnlpba_md-0.3.0.tar.gz#egg=en_ner_jnlpba_md
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 faiss-cpu>=1.6.1
-git+https://git@github.com/asyml/forte.git
 git+https://git@github.com/asyml/forte-wrappers#egg=forte-wrappers[allennlp,allennlp-models,elastic,nltk]
 ddt
