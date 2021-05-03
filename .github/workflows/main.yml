@@ -76,5 +76,5 @@ jobs:
           coverage run -m pytest
       - name: Test doctest
         run: |
-          export PYTHONPATH="$(pwd):$PYTHONPATH"
+          export PYTHONPATH=$PYTHONPATH:`pwd`
           pytest --doctest-modules
