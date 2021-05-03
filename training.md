@@ -128,38 +128,40 @@ Then run the following command.
 * Below is the performance metrics of the General NER task.
 
     
-    |       General NER          |                                                       |
-    |----------------------------|-------------------------------------------------------|
-    |   Overall         |accuracy:  98.98% precision:  93.56%; recall:  94.81%; FB1:  94.18|
-    |   LOC             | precision:  95.94%; recall:  96.41%; FB1:  96.17  18430|
-    |   MISC            | precision:  86.15%; recall:  89.97%; FB1:  88.02  9628|
-    |   ORG             | precision:  91.05%; recall:  91.99%; FB1:  91.52  13549|
-    |   PER             | precision:  96.89%; recall:  97.69%; FB1:  97.29  18563|
+    |       General NER          |  Accuracy | Precision | Recall | F1    | #instance |
+    |----------------------------|-----------|-----------|--------|-------|-----------|
+    |   Overall                  |   98.98   | 93.56     | 94.81  | 94.18 |           |
+    |   LOC                      |           | 95.94     | 96.41  | 96.17 |  18430    |
+    |   MISC                     |           | 86.15     | 89.97  | 88.02 |   9628    |
+    |   ORG                      |           | 91.05     | 91.99  | 91.52 |  13549    |
+    |   PER                      |           | 96.89     | 97.69  | 97.29 |  18563    |
 
 
 
 * Below is the performance metrics of the bio-medical NER task.
 
     
-    |       Bio-medical NER          |                                                      |
-    |--------------------------------|-------------------------------------------------------|
-    |   Overall         |accuracy:  98.41%; precision:  84.93%; recall:  89.01%; FB1:  86.92|
-    |   Chemical        | precision:  79.20%; recall:  86.34%; FB1:  82.62  1428|
-    |   Organism        | precision:  85.23%; recall:  73.87%; FB1:  79.14  3337|
-    |   Protein         | precision:  85.53%; recall:  97.15%; FB1:  90.97  11972|
+    | Bio-medical NER   |  Accuracy  | Precision| Recall | F1    |  #instance |
+    |-------------------|------------|----------|--------|-------|------------|
+    |   Overall         |   98.41    | 84.93    | 89.01  | 86.92 |            |
+    |   Chemical        |            | 79.20    | 86.34  | 82.62 | 1428       |
+    |   Organism        |            | 85.23    | 73.87  | 79.14 | 3337       |
+    |   Protein         |            | 85.53    | 97.15  | 90.97 | 11972      |
   
 
 * Below is the performance metrics of the wiki entity linking task. 
 Due to the large number of classes in entity linking tasks, we are only showing the overall performance.
 
-    |   Wiki entity linking          |                                                        |
-    |---------------------------------|-------------------------------------------------------|
-    |        Overall             | accuracy:  91.27%; precision:  51.86%; recall:  38.60%; FB1:  44.25|
-    
+
+    |   Wiki entity linking      |  Accuracy | Precision | Recall | F1    | 
+    |----------------------------|-----------|-----------|--------|-------|
+    |        Overall             |   91.27   |  51.86    | 38.60  | 44.25 |
+
+
 * Below is the performance metrics of the medical entity linking task. 
 Since MedMentions dataset does not provide word boundaries (only has entity linking boundaries),
 the evaluation method here is to count extact match of entities.
 
-    |   Medical entity linking         |                                                        |
-    |---------------------------------|-------------------------------------------------------|
-    |       Exact match             |   precision:      26.25%;     recall:     22.24%;     f1:     24.07%     |
+    |   Medical entity linking        |  Precision | Recall    | F1     | 
+    |---------------------------------|------------|-----------|--------|
+    |       Exact match               |   26.25    | 22.24     | 24.07  |
