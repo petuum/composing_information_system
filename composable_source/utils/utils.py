@@ -1,6 +1,7 @@
-from ft.onto.base_ontology import Token, Sentence, PredicateLink
-from forte.data.data_pack import DataPack
 from collections import defaultdict
+from typing import Dict, DefaultDict
+from ft.onto.base_ontology import Token, Sentence, PredicateLink, Annotation
+from forte.data.data_pack import DataPack
 
 
 def query_preprocess(input_pack: DataPack):
@@ -12,11 +13,12 @@ def query_preprocess(input_pack: DataPack):
         arg1: object in query
         predicate: verb in query
         verb_lemma: verb lemma
-        is_answer_arg0: should subject(arg0) or object(arg1) be returned as answer
+        is_answer_arg0: should subject(arg0) or object(arg1) be returned
+        as answer
     """
     sentence = input_pack.get_single(Sentence)
 
-    relations = defaultdict(dict)
+    relations : DefaultDict[str, Dict[str, Dict[str, str]]] = defaultdict(dict)
     text_mention_mapping = {}
 
     # get all srl relations
@@ -30,26 +32,24 @@ def query_preprocess(input_pack: DataPack):
         text_mention_mapping[argument_text] = argument
         relations[verb_text][link.arg_type] = argument_text
 
-    arg0, arg1, predicate = None, None, None
+    arg0, arg1, predicate = '', '', ''
     for verb_text, entity in relations.items():
-        arg0, arg1, predicate = collect_mentions(text_mention_mapping, entity, verb_text)
-        if not arg0 and not arg1:
+        arg0, arg1, predicate = collect_mentions(text_mention_mapping,
+                                                 entity, verb_text)
+        if arg0 == '' and arg1 == '':
             continue
-        else:
-            break
 
-    if not arg0 and not arg1:
-        raise Exception('AllenNLP SRL cannot extract the two arguments or the '
-                        'predicate in your query, please check our examples '
-                        'or rephrase your question')
+    assert isinstance(arg0, Annotation) and isinstance(arg1, Annotation) and \
+           isinstance(predicate, Annotation), (
+        'AllenNLP SRL cannot extract the two arguments or the '
+        'predicate in your query, please check our examples '
+        'or rephrase your question')
 
     verb_lemma, is_answer_arg0 = None, None
 
     # check pos tag and lemma for tokens
-    for j, token in enumerate(input_pack.get(entry_type=Token,
-                                             range_annotation=sentence,
-                                             components=['forte_wrapper.nltk.nltk_processors.NLTKWordTokenizer']
-                                             )):
+    for token in input_pack.get(entry_type=Token, range_annotation=sentence,
+         components=['forte_wrapper.nltk.nltk_processors.NLTKWordTokenizer']):
         # find WH words
         if token.pos in {"WP", "WP$", "WRB", "WDT"}:
             if arg0.begin <= token.begin and arg0.end >= token.end:
@@ -75,8 +75,8 @@ def collect_mentions(text_mention_mapping, relation, verb_text):
     """
     arg0_text, arg1_text = get_arg_text(relation)
 
-    if not arg0_text or not arg1_text:
-        return None, None, None
+    if arg0_text == '' or arg1_text == '':
+        return '', '', ''
 
     arg0 = text_mention_mapping[arg0_text]
     arg1 = text_mention_mapping[arg1_text]
@@ -97,7 +97,7 @@ def get_arg_text(relation):
     :param relation:
     :return:
     """
-    arg0_text, arg1_text = None, None
+    arg0_text, arg1_text = '', ''
     if 'ARG0' in relation and 'ARG1' in relation:
         arg0_text = relation['ARG0']
         arg1_text = relation['ARG1']

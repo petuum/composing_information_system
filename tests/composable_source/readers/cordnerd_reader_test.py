@@ -39,6 +39,8 @@ class CORDNERDReaderPipelineTest(unittest.TestCase):
         Test if the output of CORDReader is as expected.
         """
         doc_exists = False
+
+        filename = ['24500', '24501']
         expected_text = [
             ['Coronavirus', 'Severe acute respiratory syndrome', 'SARS',
              'coronavirus', 'enzyme', 'host cell', 'virus assembly', 'first',
@@ -108,8 +110,9 @@ class CORDNERDReaderPipelineTest(unittest.TestCase):
              'UMLS:C3273930']]
 
         # Get processed pack from the dataset.
-        for i, pack in enumerate(self.nlp.process_dataset(self.dataset_path)):
+        for pack in self.nlp.process_dataset(self.dataset_path):
             doc_exists = True
+            i = filename.index(pack.pack_name)
             for j, entity_link in enumerate(pack.get(MedicalEntityMention)):
                 self.assertEqual(expected_text[i][j], entity_link.text)
                 self.assertEqual(expected_type[i][j], entity_link.ner_type)

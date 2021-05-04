@@ -17,9 +17,7 @@ Unit tests for MedMentionsReader.
 
 import unittest
 from forte.data.data_pack import DataPack
-from forte.processors.base.pack_processor import PackProcessor
 from forte.pipeline import Pipeline
-from ft.onto.base_ontology import Token, Sentence
 from composable_source.readers import MedMentionsReader
 from onto.medical import MedicalEntityMention
 

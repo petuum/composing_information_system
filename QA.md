@@ -20,9 +20,9 @@ Given user input query, the pipeline will search the relevant information in COR
 ### Preparation
 * First, you need to create a virtual environment and git clone this repo, then in command line:
 
-`pip install -r requirements.txt`
-
 `cd composing_information_system/`
+
+`pip install -r requirements.txt`
 
 `export PYTHONPATH="$(pwd):$PYTHONPATH"`
 

@@ -65,6 +65,7 @@ class MedMentionsReader(PackReader):
         logging.info("Processing %s.", collection)
         doc = open(collection, "r", encoding="utf8")
         text, pack_name = "", ""
+        pack: DataPack = DataPack()
         for line in doc:
             # Each paper or document ends with a blank line
             if not line.strip('\n') and text != "":
@@ -79,7 +80,7 @@ class MedMentionsReader(PackReader):
             # and the abstract includes '|a|'.
             elif '|t|' in line or '|a|' in line:
                 if text == "":
-                    pack: DataPack = DataPack()
+                    pack = DataPack()
                     pack_name = line.split('|')[0]
                 text += '|'.join(line.split('|')[2:])
             elif len(line.split('\t')) == 6:
