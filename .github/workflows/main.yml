@@ -73,16 +73,3 @@ jobs:
       - name: Test with pytest and run coverage
         run: |
           coverage run -m pytest
-
-name: Repository Dispatch
-on:
-  repository_dispatch:
-    types: [my-event]
-jobs:
-  myEvent:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.client_payload.ref }}
-      - run: echo ${{ github.event.client_payload.sha }}
