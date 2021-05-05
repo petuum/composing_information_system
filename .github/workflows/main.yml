@@ -5,6 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   repository_dispatch:
+    branches: [ main ]
     types: [trigger-composable-workflow]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
