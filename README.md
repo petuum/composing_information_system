@@ -1,5 +1,7 @@
 # Composable Information System
 
+[![Python Build](https://github.com/petuum/composing_information_system/actions/workflows/main.yml/badge.svg)](https://github.com/petuum/composing_information_system/actions/workflows/main.yml)
+
 The repo shows how to build NLP pipelines using Forte that comes with switchable parts, 
 and allows users to re-purpose it for different datasets and/or tasks.
 
