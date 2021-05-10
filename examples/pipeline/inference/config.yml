@@ -17,7 +17,7 @@ indexer:
   indexed_text_only: False
 
 spacy1:
-  processors: "sent_segment, ent_link"
+  processors: "sent_parse, ent_link"
   lang: "en_ner_bionlp13cg_md"
   use_gpu: False
 
