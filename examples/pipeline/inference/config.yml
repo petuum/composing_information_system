@@ -32,8 +32,6 @@ allennlp_query:
   'overwrite_entries': False
   'allow_parallel_entries': True
   'srl_url': "https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz"
-  'cuda_devices': [0, 1]
-  'infer_batch_size': 1
 
 allennlp:
   'processors': "tokenize, srl"
@@ -42,7 +40,6 @@ allennlp:
   'allow_parallel_entries': True
   'srl_url': "https://storage.googleapis.com/allennlp-public-models/openie-model.2020.03.26.tar.gz"
   'cuda_devices': [0, 1]
-  'infer_batch_size': 50
 
 response:
   'query_pack_name': "query"
