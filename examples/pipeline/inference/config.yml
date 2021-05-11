@@ -1,4 +1,4 @@
-reader:
+boxer:
   pack_name: "query"
 
 query_creator:
