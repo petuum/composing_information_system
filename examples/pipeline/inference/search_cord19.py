@@ -79,9 +79,6 @@ if __name__ == "__main__":
     # process dataset
     m_pack: MultiPack
     for m_pack in nlp.process_dataset():
-        import pdb
-
-        pdb.set_trace()
         print('The number of datapacks(including query) is', len(m_pack.packs))
         if len(m_pack.packs) == 1:  # no paper found, only query
             input("No result. Try another query: \n")
