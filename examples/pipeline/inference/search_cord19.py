@@ -13,20 +13,20 @@
 # limitations under the License.
 
 import os
-import yaml
-import torch
 
+import torch
+import yaml
 from forte.common.configuration import Config
+from forte.data.caster import MultiPackBoxer
 from forte.data.multi_pack import MultiPack
-from forte.data.readers import MultiPackTerminalReader
+from forte.data.readers import TerminalReader
 from forte.pipeline import Pipeline
-from forte.data.selector import NameMatchSelector, RegexNameMatchSelector
-from forte_wrapper.allennlp.allennlp_processors import AllenNLPProcessor
-from forte_wrapper.nltk.nltk_processors import NLTKLemmatizer, \
-    NLTKSentenceSegmenter, NLTKWordTokenizer, NLTKPOSTagger
-from forte_wrapper.elastic.elastic_search_processor import \
-    ElasticSearchProcessor
+from forte.data.selector import RegexNameMatchSelector
 from forte_wrapper.spacy.spacy_processors import SpacyProcessor
+from forte_wrapper.allennlp import AllenNLPProcessor
+from forte_wrapper.elastic import ElasticSearchProcessor
+from forte_wrapper.nltk import (
+    NLTKLemmatizer, NLTKSentenceSegmenter, NLTKWordTokenizer, NLTKPOSTagger)
 
 from composable_source.processors.elasticsearch_query_creator import \
     ElasticSearchQueryCreator
@@ -34,28 +34,30 @@ from composable_source.processors.response_creator import ResponseCreator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
 if __name__ == "__main__":
     config_file = os.path.join(os.path.dirname(__file__), 'config.yml')
     config = yaml.safe_load(open(config_file, "r"))
     config = Config(config, default_hparams=None)
 
-    # build pipeline
-    nlp: Pipeline[MultiPack] = Pipeline()
-    nlp.set_reader(reader=MultiPackTerminalReader(), config=config.reader)
+    # Build pipeline and add the reader, which will read from terminal.
+    nlp: Pipeline = Pipeline()
+    nlp.set_reader(reader=TerminalReader())
 
-    # process input and generate query
-    selector_input = NameMatchSelector(select_name=config.reader.pack_name)
-    nlp.add(NLTKSentenceSegmenter(), selector=selector_input)
-    nlp.add(NLTKWordTokenizer(), selector=selector_input)
-    nlp.add(NLTKPOSTagger(), selector=selector_input)
-    nlp.add(NLTKLemmatizer(), selector=selector_input)
-    nlp.add(AllenNLPProcessor(),
-            config=config.allennlp_query, selector=selector_input)
+    # Conduct query analysis.
+    nlp.add(NLTKSentenceSegmenter())
+    nlp.add(NLTKWordTokenizer())
+    nlp.add(NLTKPOSTagger())
+    nlp.add(NLTKLemmatizer())
+    nlp.add(AllenNLPProcessor(), config=config.allennlp_query)
 
+    # Start to work on multi-packs in the rest of the pipeline, so we use a
+    # boxer to change this.
+    nlp.add(MultiPackBoxer(), config=config.boxer)
+
+    # Create query.
     nlp.add(ElasticSearchQueryCreator(), config=config.query_creator)
 
-    # search
+    # Search the elastic back end.
     nlp.add(ElasticSearchProcessor(), config=config.indexer)
 
     # process hits
@@ -79,7 +81,7 @@ if __name__ == "__main__":
     for m_pack in nlp.process_dataset():
         print('The number of datapacks(including query) is', len(m_pack.packs))
         if len(m_pack.packs) == 1:  # no paper found, only query
-            input("No result ...\n")
+            input("No result. Try another query: \n")
             continue
 
     print('Done')
