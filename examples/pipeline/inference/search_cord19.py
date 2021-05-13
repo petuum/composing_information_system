@@ -20,8 +20,9 @@ from forte.common.configuration import Config
 from forte.data.caster import MultiPackBoxer
 from forte.data.multi_pack import MultiPack
 from forte.data.readers import TerminalReader
-from forte.data.selector import RegexNameMatchSelector
 from forte.pipeline import Pipeline
+from forte.data.selector import RegexNameMatchSelector
+from forte_wrapper.spacy.spacy_processors import SpacyProcessor
 from forte_wrapper.allennlp import AllenNLPProcessor
 from forte_wrapper.elastic import ElasticSearchProcessor
 from forte_wrapper.nltk import (
@@ -30,7 +31,6 @@ from forte_wrapper.nltk import (
 from composable_source.processors.elasticsearch_query_creator import \
     ElasticSearchQueryCreator
 from composable_source.processors.response_creator import ResponseCreator
-from composable_source.processors.scispacy_processor import SciSpacyProcessor
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -63,9 +63,9 @@ if __name__ == "__main__":
     # process hits
     pattern = rf"{config.indexer.response_pack_name_prefix}_\d"
     selector_hit = RegexNameMatchSelector(select_name=pattern)
-    nlp.add(component=SciSpacyProcessor(),
+    nlp.add(component=SpacyProcessor(),
             config=config.spacy1, selector=selector_hit)
-    nlp.add(component=SciSpacyProcessor(),
+    nlp.add(component=SpacyProcessor(),
             config=config.spacy2, selector=selector_hit)
     nlp.add(AllenNLPProcessor(), config=config.allennlp, selector=selector_hit)
     nlp.add(NLTKPOSTagger(), selector=selector_hit)
