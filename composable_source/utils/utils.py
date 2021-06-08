@@ -49,7 +49,7 @@ def query_preprocess(input_pack: DataPack):
 
     # check pos tag and lemma for tokens
     for token in input_pack.get(entry_type=Token, range_annotation=sentence,
-         components=['forte_wrapper.nltk.nltk_processors.NLTKWordTokenizer']):
+         components=['forte.nltk.nltk_processors.NLTKWordTokenizer']):
         # find WH words
         if token.pos in {"WP", "WP$", "WRB", "WDT"}:
             if arg0.begin <= token.begin and arg0.end >= token.end:
