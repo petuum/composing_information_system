@@ -5,5 +5,4 @@ git+https://git@github.com/asyml/forte-wrappers.git#egg=forte.nltk&subdirectory=
 git+https://git@github.com/asyml/forte-wrappers.git#egg=forte.elastic&subdirectory=src/elastic
 git+https://git@github.com/asyml/forte-wrappers.git#egg=forte.allennlp&subdirectory=src/allennlp
 git+https://git@github.com/asyml/forte-wrappers.git#egg=forte.spacy&subdirectory=src/spacy
-git+https://git@github.com/asyml/forte-wrappers#egg=forte-wrappers[scispacy]
 ddt
