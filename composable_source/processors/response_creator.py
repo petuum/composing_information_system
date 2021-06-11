@@ -21,7 +21,7 @@ from forte.data.data_pack import DataPack
 from forte.data.multi_pack import MultiPack
 from forte.processors.base import PackProcessor
 from ft.onto.base_ontology import Token, Sentence, PredicateLink, Title
-from onto.medical import MedicalEntityMention
+from ftx.medical import MedicalEntityMention
 from composable_source.utils.utils import query_preprocess, get_arg_text
 
 logger = logging.getLogger(__name__)
