@@ -18,8 +18,8 @@ Unit tests for MedMentionsReader.
 import unittest
 from forte.data.data_pack import DataPack
 from forte.pipeline import Pipeline
+from ftx.medical import MedicalEntityMention
 from composable_source.readers import MedMentionsReader
-from onto.medical import MedicalEntityMention
 
 
 class MedMentionsReaderTest(unittest.TestCase):
