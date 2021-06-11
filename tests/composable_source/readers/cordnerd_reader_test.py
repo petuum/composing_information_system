@@ -17,9 +17,9 @@ Unit tests for CORDNERDReader.
 import unittest
 
 from composable_source.readers import CORDNERDReader
-from onto.medical import MedicalEntityMention
 from forte.data.data_pack import DataPack
 from forte.pipeline import Pipeline
+from ftx.medical import MedicalEntityMention
 
 
 class CORDNERDReaderPipelineTest(unittest.TestCase):
