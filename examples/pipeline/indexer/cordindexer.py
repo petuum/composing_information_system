@@ -26,6 +26,15 @@ from forte.elastic import ElasticSearchPackIndexProcessor
 from composable_source.readers import CORDReader
 
 
+def build_index_pipeline(dataset_dir: str, config: Config):
+    pipeline = Pipeline[DataPack]()
+
+    pipeline.set_reader(CORDReader())
+    pipeline.add(ElasticSearchPackIndexProcessor(), config=config.create_index)
+
+    pipeline.run(dataset_dir)
+
+
 def main(dataset_dir: str):
     """
     Build a pipeline to process CORD_NER dataset using
@@ -34,13 +43,7 @@ def main(dataset_dir: str):
     config_file = os.path.join(os.path.dirname(__file__), 'config.yml')
     config = yaml.safe_load(open(config_file, "r"))
     config = Config(config, default_hparams=None)
-
-    pipeline = Pipeline[DataPack]()
-
-    pipeline.set_reader(CORDReader())
-    pipeline.add(ElasticSearchPackIndexProcessor(), config=config.create_index)
-
-    pipeline.run(dataset_dir)
+    build_index_pipeline(dataset_dir, config)
 
 
 if __name__ == '__main__':

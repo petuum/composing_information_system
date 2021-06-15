@@ -1,0 +1,33 @@
+boxer:
+  pack_name: "query"
+
+query_creator:
+  size: 10
+
+create_index:
+  indexer:
+    name: "ElasticSearchIndexer"
+    hparams:
+      index_name: "test"
+
+indexer:
+  query_pack_name: "query"
+  response_pack_name_prefix: "passage"
+
+
+spacy1:
+  processors: "sentence"
+
+
+spacy2:
+  processors: "umls_link"
+
+
+allennlp_query:
+  'processors': "tokenize, pos, srl"
+
+allennlp:
+  'processors': "tokenize, srl"
+
+response:
+  'query_pack_name': "query"

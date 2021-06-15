@@ -34,11 +34,7 @@ from composable_source.processors.response_creator import ResponseCreator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-if __name__ == "__main__":
-    config_file = os.path.join(os.path.dirname(__file__), 'config.yml')
-    config = yaml.safe_load(open(config_file, "r"))
-    config = Config(config, default_hparams=None)
-
+def build_search_pipeline(config: Config):
     # Build pipeline and add the reader, which will read from terminal.
     nlp: Pipeline = Pipeline()
     nlp.set_reader(reader=TerminalReader())
@@ -74,6 +70,14 @@ if __name__ == "__main__":
     # generate outputs
     nlp.add(ResponseCreator(), config=config.response)
 
+    return nlp
+
+
+if __name__ == '__main__':
+    config_file = os.path.join(os.path.dirname(__file__), 'config.yml')
+    config = yaml.safe_load(open(config_file, "r"))
+    config = Config(config, default_hparams=None)
+    nlp = build_search_pipeline(config)
     nlp.initialize()
 
     # process dataset
