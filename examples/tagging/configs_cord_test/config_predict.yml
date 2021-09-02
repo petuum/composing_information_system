@@ -30,7 +30,7 @@ ner_predict:
   predict_path: "./sample_output/ner_bio/"
   attribute: 'ner_type'
   config: 
-    scope: "ft.onto.base_ontology.Sentence"
+    context_type: "ft.onto.base_ontology.Sentence"
     batch_size: 1
     do_eval: True
     feature_scheme:
@@ -62,7 +62,7 @@ linking_predict:
   predict_path: "./sample_output/linking_medical/"
   attribute: 'umls_link'
   config: 
-    scope: "ft.onto.base_ontology.Sentence"
+    context_type: "ft.onto.base_ontology.Sentence"
     batch_size: 1
     do_eval: False
     feature_scheme:

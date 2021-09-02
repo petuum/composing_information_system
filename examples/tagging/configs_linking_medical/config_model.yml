@@ -1,7 +1,7 @@
 pretrained_model_name: "biobert-v1.1-pubmed"
 
 tp_request:
-  scope: "ft.onto.base_ontology.Sentence"
+  context_type: "ft.onto.base_ontology.Sentence"
   feature_scheme: 
     input_tag:
       type: "data_input"
