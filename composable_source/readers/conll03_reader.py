@@ -156,16 +156,13 @@ class CoNLL03Reader(PackReader):
             "ft.onto.base_ontology.EntityMention"
 
         """
-        config: dict = super().default_configs()
-
-        config.update({
+        return {
             "file_ext": '.txt',
             "num_sent_per_doc": -1,
             "doc_break_str": None,
             "column_format": cls._DEFAULT_FORMAT,
             "entity_mention_class": None
-        })
-        return config
+        }
 
     def _collect(self, conll_directory) -> Iterator[Any]:
         r"""Iterator over conll files in the data_source.

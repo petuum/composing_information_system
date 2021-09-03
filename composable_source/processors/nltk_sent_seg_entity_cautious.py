@@ -74,8 +74,6 @@ class NLTKSentSegEntityCautious(PackProcessor):
 
     @classmethod
     def default_configs(cls):
-        configs = super().default_configs()
-        configs.update({
+        return {
             "entity_mention_type": None,
-        })
-        return configs
+        }

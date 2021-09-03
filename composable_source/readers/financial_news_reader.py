@@ -68,6 +68,6 @@ class FinancialNewsReader(PackReader):
         """
         Indicate files with a specific extension to be processed
         """
-        config = super().default_configs()
-        config['file_ext'] = '.txt'
-        return config
+        return {
+            'file_ext': '.txt'
+        }

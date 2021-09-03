@@ -101,9 +101,9 @@ class CORDNERDReader(PackReader):
         Indicate files with a specific extension to
         be processed
         """
-        config = super().default_configs()
-        config['file_ext'] = '.txt'
-        return config
+        return {
+            'file_ext': '.txt'
+        }
 
 
 class CORDReader(PackReader):
@@ -162,11 +162,14 @@ class CORDReader(PackReader):
     def default_configs(cls):
         """
         Indicate files with a specific extension to be processed
-        :return: A dictionary with the default config for this processor.
+
+        Returns: A dictionary with the default config for this processor.
+
         Following are the keys for this dictionary:
+
             - file_ext: define the file extension that the processor
             should process.
         """
-        config = super().default_configs()
-        config['file_ext'] = '.json'
-        return config
+        return {
+            'file_ext': '.json'
+        }

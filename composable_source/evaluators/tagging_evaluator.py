@@ -60,13 +60,11 @@ class BertEvaluatorEntry(Evaluator):
 
     @classmethod
     def default_configs(cls):
-        config = super().default_configs()
-        config.update({
+        return {
             'entry_type': None,
             'tagging_unit': None,
             'attribute': ""
-        })
-        return config
+        }
 
     def consume_next(self, pred_pack: PackType, ref_pack: PackType):
         with open(self.output_file, "a+") as output_file:

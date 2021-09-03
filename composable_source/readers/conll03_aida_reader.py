@@ -165,14 +165,11 @@ class CoNLL03LinkReader(PackReader):
                 A `None` field means that column in the dataset file will be
                 ignored during parsing.
         """
-        config: dict = super().default_configs()
-
-        config.update({
+        return {
             "file_ext": '.txt',
             "doc_break_str": '-DOCSTART-',
             "column_format": cls._DEFAULT_FORMAT
-        })
-        return config
+        }
 
     def _collect(self, conll_directory) -> Iterator[Any]:
         r"""Iterator over conll files in the data_source.

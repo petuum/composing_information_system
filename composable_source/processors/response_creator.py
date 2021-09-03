@@ -46,11 +46,9 @@ class ResponseCreator(PackProcessor):
         Following are the keys for this dictionary:
             - query_pack_name: the query datapack's name
         """
-        config = super().default_configs()
-        config.update({
+        return {
             'query_pack_name': "query"
-        })
-        return config
+        }
 
     def _process(self, input_pack: MultiPack):
         """
