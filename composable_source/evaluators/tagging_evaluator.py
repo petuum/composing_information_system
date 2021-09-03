@@ -28,6 +28,7 @@ class BertEvaluatorEntry(Evaluator):
     """
     Evaluator for Bert models. Evaluation strategy is exact match of entries.
     """
+
     def __init__(self):
         super().__init__()
         self.output_file = "tmp_eval.txt"
@@ -60,11 +61,7 @@ class BertEvaluatorEntry(Evaluator):
 
     @classmethod
     def default_configs(cls):
-        return {
-            'entry_type': None,
-            'tagging_unit': None,
-            'attribute': ""
-        }
+        return {"entry_type": None, "tagging_unit": None, "attribute": ""}
 
     def consume_next(self, pred_pack: PackType, ref_pack: PackType):
         with open(self.output_file, "a+") as output_file:
@@ -72,12 +69,12 @@ class BertEvaluatorEntry(Evaluator):
             pred_tags = list(pred_pack.get(self.entry_type))
             refer_count = len(refer_tags)
             pred_count = len(pred_tags)
-            exact_match = count_exact_match(refer_tags,
-                                            pred_tags,
-                                            self.attribute)
+            exact_match = count_exact_match(
+                refer_tags, pred_tags, self.attribute
+            )
 
             output_file.write(
-                    "%d %d %d\n" % (exact_match, refer_count, pred_count)
+                "%d %d %d\n" % (exact_match, refer_count, pred_count)
             )
 
     def get_result(self) -> Dict:
@@ -101,6 +98,6 @@ class BertEvaluatorEntry(Evaluator):
         self.scores = {
             "precision": precision * 100,
             "recall": recall * 100,
-            "f1": f1 * 100
+            "f1": f1 * 100,
         }
         return self.scores

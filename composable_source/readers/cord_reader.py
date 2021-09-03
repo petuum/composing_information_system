@@ -26,15 +26,12 @@ from ft.onto.base_ontology import Document, Title
 from ftx.medical import MedicalEntityMention
 from onto.cord19research import Abstract, Body
 
-__all__ = [
-    "CORDNERDReader",
-    "CORDReader"
-]
+__all__ = ["CORDNERDReader", "CORDReader"]
 
 
 class CORDNERDReader(PackReader):
     r""":class:`CORDNERDReader` is designed to read in CORD_NERD dataset.
-        https://aistairc.github.io/BENNERD/
+    https://aistairc.github.io/BENNERD/
     """
 
     def _collect(self, text_directory: str) -> Iterator[Any]:
@@ -62,36 +59,41 @@ class CORDNERDReader(PackReader):
         Document(pack, 0, len(pack.text))
         pack.pack_name = os.path.split(file_path)[-1][:-4]
 
-        ann_path = file_path[:-3] + 'ann'
+        ann_path = file_path[:-3] + "ann"
         if not os.path.exists(ann_path):
-            logging.warning('No annotation file for %s', file_path)
+            logging.warning("No annotation file for %s", file_path)
             yield pack
 
-        ind = '0'
-        with open(ann_path, "r", encoding='utf8') as ann_file:
+        ind = "0"
+        with open(ann_path, "r", encoding="utf8") as ann_file:
             for line in ann_file:
                 line = line.strip()
                 line_components = line.split()
-                if len(line_components) < 4 or \
-                not line_components[0][1:].isdigit():
+                if (
+                    len(line_components) < 4
+                    or not line_components[0][1:].isdigit()
+                ):
                     continue
-                if line.startswith('T'):
+                if line.startswith("T"):
                     ind = line_components[0]
                     ner_type = line_components[1]
                     span_begin = int(line_components[2])
                     span_end = int(line_components[3])
                     entity = MedicalEntityMention(pack, span_begin, span_end)
                     entity.ner_type = ner_type
-                elif line.startswith('N'):
+                elif line.startswith("N"):
                     if line_components[2] != ind:
                         continue
-                    if 'UMLS:' not in line_components[3]:
+                    if "UMLS:" not in line_components[3]:
                         raise Exception(
-                            '''The last field should start with `UMLS`.
+                            """The last field should start with `UMLS`.
                             The label we get is: {0}. Lable file path
-                            is {1}. '''.format(line, ann_path))
+                            is {1}. """.format(
+                                line, ann_path
+                            )
+                        )
                     link = line_components[3]
-                    if 'cui_less' not in link:
+                    if "cui_less" not in link:
                         entity.umls_link = link
         yield pack
 
@@ -101,9 +103,7 @@ class CORDNERDReader(PackReader):
         Indicate files with a specific extension to
         be processed
         """
-        return {
-            'file_ext': '.txt'
-        }
+        return {"file_ext": ".txt"}
 
 
 class CORDReader(PackReader):
@@ -136,24 +136,28 @@ class CORDReader(PackReader):
             json_text = json.load(file)
 
             title = json_text["metadata"]["title"]
-            abstract = ''
-            for entry in json_text['abstract']:
-                abstract += entry['text']
+            abstract = ""
+            for entry in json_text["abstract"]:
+                abstract += entry["text"]
 
             body_text = ""
-            for entry in json_text['body_text']:
-                body_text += entry['text']
+            for entry in json_text["body_text"]:
+                body_text += entry["text"]
 
-            delimiter = '\n\n'
+            delimiter = "\n\n"
             text = delimiter.join([title, abstract, body_text])
             pack.set_text(text)
 
             Document(pack, 0, len(pack.text))
             Title(pack, 0, len(title))
-            Abstract(pack, len(title) + len(delimiter),
-                     len(title) + len(delimiter) + len(abstract))
-            Body(pack,
-                 len(title) + 2 * len(delimiter) + len(abstract), len(text))
+            Abstract(
+                pack,
+                len(title) + len(delimiter),
+                len(title) + len(delimiter) + len(abstract),
+            )
+            Body(
+                pack, len(title) + 2 * len(delimiter) + len(abstract), len(text)
+            )
 
             pack.pack_name = os.path.splitext(os.path.basename(file_path))[0]
             yield pack
@@ -170,6 +174,4 @@ class CORDReader(PackReader):
             - file_ext: define the file extension that the processor
             should process.
         """
-        return {
-            'file_ext': '.json'
-        }
+        return {"file_ext": ".json"}

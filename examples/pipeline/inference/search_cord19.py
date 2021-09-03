@@ -26,13 +26,19 @@ from forte.spacy.spacy_processors import SpacyProcessor
 from forte.allennlp import AllenNLPProcessor
 from forte.elastic import ElasticSearchProcessor
 from forte.nltk import (
-    NLTKLemmatizer, NLTKSentenceSegmenter, NLTKWordTokenizer, NLTKPOSTagger)
+    NLTKLemmatizer,
+    NLTKSentenceSegmenter,
+    NLTKWordTokenizer,
+    NLTKPOSTagger,
+)
 
-from composable_source.processors.elasticsearch_query_creator import \
-    ElasticSearchQueryCreator
+from composable_source.processors.elasticsearch_query_creator import (
+    ElasticSearchQueryCreator,
+)
 from composable_source.processors.response_creator import ResponseCreator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 def build_search_pipeline(config: Config):
     # Build pipeline and add the reader, which will read from terminal.
@@ -59,10 +65,12 @@ def build_search_pipeline(config: Config):
     # process hits
     pattern = rf"{config.indexer.response_pack_name_prefix}_\d"
     selector_hit = RegexNameMatchSelector(select_name=pattern)
-    nlp.add(component=SpacyProcessor(),
-            config=config.spacy1, selector=selector_hit)
-    nlp.add(component=SpacyProcessor(),
-            config=config.spacy2, selector=selector_hit)
+    nlp.add(
+        component=SpacyProcessor(), config=config.spacy1, selector=selector_hit
+    )
+    nlp.add(
+        component=SpacyProcessor(), config=config.spacy2, selector=selector_hit
+    )
     nlp.add(AllenNLPProcessor(), config=config.allennlp, selector=selector_hit)
     nlp.add(NLTKPOSTagger(), selector=selector_hit)
     nlp.add(NLTKLemmatizer(), selector=selector_hit)
@@ -73,8 +81,8 @@ def build_search_pipeline(config: Config):
     return nlp
 
 
-if __name__ == '__main__':
-    config_file = os.path.join(os.path.dirname(__file__), 'config.yml')
+if __name__ == "__main__":
+    config_file = os.path.join(os.path.dirname(__file__), "config.yml")
     config = yaml.safe_load(open(config_file, "r"))
     config = Config(config, default_hparams=None)
     nlp = build_search_pipeline(config)
@@ -83,9 +91,9 @@ if __name__ == '__main__':
     # process dataset
     m_pack: MultiPack
     for m_pack in nlp.process_dataset():
-        print('The number of datapacks(including query) is', len(m_pack.packs))
+        print("The number of datapacks(including query) is", len(m_pack.packs))
         if len(m_pack.packs) == 1:  # no paper found, only query
             input("No result. Try another query: \n")
             continue
 
-    print('Done')
+    print("Done")

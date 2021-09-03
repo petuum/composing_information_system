@@ -40,23 +40,23 @@ class NLTKSentSegEntityCautious(PackProcessor):
         self.resources = resources
         self.config = Config(configs, self.default_configs())
         if not self.config.entity_mention_type:
-            raise ProcessorConfigError(
-                "Please specify an entity mention type!")
+            raise ProcessorConfigError("Please specify an entity mention type!")
         self.entity_mention_type = get_class(self.config.entity_mention_type)
         self.sent_splitter = PunktSentenceTokenizer()
 
     def _process(self, input_pack: DataPack):
-        entity_mentions: List[Annotation] = \
-                list(input_pack.get(self.entity_mention_type))
+        entity_mentions: List[Annotation] = list(
+            input_pack.get(self.entity_mention_type)
+        )
         current_begin = 0
         for _, end in self.sent_splitter.span_tokenize(input_pack.text):
             if not self.is_within_entity(entity_mentions, end):
                 Sentence(input_pack, current_begin, end)
                 current_begin = end + 1
 
-    def is_within_entity(self,
-                         entity_mentions: List[Annotation],
-                         position: int) -> bool:
+    def is_within_entity(
+        self, entity_mentions: List[Annotation], position: int
+    ) -> bool:
         """
         Determin if a position is within any entity mention span.
         Args:

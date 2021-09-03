@@ -24,13 +24,15 @@ class BertPredictor(Predictor):
     """
     Predictor for sequence tagging Bert models.
     """
+
     def predict(self, _batch):
         input_ids = _batch["input_tag"]["data"]
-        pad_value = self.configs.\
-            feature_scheme["input_tag"]["extractor"].get_pad_value()
+        pad_value = self.configs.feature_scheme["input_tag"][
+            "extractor"
+        ].get_pad_value()
         input_length = (1 - (input_ids == pad_value).int()).sum(dim=1)
         input_ids = input_ids.cuda()
         input_length = input_length.cuda()
         self.model.eval()
         _, preds = self.model(input_ids, input_length, None)
-        return {'output_tag': preds}
+        return {"output_tag": preds}

@@ -18,7 +18,7 @@ def query_preprocess(input_pack: DataPack):
     """
     sentence = input_pack.get_single(Sentence)
 
-    relations : DefaultDict[str, Dict[str, Dict[str, str]]] = defaultdict(dict)
+    relations: DefaultDict[str, Dict[str, Dict[str, str]]] = defaultdict(dict)
     text_mention_mapping = {}
 
     # get all srl relations
@@ -32,24 +32,32 @@ def query_preprocess(input_pack: DataPack):
         text_mention_mapping[argument_text] = argument
         relations[verb_text][link.arg_type] = argument_text
 
-    arg0, arg1, predicate = '', '', ''
+    arg0, arg1, predicate = "", "", ""
     for verb_text, entity in relations.items():
-        arg0, arg1, predicate = collect_mentions(text_mention_mapping,
-                                                 entity, verb_text)
-        if arg0 == '' and arg1 == '':
+        arg0, arg1, predicate = collect_mentions(
+            text_mention_mapping, entity, verb_text
+        )
+        if arg0 == "" and arg1 == "":
             continue
 
-    assert isinstance(arg0, Annotation) and isinstance(arg1, Annotation) and \
-           isinstance(predicate, Annotation), (
-        'AllenNLP SRL cannot extract the two arguments or the '
-        'predicate in your query, please check our examples '
-        'or rephrase your question')
+    assert (
+        isinstance(arg0, Annotation)
+        and isinstance(arg1, Annotation)
+        and isinstance(predicate, Annotation)
+    ), (
+        "AllenNLP SRL cannot extract the two arguments or the "
+        "predicate in your query, please check our examples "
+        "or rephrase your question"
+    )
 
     verb_lemma, is_answer_arg0 = None, None
 
     # check pos tag and lemma for tokens
-    for token in input_pack.get(entry_type=Token, range_annotation=sentence,
-         components=['forte.nltk.nltk_processors.NLTKWordTokenizer']):
+    for token in input_pack.get(
+        entry_type=Token,
+        range_annotation=sentence,
+        components=["forte.nltk.nltk_processors.NLTKWordTokenizer"],
+    ):
         # find WH words
         if token.pos in {"WP", "WP$", "WRB", "WDT"}:
             if arg0.begin <= token.begin and arg0.end >= token.end:
@@ -61,8 +69,14 @@ def query_preprocess(input_pack: DataPack):
         if token.text == predicate.text:
             verb_lemma = token.lemma
 
-    return sentence, arg0.text if arg0 else '', arg1.text if arg1 else '', \
-           predicate.text, verb_lemma, is_answer_arg0
+    return (
+        sentence,
+        arg0.text if arg0 else "",
+        arg1.text if arg1 else "",
+        predicate.text,
+        verb_lemma,
+        is_answer_arg0,
+    )
 
 
 def collect_mentions(text_mention_mapping, relation, verb_text):
@@ -75,8 +89,8 @@ def collect_mentions(text_mention_mapping, relation, verb_text):
     """
     arg0_text, arg1_text = get_arg_text(relation)
 
-    if arg0_text == '' or arg1_text == '':
-        return '', '', ''
+    if arg0_text == "" or arg1_text == "":
+        return "", "", ""
 
     arg0 = text_mention_mapping[arg0_text]
     arg1 = text_mention_mapping[arg1_text]
@@ -97,13 +111,13 @@ def get_arg_text(relation):
     :param relation:
     :return:
     """
-    arg0_text, arg1_text = '', ''
-    if 'ARG0' in relation and 'ARG1' in relation:
-        arg0_text = relation['ARG0']
-        arg1_text = relation['ARG1']
+    arg0_text, arg1_text = "", ""
+    if "ARG0" in relation and "ARG1" in relation:
+        arg0_text = relation["ARG0"]
+        arg1_text = relation["ARG1"]
 
-    elif 'ARG1' in relation and 'ARG2' in relation:
-        arg0_text = relation['ARG1']
-        arg1_text = relation['ARG2']
+    elif "ARG1" in relation and "ARG2" in relation:
+        arg0_text = relation["ARG1"]
+        arg1_text = relation["ARG2"]
 
     return arg0_text, arg1_text

@@ -37,37 +37,95 @@ class MedMentionsReaderTest(unittest.TestCase):
     def test_process_next(self):
         doc_exists = False
         expected_text = [
-            ['DCTN4', 'chronic Pseudomonas aeruginosa infection',
-             'cystic fibrosis', 'Pseudomonas aeruginosa (Pa) infection',
-             'cystic fibrosis', 'CF', 'patients', 'long-term',
-             'pulmonary disease', 'shorter survival'],
-            ['inhibits', 'apoptosis', 'induced', 'PC12 cells',
-             'Nonylphenol', 'short-chain nonylphenol ethoxylates',
-             'NP2 EO', 'present', 'aquatic environment']]
+            [
+                "DCTN4",
+                "chronic Pseudomonas aeruginosa infection",
+                "cystic fibrosis",
+                "Pseudomonas aeruginosa (Pa) infection",
+                "cystic fibrosis",
+                "CF",
+                "patients",
+                "long-term",
+                "pulmonary disease",
+                "shorter survival",
+            ],
+            [
+                "inhibits",
+                "apoptosis",
+                "induced",
+                "PC12 cells",
+                "Nonylphenol",
+                "short-chain nonylphenol ethoxylates",
+                "NP2 EO",
+                "present",
+                "aquatic environment",
+            ],
+        ]
         expected_ner_type = [
-            ['T116,T123', 'T047', 'T047', 'T047', 'T047', 'T047',
-             'T101', 'T079', 'T047', 'T169'],
-            ['T052', 'T043', 'T169', 'T025', 'T131', 'T131',
-             'T131', 'T033', 'T067']]
+            [
+                "T116,T123",
+                "T047",
+                "T047",
+                "T047",
+                "T047",
+                "T047",
+                "T101",
+                "T079",
+                "T047",
+                "T169",
+            ],
+            [
+                "T052",
+                "T043",
+                "T169",
+                "T025",
+                "T131",
+                "T131",
+                "T131",
+                "T033",
+                "T067",
+            ],
+        ]
         expected_umls_link = [
-            ['UMLS:C4308010', 'UMLS:C0854135', 'UMLS:C0010674',
-             'UMLS:C0854135', 'UMLS:C0010674', 'UMLS:C0010674',
-             'UMLS:C0030705', 'UMLS:C0443252', 'UMLS:C0024115',
-             'UMLS:C0220921'],
-            ['UMLS:C3463820', 'UMLS:C0162638', 'UMLS:C0205263',
-             'UMLS:C0085262', 'UMLS:C1254354', 'UMLS:C1254354',
-             'UMLS:C1254354', 'UMLS:C0150312', 'UMLS:C0563034']]
+            [
+                "UMLS:C4308010",
+                "UMLS:C0854135",
+                "UMLS:C0010674",
+                "UMLS:C0854135",
+                "UMLS:C0010674",
+                "UMLS:C0010674",
+                "UMLS:C0030705",
+                "UMLS:C0443252",
+                "UMLS:C0024115",
+                "UMLS:C0220921",
+            ],
+            [
+                "UMLS:C3463820",
+                "UMLS:C0162638",
+                "UMLS:C0205263",
+                "UMLS:C0085262",
+                "UMLS:C1254354",
+                "UMLS:C1254354",
+                "UMLS:C1254354",
+                "UMLS:C0150312",
+                "UMLS:C0563034",
+            ],
+        ]
 
         # Get processed pack from the dataset.
         for i, pack in enumerate(self.nlp.process_dataset(self.dataset_path)):
             doc_exists = True
             for j, entity_mention in enumerate(pack.get(MedicalEntityMention)):
                 self.assertEqual(expected_text[i][j], entity_mention.text)
-                self.assertEqual(expected_ner_type[i][j], entity_mention.ner_type)
-                self.assertEqual(expected_umls_link[i][j], entity_mention.umls_link)
+                self.assertEqual(
+                    expected_ner_type[i][j], entity_mention.ner_type
+                )
+                self.assertEqual(
+                    expected_umls_link[i][j], entity_mention.umls_link
+                )
 
         self.assertTrue(doc_exists)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -13,8 +13,7 @@
 # limitations under the License.
 import logging
 import os
-from typing import (Any, Iterator, List, Optional, NamedTuple,
-                    Set, Tuple)
+from typing import Any, Iterator, List, Optional, NamedTuple, Set, Tuple
 from forte.common.configuration import Config
 from forte.common.resources import Resources
 from forte.data.data_pack import DataPack
@@ -22,12 +21,9 @@ from forte.data.data_utils_io import dataset_path_iterator
 from forte.data.base_reader import PackReader
 from forte.common.exception import ProcessorConfigError
 from forte.utils import get_class
-from ft.onto.base_ontology import (
-    Document, Sentence, Token)
+from ft.onto.base_ontology import Document, Sentence, Token
 
-__all__ = [
-    "CoNLL03Reader"
-]
+__all__ = ["CoNLL03Reader"]
 
 
 class CoNLL03Reader(PackReader):
@@ -70,19 +66,21 @@ class CoNLL03Reader(PackReader):
     def initialize(self, resources: Resources, configs: Config):
         super().initialize(resources, configs)
 
-        if not configs.doc_break_str and \
-            configs.num_sent_per_doc <= 0:
+        if not configs.doc_break_str and configs.num_sent_per_doc <= 0:
             raise ProcessorConfigError(
                 """Please specify doc_break_str or
-                select a positive integer for num_sent_per_doc""")
+                select a positive integer for num_sent_per_doc"""
+            )
 
         if configs.column_format is None:
             raise ProcessorConfigError(
-                "Configuration column_format not provided.")
+                "Configuration column_format not provided."
+            )
 
         if configs.entity_mention_class is None:
             raise ProcessorConfigError(
-                "Configuration entity_mention_class not provided.")
+                "Configuration entity_mention_class not provided."
+            )
 
         # pylint: disable=attribute-defined-outside-init
         self.entity_mention = get_class(configs.entity_mention_class)
@@ -157,11 +155,11 @@ class CoNLL03Reader(PackReader):
 
         """
         return {
-            "file_ext": '.txt',
+            "file_ext": ".txt",
             "num_sent_per_doc": -1,
             "doc_break_str": None,
             "column_format": cls._DEFAULT_FORMAT,
-            "entity_mention_class": None
+            "entity_mention_class": None,
         }
 
     def _collect(self, conll_directory) -> Iterator[Any]:
@@ -178,7 +176,7 @@ class CoNLL03Reader(PackReader):
     def _cache_key_function(self, collection: str) -> str:
         return os.path.basename(collection)
 
-    def _parse_line(self, line: str) -> 'ParsedFields':
+    def _parse_line(self, line: str) -> "ParsedFields":
         parts = line.split()
         fields = {}
         for field, part in zip(self._column_format, parts):
@@ -187,20 +185,21 @@ class CoNLL03Reader(PackReader):
         return self.ParsedFields(**fields)
 
     def _if_break_doc(self, line: str, num_sent: int) -> bool:
-        if self.configs.doc_break_str and \
-            self.configs.doc_break_str in line:
+        if self.configs.doc_break_str and self.configs.doc_break_str in line:
             return True
-        if line == '' and num_sent > 0 and \
-            self.configs.num_sent_per_doc > 0 and \
-            num_sent % self.configs.num_sent_per_doc == 0:
+        if (
+            line == ""
+            and num_sent > 0
+            and self.configs.num_sent_per_doc > 0
+            and num_sent % self.configs.num_sent_per_doc == 0
+        ):
             return True
         return False
 
     def _parse_pack(self, file_path: str) -> Iterator[DataPack]:
         def finish_pack():
             text = " ".join(words)
-            pack.set_text(text,
-                        replace_func=self.text_replace_operation)
+            pack.set_text(text, replace_func=self.text_replace_operation)
             _ = Document(pack, 0, len(text))
 
         start_new_doc: bool = True
@@ -221,7 +220,7 @@ class CoNLL03Reader(PackReader):
                     start_new_doc = False
 
                 line = line.strip()
-                if line == '':
+                if line == "":
                     if not has_rows:
                         continue
                     # add sentence
@@ -248,7 +247,9 @@ class CoNLL03Reader(PackReader):
                     Token(pack, word_begin, word_end)
                     # add entity mentions
                     current_entity_mention = self._process_entity_annotations(
-                        pack, fields.entity_label, word_begin,
+                        pack,
+                        fields.entity_label,
+                        word_begin,
                         current_entity_mention,
                     )
                     words.append(fields.word)
@@ -263,26 +264,30 @@ class CoNLL03Reader(PackReader):
             yield pack
 
     def _process_entity_annotations(
-            self,
-            pack: DataPack,
-            label: Optional[str],
-            word_begin: int,
-            current_entity_mention: Optional[Tuple[int, str]],
+        self,
+        pack: DataPack,
+        label: Optional[str],
+        word_begin: int,
+        current_entity_mention: Optional[Tuple[int, str]],
     ) -> Optional[Tuple[int, str]]:
 
         if label is None:
             return None
 
-        ner_type = label.split('-')[-1]
+        ner_type = label.split("-")[-1]
         if not current_entity_mention:
             return (word_begin, ner_type)
 
-        if label[0] == 'O' or label[0] == 'B' or \
-            (label[0] == 'I' and ner_type != current_entity_mention[1]):
+        if (
+            label[0] == "O"
+            or label[0] == "B"
+            or (label[0] == "I" and ner_type != current_entity_mention[1])
+        ):
             # Exiting a span, add and then reset the current span.
-            if current_entity_mention[1] != 'O':
+            if current_entity_mention[1] != "O":
                 entity = self.entity_mention(
-                    pack, current_entity_mention[0], word_begin - 1)
+                    pack, current_entity_mention[0], word_begin - 1
+                )
                 entity.ner_type = current_entity_mention[1]
             current_entity_mention = (word_begin, ner_type)
 

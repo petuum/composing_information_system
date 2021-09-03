@@ -33,23 +33,29 @@ def main(dataset_dir: str, output_dir: str):
     pipeline.add(
         PackIdJsonPackWriter(),
         {
-            'output_dir': output_dir,
-            'zip_pack': True,
-            'indent': 2,
-            'overwrite': True,
-        }
+            "output_dir": output_dir,
+            "zip_pack": True,
+            "indent": 2,
+            "overwrite": True,
+        },
     )
     pipeline.run(dataset_dir)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", type=str,
-                        default="sample_data/financial_news/",
-                        help="Data directory to read the text files from")
-    parser.add_argument("--output-dir", type=str,
-                    default='./',
-                    help="Output dir to save the processed datapack.")
+    parser.add_argument(
+        "--data-dir",
+        type=str,
+        default="sample_data/financial_news/",
+        help="Data directory to read the text files from",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default="./",
+        help="Output dir to save the processed datapack.",
+    )
     args = parser.parse_args()
     for root, subdirectories, files in os.walk(args.data_dir):
         for subdirectory in subdirectories:

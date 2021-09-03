@@ -24,9 +24,7 @@ from forte.data.base_reader import PackReader
 from ft.onto.base_ontology import Document, Token
 from ftx.medical import MedicalEntityMention
 
-__all__ = [
-    "MedMentionsReader"
-]
+__all__ = ["MedMentionsReader"]
 
 
 class MedMentionsReader(PackReader):
@@ -44,6 +42,7 @@ class MedMentionsReader(PackReader):
         PMID StartIndex EndIndex MentionTextSegment SemanticTypeID EntityID
         ...
     """
+
     def _collect(self, med_mentions_directory) -> Iterator[Any]:
         r"""Iterator over med_mentions files in the data_source.
         Args:
@@ -51,7 +50,7 @@ class MedMentionsReader(PackReader):
         Returns: Iterator over files in the path with med_mentions extensions.
         """
         logging.info("Reading MedMentions from %s", med_mentions_directory)
-        return dataset_path_iterator(med_mentions_directory, 'txt')
+        return dataset_path_iterator(med_mentions_directory, "txt")
 
     def _cache_key_function(self, collection: str) -> str:
         return os.path.basename(collection)
@@ -68,9 +67,8 @@ class MedMentionsReader(PackReader):
         pack: DataPack = DataPack()
         for line in doc:
             # Each paper or document ends with a blank line
-            if not line.strip('\n') and text != "":
-                pack.set_text(
-                    text, replace_func=self.text_replace_operation)
+            if not line.strip("\n") and text != "":
+                pack.set_text(text, replace_func=self.text_replace_operation)
                 Document(pack, 0, len(text))
                 self._word_tokenizer(pack, text)
                 pack.pack_name = pack_name
@@ -78,28 +76,28 @@ class MedMentionsReader(PackReader):
                 yield pack
             # Fetch the title information, title includes '|t|'
             # and the abstract includes '|a|'.
-            elif '|t|' in line or '|a|' in line:
+            elif "|t|" in line or "|a|" in line:
                 if text == "":
                     pack = DataPack()
-                    pack_name = line.split('|')[0]
-                text += '|'.join(line.split('|')[2:])
-            elif len(line.split('\t')) == 6:
-                line_components = line.strip('\n').split('\t')
+                    pack_name = line.split("|")[0]
+                text += "|".join(line.split("|")[2:])
+            elif len(line.split("\t")) == 6:
+                line_components = line.strip("\n").split("\t")
                 start_index = int(line_components[1])
                 end_index = int(line_components[2])
                 semantic_type_id = line_components[4]
-                umls_link = 'UMLS:' + line_components[5]
+                umls_link = "UMLS:" + line_components[5]
                 # Create the entity_mention and save the
                 # semantic_type_id and umls_link information.
                 entity_mention = MedicalEntityMention(
-                    pack, start_index, end_index)
+                    pack, start_index, end_index
+                )
                 entity_mention.ner_type = semantic_type_id
                 entity_mention.umls_link = umls_link
         doc.close()
 
         if text != "":
-            pack.set_text(
-                text, replace_func=self.text_replace_operation)
+            pack.set_text(text, replace_func=self.text_replace_operation)
             Document(pack, 0, len(text))
             pack.pack_name = pack_name
             yield pack

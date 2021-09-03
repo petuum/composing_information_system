@@ -30,7 +30,7 @@ __all__ = [
     "ResponseCreator",
 ]
 
-URL_PREFIX = 'https://www.ncbi.nlm.nih.gov/search/all/?term='
+URL_PREFIX = "https://www.ncbi.nlm.nih.gov/search/all/?term="
 
 
 class ResponseCreator(PackProcessor):
@@ -46,9 +46,7 @@ class ResponseCreator(PackProcessor):
         Following are the keys for this dictionary:
             - query_pack_name: the query datapack's name
         """
-        return {
-            'query_pack_name': "query"
-        }
+        return {"query_pack_name": "query"}
 
     def _process(self, input_pack: MultiPack):
         """
@@ -59,13 +57,19 @@ class ResponseCreator(PackProcessor):
         query_pack = input_pack.get_pack(self.configs.query_pack_name)
 
         _, arg0, arg1, _, verb_lemma, is_answer_arg0 = query_preprocess(
-            query_pack)
+            query_pack
+        )
 
         ent = arg1 if is_answer_arg0 else arg0
         self._process_results(input_pack, ent, verb_lemma, is_answer_arg0)
 
-    def _process_results(self, input_pack: MultiPack, ent: str,
-                         verb_lemma: str, is_answer_arg0=True):
+    def _process_results(
+        self,
+        input_pack: MultiPack,
+        ent: str,
+        verb_lemma: str,
+        is_answer_arg0=True,
+    ):
         """
         Output relations given input pack and user's interested entity
         :param input_pack: Datapack
@@ -77,49 +81,61 @@ class ResponseCreator(PackProcessor):
         ent = ent.lower().strip()
 
         output_relations: DefaultDict[str, List[Any]] = defaultdict(list)
-        output_concepts: \
-            DefaultDict[int, Dict[str, Dict[str, Set[str]]]] = defaultdict(dict)
-        output_titles: DefaultDict[int, Dict[str, Tuple[str, str]]] \
-            = defaultdict(dict)
+        output_concepts: DefaultDict[
+            int, Dict[str, Dict[str, Set[str]]]
+        ] = defaultdict(dict)
+        output_titles: DefaultDict[
+            int, Dict[str, Tuple[str, str]]
+        ] = defaultdict(dict)
 
         for p, pack in enumerate(input_pack.packs):
             if pack.pack_name == self.configs.query_pack_name:
                 continue
 
-            result = self._process_datapack(p, pack, ent,
-                                                   verb_lemma, is_answer_arg0)
+            result = self._process_datapack(
+                p, pack, ent, verb_lemma, is_answer_arg0
+            )
             for key, r in result.items():
                 output_relations[key] = r[0]
                 output_titles[p][key] = r[1]
                 output_concepts[p][key] = r[2]
 
-        intro_relation = u'\u2022Relation:'
-        intro_source = u'\u2022Source Sentence:'
-        intro_concepts = u'\u2022UMLS Concepts:'
+        intro_relation = "\u2022Relation:"
+        intro_source = "\u2022Source Sentence:"
+        intro_concepts = "\u2022UMLS Concepts:"
 
         relations = list({x[0] for x in output_relations.values()})
         relations.sort(key=lambda x: (x[3], x[4]))
 
         for r in relations:
-            triplet = '\t'.join(r[0:3])
+            triplet = "\t".join(r[0:3])
             paper_number = output_relations[triplet][1]
             sentence, paper_title = output_titles[paper_number][triplet]
 
-            line_seperator = '=' * 80
-            print(f'{line_seperator}\n{intro_relation}\n'
-                  f'{triplet}\n{intro_source}\n'
-                  f'{sentence}(From Paper: , {paper_title})\n'
-                  f'{intro_concepts}')
+            line_seperator = "=" * 80
+            print(
+                f"{line_seperator}\n{intro_relation}\n"
+                f"{triplet}\n{intro_source}\n"
+                f"{sentence}(From Paper: , {paper_title})\n"
+                f"{intro_concepts}"
+            )
 
-            leading = ' - '
-            sep = '\n\t'
-            for umls_ent, desc in \
-                    output_concepts[paper_number][triplet].items():
+            leading = " - "
+            sep = "\n\t"
+            for umls_ent, desc in output_concepts[paper_number][
+                triplet
+            ].items():
                 info = sep.join(desc)
-                print(f'{leading}{umls_ent}{sep}{info}')
+                print(f"{leading}{umls_ent}{sep}{info}")
 
-    def _process_datapack(self, p: int, pack: DataPack, ent: str,
-                          verb_lemma: str, is_answer_arg0: bool):
+    def _process_datapack(
+        self,
+        p: int,
+        pack: DataPack,
+        ent: str,
+        verb_lemma: str,
+        is_answer_arg0: bool,
+    ):
         title = pack.get_single(entry_type=Title).text
         result: DefaultDict[str, List[Any]] = defaultdict(list)
 
@@ -132,8 +148,9 @@ class ResponseCreator(PackProcessor):
             for link in pack.get(PredicateLink, sentence):
                 pred = link.get_parent().text
 
-                for token in \
-                        pack.get(entry_type=Token, range_annotation=sentence):
+                for token in pack.get(
+                    entry_type=Token, range_annotation=sentence
+                ):
                     if token.text == pred and verb_lemma == token.lemma:
                         argument = link.get_child().text
                         relations[pred][link.arg_type] = argument
@@ -146,26 +163,42 @@ class ResponseCreator(PackProcessor):
                     continue
 
                 # check the logic of triplet to filter answers
-                if (ent in arg0.lower() and not is_answer_arg0):
+                if ent in arg0.lower() and not is_answer_arg0:
                     triplets.append((arg0, pred, arg1, len(arg0), len(arg1)))
-                if (ent in arg1.lower() and is_answer_arg0):
+                if ent in arg1.lower() and is_answer_arg0:
                     triplets.append((arg0, pred, arg1, len(arg1), len(arg0)))
 
-                result = self._collect_triplet_info(triplets, result, pack,
-                                    sentence, p, sent_text, title, arg0, arg1)
+                result = self._collect_triplet_info(
+                    triplets,
+                    result,
+                    pack,
+                    sentence,
+                    p,
+                    sent_text,
+                    title,
+                    arg0,
+                    arg1,
+                )
 
         return result
 
-    def _collect_triplet_info(self,
-                              triplets: List[Tuple[str, str, str, int, int]],
-                              result: DefaultDict[str, List[Any]],
-                              pack: DataPack, sentence: Sentence, p: int,
-                              sent_text: str, title: str, arg0: str, arg1: str):
+    def _collect_triplet_info(
+        self,
+        triplets: List[Tuple[str, str, str, int, int]],
+        result: DefaultDict[str, List[Any]],
+        pack: DataPack,
+        sentence: Sentence,
+        p: int,
+        sent_text: str,
+        title: str,
+        arg0: str,
+        arg1: str,
+    ):
         if not triplets:
             return result
 
         for triplet in triplets:
-            key = '\t'.join(triplet[0:3])
+            key = "\t".join(triplet[0:3])
             result[key].append([triplet, p])
             result[key].append((sent_text, title))
 
@@ -175,9 +208,11 @@ class ResponseCreator(PackProcessor):
                 if med_ent.text.lower() not in (arg0.lower() or arg1.lower()):
                     continue
                 for umls in med_ent.umls_entities:
-                    sent = f"Name: {umls.name}\t" \
-                           f"CUI: {umls.cui}\t" \
-                           f"Learn more at: {URL_PREFIX}{umls.cui}"
+                    sent = (
+                        f"Name: {umls.name}\t"
+                        f"CUI: {umls.cui}\t"
+                        f"Learn more at: {URL_PREFIX}{umls.cui}"
+                    )
                     entity_dict[med_ent.text.lower()].add(sent)
 
             result[key].append(entity_dict)

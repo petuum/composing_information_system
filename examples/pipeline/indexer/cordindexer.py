@@ -40,17 +40,20 @@ def main(dataset_dir: str):
     Build a pipeline to process CORD_NER dataset using
     CORDReader and build elastic indexer.
     """
-    config_file = os.path.join(os.path.dirname(__file__), 'config.yml')
+    config_file = os.path.join(os.path.dirname(__file__), "config.yml")
     config = yaml.safe_load(open(config_file, "r"))
     config = Config(config, default_hparams=None)
     build_index_pipeline(dataset_dir, config)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", type=str,
-                    default="sample_data/cord_paper/",
-                    help="Data directory to read the text files from.")
+    parser.add_argument(
+        "--data-dir",
+        type=str,
+        default="sample_data/cord_paper/",
+        help="Data directory to read the text files from.",
+    )
 
     args = parser.parse_args()
     main(args.data_dir)

@@ -20,9 +20,7 @@ from forte.data.multi_pack import MultiPack
 from forte.processors.base import QueryProcessor
 from composable_source.utils.utils import query_preprocess
 
-__all__ = [
-    "ElasticSearchQueryCreator"
-]
+__all__ = ["ElasticSearchQueryCreator"]
 
 
 class ElasticSearchQueryCreator(QueryProcessor):
@@ -43,41 +41,39 @@ class ElasticSearchQueryCreator(QueryProcessor):
         size = self.configs.size
         field = self.configs.field
 
-        query, arg0, arg1, verb, _, is_answer_arg0 = \
-            query_preprocess(input_pack)
+        query, arg0, arg1, verb, _, is_answer_arg0 = query_preprocess(
+            input_pack
+        )
 
         if not arg0 or not arg1:
             processed_query = query
 
         if is_answer_arg0 is None:
-            processed_query = f'{arg0} {verb} {arg1}'.lower()
+            processed_query = f"{arg0} {verb} {arg1}".lower()
         elif is_answer_arg0:
-            processed_query = f'{arg1} {verb}'.lower()
+            processed_query = f"{arg1} {verb}".lower()
         else:
-            processed_query = f'{arg0} {verb}'.lower()
+            processed_query = f"{arg0} {verb}".lower()
 
         return {
             "query": {
                 "match_phrase": {
                     field: {
                         "query": processed_query,
-                        "slop": 10  # how far we allow the terms to be
+                        "slop": 10,  # how far we allow the terms to be
                     }
                 }
             },
-            "size": size
+            "size": size,
         }
 
     @classmethod
     def default_configs(cls) -> Dict[str, Any]:
-        return {
-            "size": 1000,
-            "field": "content",
-            "query_pack_name": "query"
-        }
+        return {"size": 1000, "field": "content", "query_pack_name": "query"}
 
-    def _process_query(self, input_pack: MultiPack) -> \
-            Tuple[DataPack, Dict[str, Any]]:
+    def _process_query(
+        self, input_pack: MultiPack
+    ) -> Tuple[DataPack, Dict[str, Any]]:
         """
         process query datapack and return query
         :param input_pack:

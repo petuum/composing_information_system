@@ -1,4 +1,3 @@
-
 #  Copyright 2021 The Forte Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,9 +18,9 @@ from typing import List
 from forte.data.ontology import Annotation
 
 
-def count_exact_match(refer_tag: List[Annotation],
-                      pred_tag: List[Annotation],
-                      attribute: str) -> int:
+def count_exact_match(
+    refer_tag: List[Annotation], pred_tag: List[Annotation], attribute: str
+) -> int:
     count = 0
     seen = set()
     for tag in refer_tag:

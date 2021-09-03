@@ -26,13 +26,14 @@ class PredictPipeline:
     """
     Predict Pipeline.
     """
+
     def __init__(self, config):
         ner_predict_path = config["ner_predict"]["predict_path"]
         linking_predict_path = config["linking_predict"]["predict_path"]
-        self.ner_model = torch.load(
-            os.path.join(ner_predict_path, "model.pt"))
+        self.ner_model = torch.load(os.path.join(ner_predict_path, "model.pt"))
         self.linking_model = torch.load(
-            os.path.join(linking_predict_path, "model.pt"))
+            os.path.join(linking_predict_path, "model.pt")
+        )
 
         self.reader = config["reader"]
         self.processors = config["processors"]
@@ -47,29 +48,31 @@ class PredictPipeline:
         predictor.load(model)
         predict_path = predictor_config["predict_path"]
         pred_config = predictor_config["config"]
-        (pred_config["feature_scheme"]
-                         ["output_tag"]
-                         ["extractor"]
-                         ["vocab_path"]) = \
-                         os.path.join(predict_path, "vocab.pkl")
+        (
+            pred_config["feature_scheme"]["output_tag"]["extractor"][
+                "vocab_path"
+            ]
+        ) = os.path.join(predict_path, "vocab.pkl")
         return predictor, pred_config
 
     def build_predict_pipeline(self):
         """
         Using the saved train state to build a prediction pipeline.
         """
-        ner_predictor, ner_predictor_config = \
-                        self.build_predictor(self.ner_model,
-                                             self.ner_predictor_config)
-        linking_predictor, linking_predictor_config = \
-                        self.build_predictor(self.linking_model,
-                                             self.linking_predictor_config)
+        ner_predictor, ner_predictor_config = self.build_predictor(
+            self.ner_model, self.ner_predictor_config
+        )
+        linking_predictor, linking_predictor_config = self.build_predictor(
+            self.linking_model, self.linking_predictor_config
+        )
         reader = get_class(self.reader["class_name"])()
         pl: Pipeline = Pipeline()
         pl.set_reader(reader, config=self.reader["config"])
         for processor in self.processors.values():
-            pl.add(component=get_class(processor["class_name"])(),
-                   config=processor["config"])
+            pl.add(
+                component=get_class(processor["class_name"])(),
+                config=processor["config"],
+            )
         pl.add(component=ner_predictor, config=ner_predictor_config)
         pl.add(component=linking_predictor, config=linking_predictor_config)
         pl.initialize()
@@ -78,12 +81,14 @@ class PredictPipeline:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config-dir", type=str,
-                    help="Directory to the config files.")
+    parser.add_argument(
+        "--config-dir", type=str, help="Directory to the config files."
+    )
     args = parser.parse_args()
 
     config_predict = yaml.safe_load(
-        open(os.path.join(args.config_dir, "config_predict.yml"), "r"))
+        open(os.path.join(args.config_dir, "config_predict.yml"), "r")
+    )
 
     predict_pl = PredictPipeline(config_predict)
     pipeline = predict_pl.build_predict_pipeline()
@@ -109,4 +114,4 @@ if __name__ == "__main__":
             print("sentence: ", sent)
             print("output_ner_tags: ", output_ner_tags)
             print("output_linking_tags: ", output_linking_tags)
-            print('\n')
+            print("\n")

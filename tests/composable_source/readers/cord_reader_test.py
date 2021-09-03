@@ -39,31 +39,35 @@ class CORDReaderTest(unittest.TestCase):
         """
         Test CORDReader
         """
-        expected_title = \
-            "Systematic Review and Meta-Analysis Kidney Dis Renal Injury by " \
-            "SARS-CoV-2 Infection: A Systematic Review Keywords SARS-CoV-2 " \
+        expected_title = (
+            "Systematic Review and Meta-Analysis Kidney Dis Renal Injury by "
+            "SARS-CoV-2 Infection: A Systematic Review Keywords SARS-CoV-2 "
             "COVID-19 Angiotensin-converting enzyme 2 Renal injury Mechanism"
+        )
 
-        expected_abstract = \
-            "Background: SARS-CoV-2 infection can cause renal involvement, " \
-            "and severe renal dysfunction is more common among patients with " \
-            "chronic comorbid conditions, especially patients with " \
+        expected_abstract = (
+            "Background: SARS-CoV-2 infection can cause renal involvement, "
+            "and severe renal dysfunction is more common among patients with "
+            "chronic comorbid conditions, especially patients with "
             "chronic kidney disease."
+        )
 
-        expected_body = \
-            " In this review, we summarize the pathogenesis of renal injury " \
-            "deriving from SARS-CoV-2 infection by focusing on its etiology, " \
-            "pathology, and clinical manifestations."\
-            " Renal injury by SARS-CoV-2 is the result of multiple factors. " \
-            "Via highly expressed ACE2 in renal tissue, SARS-CoV-2 infection " \
-            "fundamentally initiates a mechanism of renal injury. " \
-            "Systemic effects such as host immune clearance and immune " \
-            "tolerance disorders, endothelial cell injury, thrombus formation, " \
-            "glucose and lipid metabolism disorder, and hypoxia aggravate " \
+        expected_body = (
+            " In this review, we summarize the pathogenesis of renal injury "
+            "deriving from SARS-CoV-2 infection by focusing on its etiology, "
+            "pathology, and clinical manifestations."
+            " Renal injury by SARS-CoV-2 is the result of multiple factors. "
+            "Via highly expressed ACE2 in renal tissue, SARS-CoV-2 infection "
+            "fundamentally initiates a mechanism of renal injury. "
+            "Systemic effects such as host immune clearance and immune "
+            "tolerance disorders, endothelial cell injury, thrombus formation, "
+            "glucose and lipid metabolism disorder, and hypoxia aggravate "
             "this renal injury."
+        )
 
-        expected_text = '\n\n'.join([expected_title, expected_abstract,
-                                     expected_body])
+        expected_text = "\n\n".join(
+            [expected_title, expected_abstract, expected_body]
+        )
 
         # Process pipeline
         data_pack = self.pipeline.process_one(self.dataset_path)
@@ -96,5 +100,5 @@ class CORDReaderTest(unittest.TestCase):
         self.assertEqual(body.text, expected_body)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -22,17 +22,21 @@ logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config-dir", type=str,
-                    help="Directory to the config files.")
+    parser.add_argument(
+        "--config-dir", type=str, help="Directory to the config files."
+    )
     args = parser.parse_args()
 
     config = {
         "config_data": yaml.safe_load(
-            open(os.path.join(args.config_dir, "config_data.yml"), "r")),
+            open(os.path.join(args.config_dir, "config_data.yml"), "r")
+        ),
         "config_model": yaml.safe_load(
-            open(os.path.join(args.config_dir, "config_model.yml"), "r")),
-        "device": torch.device("cuda") if torch.cuda.is_available() else
-        torch.device("cpu")
+            open(os.path.join(args.config_dir, "config_model.yml"), "r")
+        ),
+        "device": torch.device("cuda")
+        if torch.cuda.is_available()
+        else torch.device("cpu"),
     }
 
     output_path = config["config_data"]["output_path"]

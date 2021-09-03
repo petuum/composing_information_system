@@ -13,8 +13,17 @@
 # limitations under the License.
 import logging
 import os
-from typing import (Any, Iterator, List, Optional, NamedTuple,
-                    Set, Tuple, TextIO, Dict)
+from typing import (
+    Any,
+    Iterator,
+    List,
+    Optional,
+    NamedTuple,
+    Set,
+    Tuple,
+    TextIO,
+    Dict,
+)
 from forte.common.configuration import Config
 from forte.common.resources import Resources
 from forte.data.data_pack import DataPack
@@ -24,9 +33,7 @@ from forte.common.exception import ProcessorConfigError
 from ft.onto.base_ontology import Document, Sentence, Token
 from onto.wiki import WikiEntityMention
 
-__all__ = [
-    "CoNLL03LinkReader"
-]
+__all__ = ["CoNLL03LinkReader"]
 
 
 # pylint: disable=line-too-long
@@ -104,7 +111,8 @@ class CoNLL03LinkReader(PackReader):
 
         if configs.column_format is None:
             raise ProcessorConfigError(
-                "Configuration column_format not provided.")
+                "Configuration column_format not provided."
+            )
         column_format = configs.column_format
         # Validate column format.
         seen_fields: Set[str] = set()
@@ -166,9 +174,9 @@ class CoNLL03LinkReader(PackReader):
                 ignored during parsing.
         """
         return {
-            "file_ext": '.txt',
-            "doc_break_str": '-DOCSTART-',
-            "column_format": cls._DEFAULT_FORMAT
+            "file_ext": ".txt",
+            "doc_break_str": "-DOCSTART-",
+            "column_format": cls._DEFAULT_FORMAT,
         }
 
     def _collect(self, conll_directory) -> Iterator[Any]:
@@ -196,11 +204,10 @@ class CoNLL03LinkReader(PackReader):
     def _parse_pack(self, file_path: str) -> Iterator[DataPack]:
         def finish_pack():
             text = " ".join(words)
-            pack.set_text(text,
-                        replace_func=self.text_replace_operation)
+            pack.set_text(text, replace_func=self.text_replace_operation)
             _ = Document(pack, 0, len(text))
 
-        linking_file = open(os.path.splitext(file_path)[0] + '.link.tsv', 'r')
+        linking_file = open(os.path.splitext(file_path)[0] + ".link.tsv", "r")
         entity_linkings: Dict[int, str] = {}
         start_new_doc: bool = True
         with open(file_path, encoding="utf8") as doc:
@@ -217,8 +224,9 @@ class CoNLL03LinkReader(PackReader):
                     fields = self.ParsedFields("")
 
                     # auxiliary structures
-                    current_entity_mention: \
-                        Optional[Tuple[int, int, str]] = None
+                    current_entity_mention: Optional[
+                        Tuple[int, int, str]
+                    ] = None
                     entity_linkings = self._get_entity_linking(linking_file)
                     start_new_doc = False
 
@@ -226,9 +234,14 @@ class CoNLL03LinkReader(PackReader):
                 if self.configs.doc_break_str in line:
                     if words != []:
                         _ = self._process_entity_annotations(
-                            pack, fields.entity_label, word_begin,
-                            current_entity_mention, entity_linkings, token_idx,
-                            is_last_token=True)
+                            pack,
+                            fields.entity_label,
+                            word_begin,
+                            current_entity_mention,
+                            entity_linkings,
+                            token_idx,
+                            is_last_token=True,
+                        )
                         finish_pack()
                         yield pack
                         start_new_doc = True
@@ -246,15 +259,19 @@ class CoNLL03LinkReader(PackReader):
                     Token(pack, word_begin, word_end)
                     # add entity mentions
                     current_entity_mention = self._process_entity_annotations(
-                        pack, fields.entity_label, word_begin,
-                        current_entity_mention, entity_linkings, token_idx
+                        pack,
+                        fields.entity_label,
+                        word_begin,
+                        current_entity_mention,
+                        entity_linkings,
+                        token_idx,
                     )
                     token_idx += 1
                     words.append(fields.word)
                     offset = word_end + 1
                     has_rows = True
 
-                if line == '':
+                if line == "":
                     if not has_rows:
                         continue
                     # add sentence
@@ -266,39 +283,48 @@ class CoNLL03LinkReader(PackReader):
             Sentence(pack, sentence_begin, offset - 1)
         if words != []:
             _ = self._process_entity_annotations(
-                pack, fields.entity_label, word_begin,
-                current_entity_mention, entity_linkings, token_idx,
-                is_last_token=True)
+                pack,
+                fields.entity_label,
+                word_begin,
+                current_entity_mention,
+                entity_linkings,
+                token_idx,
+                is_last_token=True,
+            )
             finish_pack()
             yield pack
         linking_file.close()
 
     def _process_entity_annotations(
-            self,
-            pack: DataPack,
-            label: Optional[str],
-            word_begin: int,
-            current_entity_mention: Optional[Tuple[int, int, str]],
-            entity_linkings: Dict[int, str],
-            token_idx: int,
-            is_last_token: bool = False
+        self,
+        pack: DataPack,
+        label: Optional[str],
+        word_begin: int,
+        current_entity_mention: Optional[Tuple[int, int, str]],
+        entity_linkings: Dict[int, str],
+        token_idx: int,
+        is_last_token: bool = False,
     ) -> Optional[Tuple[int, int, str]]:
 
         if label is None:
             return None
 
-        ner_type = label.split('-')[-1]
+        ner_type = label.split("-")[-1]
         if not current_entity_mention:
             current_entity_mention = (word_begin, token_idx, ner_type)
             return current_entity_mention
 
-        if label[0] == 'O' or label[0] == 'B' or \
-            (label[0] == 'I' and ner_type != current_entity_mention[2]) or \
-            is_last_token:
+        if (
+            label[0] == "O"
+            or label[0] == "B"
+            or (label[0] == "I" and ner_type != current_entity_mention[2])
+            or is_last_token
+        ):
             # Exiting a span, add and then reset the current span.
-            if current_entity_mention[2] != 'O':
+            if current_entity_mention[2] != "O":
                 entity = WikiEntityMention(
-                    pack, current_entity_mention[0], word_begin)
+                    pack, current_entity_mention[0], word_begin
+                )
                 entity.ner_type = current_entity_mention[2]
                 begin_token_idx = current_entity_mention[1]
                 if begin_token_idx in entity_linkings:
@@ -319,8 +345,10 @@ class CoNLL03LinkReader(PackReader):
         """
         token_idx_to_entity_linking: Dict[int, str] = {}
         for line in linking_file:
-            if self.configs.doc_break_str in line \
-                and token_idx_to_entity_linking:
+            if (
+                self.configs.doc_break_str in line
+                and token_idx_to_entity_linking
+            ):
                 return token_idx_to_entity_linking
             line = line.strip()
             if line != "" and self.configs.doc_break_str not in line:

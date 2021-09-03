@@ -27,6 +27,7 @@ class PredictPipeline:
     """
     Predict Pipeline.
     """
+
     def __init__(self, config):
         predict_path = config["predict_path"]
         self.model = torch.load(os.path.join(predict_path, "model.pt"))
@@ -43,10 +44,11 @@ class PredictPipeline:
         """
         predictor = BertPredictor()
         predictor_config = self.predictor_config
-        (predictor_config["feature_scheme"]
-                        ["output_tag"]
-                        ["extractor"]
-                        ["vocab_path"]) = self.vocab_path
+        (
+            predictor_config["feature_scheme"]["output_tag"]["extractor"][
+                "vocab_path"
+            ]
+        ) = self.vocab_path
         predictor.load(self.model)
         return predictor, predictor_config
 
@@ -56,17 +58,17 @@ class PredictPipeline:
         """
         predictor, predictor_config = self.build_predictor()
         reader, reader_config = create_class(
-            self.reader["class_name"],
-            self.reader["config"])
+            self.reader["class_name"], self.reader["config"]
+        )
         evaluator, evaluator_config = create_class(
-            self.evaluator_config["class_name"],
-            self.evaluator_config["config"])
+            self.evaluator_config["class_name"], self.evaluator_config["config"]
+        )
         pl: Pipeline = Pipeline()
         pl.set_reader(reader, config=reader_config)
         for processor in self.processors.values():
             proc, proc_config = create_class(
-                processor["class_name"],
-                processor["config"])
+                processor["class_name"], processor["config"]
+            )
             pl.add(component=proc, config=proc_config)
         pl.add(component=predictor, config=predictor_config)
         pl.add(component=evaluator, config=evaluator_config)
@@ -76,25 +78,25 @@ class PredictPipeline:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config-dir", type=str,
-                    help="Directory to the config files.")
+    parser.add_argument(
+        "--config-dir", type=str, help="Directory to the config files."
+    )
     args = parser.parse_args()
 
     config_predict = yaml.safe_load(
-        open(os.path.join(args.config_dir, "config_predict.yml"), "r"))
+        open(os.path.join(args.config_dir, "config_predict.yml"), "r")
+    )
     config_model = yaml.safe_load(
-        open(os.path.join(args.config_dir, "config_model.yml"), "r"))
+        open(os.path.join(args.config_dir, "config_model.yml"), "r")
+    )
     config_predict.update(config_model)
 
     predict_pl = PredictPipeline(config_predict)
     pipeline, pl_evaluator = predict_pl.build_predict_pipeline()
     entry_type = get_class(config_predict["entry_type"])
-    attribute = (config_predict["tp_request"]
-                               ["feature_scheme"]
-                               ["output_tag"]
-                               ["extractor"]
-                               ["config"]
-                               ["attribute"])
+    attribute = config_predict["tp_request"]["feature_scheme"]["output_tag"][
+        "extractor"
+    ]["config"]["attribute"]
     pack_ind = 0
 
     for pack in pipeline.process_dataset(config_predict["data_path"]):
@@ -108,5 +110,5 @@ if __name__ == "__main__":
                 output_tags.append((entry.text, value))
             print("sentence: ", sent)
             print("output_tags: ", output_tags)
-            print('\n')
+            print("\n")
         print(pl_evaluator.get_result())

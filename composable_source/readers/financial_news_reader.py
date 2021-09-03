@@ -29,7 +29,7 @@ __all__ = [
 
 class FinancialNewsReader(PackReader):
     """FinancialNewsReader is designed to read in financial news dataset.
-       https://github.com/duynht/financial-news-dataset
+    https://github.com/duynht/financial-news-dataset
     """
 
     def _collect(self, text_directory) -> Iterator[Any]:
@@ -53,14 +53,13 @@ class FinancialNewsReader(PackReader):
             clean_text = []
             for line in text:
                 line = line.strip()
-                if line and not line.startswith('--'):
+                if line and not line.startswith("--"):
                     clean_text.append(line)
-            clean_text_str = '\n'.join(clean_text)
+            clean_text_str = "\n".join(clean_text)
 
-        pack.set_text(
-            clean_text_str, replace_func=self.text_replace_operation)
+        pack.set_text(clean_text_str, replace_func=self.text_replace_operation)
         Document(pack, 0, len(pack.text))
-        pack.pack_name = file_path.split('/')[-1]
+        pack.pack_name = file_path.split("/")[-1]
         yield pack
 
     @classmethod
@@ -68,6 +67,4 @@ class FinancialNewsReader(PackReader):
         """
         Indicate files with a specific extension to be processed
         """
-        return {
-            'file_ext': '.txt'
-        }
+        return {"file_ext": ".txt"}
