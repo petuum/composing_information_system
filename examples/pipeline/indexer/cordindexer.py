@@ -22,7 +22,7 @@ import yaml
 from forte.common.configuration import Config
 from forte.data.data_pack import DataPack
 from forte.pipeline import Pipeline
-from forte.elastic import ElasticSearchPackIndexProcessor
+from fortex.elastic import ElasticSearchPackIndexProcessor
 from composable_source.readers import CORDReader
 
 

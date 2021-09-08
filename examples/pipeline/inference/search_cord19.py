@@ -22,10 +22,10 @@ from forte.data.multi_pack import MultiPack
 from forte.data.readers import TerminalReader
 from forte.pipeline import Pipeline
 from forte.data.selector import RegexNameMatchSelector
-from forte.spacy.spacy_processors import SpacyProcessor
-from forte.allennlp import AllenNLPProcessor
-from forte.elastic import ElasticSearchProcessor
-from forte.nltk import (
+from fortex.spacy.spacy_processors import SpacyProcessor
+from fortex.allennlp import AllenNLPProcessor
+from fortex.elastic import ElasticSearchProcessor
+from fortex.nltk import (
     NLTKLemmatizer,
     NLTKSentenceSegmenter,
     NLTKWordTokenizer,

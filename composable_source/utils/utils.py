@@ -56,7 +56,7 @@ def query_preprocess(input_pack: DataPack):
     for token in input_pack.get(
         entry_type=Token,
         range_annotation=sentence,
-        components=["forte.nltk.nltk_processors.NLTKWordTokenizer"],
+        components=["fortex.nltk.nltk_processors.NLTKWordTokenizer"],
     ):
         # find WH words
         if token.pos in {"WP", "WP$", "WRB", "WDT"}:
