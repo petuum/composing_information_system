@@ -19,7 +19,7 @@ import unittest
 from composable_source.readers import CORDNERDReader
 from forte.data.data_pack import DataPack
 from forte.pipeline import Pipeline
-from ftx.medical import MedicalEntityMention
+from ftx.onto.clinical import MedicalEntityMention
 
 
 class CORDNERDReaderPipelineTest(unittest.TestCase):
