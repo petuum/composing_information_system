@@ -31,10 +31,11 @@ from fortex.nltk import (
     NLTKWordTokenizer,
     NLTKPOSTagger,
 )
-
+from ft.onto.base_ontology import Sentence, PredicateLink
 from composable_source.processors.elasticsearch_query_creator import (
     ElasticSearchQueryCreator,
 )
+from onto.clinical import MedicalEntityMention
 from composable_source.processors.response_creator import ResponseCreator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -92,6 +93,21 @@ if __name__ == "__main__":
     m_pack: MultiPack
     for m_pack in nlp.process_dataset():
         print("The number of datapacks(including query) is", len(m_pack.packs))
+
+        data_pack = next(nlp.process_dataset()).get_pack_at(1)
+        sent = data_pack.get_single(Sentence)
+
+        print(f"Sentence: {sent.text}")
+        print("Entities created by SciSpacy:")
+        for entity in data_pack.get(MedicalEntityMention, sent, components=["composable_source.processors.scispacy_processor.SciSpacyProcessor"]):
+            for umls in entity.umls_entities:
+                print(f"    entity: {umls.name}, cui: {umls.cui}")
+        print("Semantic role labels created by AllenNLP:")
+        for pred in data_pack.get(PredicateLink, sent, components=["fortex.allennlp.allennlp_processors.AllenNLPProcessor"]):
+            verb = pred.get_parent()
+            noun = pred.get_child()
+            print(f"    verb: {data_pack.text[verb.begin:verb.end]}, noun: {data_pack.text[noun.begin:noun.end]}, noun_type: {pred.arg_type}")
+        
         if len(m_pack.packs) == 1:  # no paper found, only query
             input("No result. Try another query: \n")
             continue
