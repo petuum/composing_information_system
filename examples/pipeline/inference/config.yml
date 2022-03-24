@@ -17,17 +17,23 @@ indexer:
   indexed_text_only: False
 
 spacy1:
-  processors: "sentence, umls_link"
+  processors: 
+  - "sentence"
+  - "umls_link"
   lang: "en_ner_bionlp13cg_md"
-  use_gpu: False
 
 spacy2:
   processors: "umls_link"
   lang: "en_ner_jnlpba_md"
-  use_gpu: False
+
+reader:
+  pack_name: "query"
 
 allennlp_query:
-  'processors': "tokenize, pos, srl"
+  'processors': 
+    - "tokenize"
+    - "pos"
+    - "srl"
   'tag_formalism': "srl"
   'overwrite_entries': False
   'allow_parallel_entries': True
