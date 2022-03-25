@@ -99,11 +99,11 @@ if __name__ == "__main__":
 
         print(f"Sentence: {sent.text}")
         print("Entities created by SciSpacy:")
-        for entity in data_pack.get(MedicalEntityMention, sent, components=["composable_source.processors.scispacy_processor.SciSpacyProcessor"]):
+        for entity in data_pack.get(MedicalEntityMention, sent):
             for umls in entity.umls_entities:
                 print(f"    entity: {umls.name}, cui: {umls.cui}")
         print("Semantic role labels created by AllenNLP:")
-        for pred in data_pack.get(PredicateLink, sent, components=["fortex.allennlp.allennlp_processors.AllenNLPProcessor"]):
+        for pred in data_pack.get(PredicateLink, sent):
             verb = pred.get_parent()
             noun = pred.get_child()
             print(f"    verb: {data_pack.text[verb.begin:verb.end]}, noun: {data_pack.text[noun.begin:noun.end]}, noun_type: {pred.arg_type}")
