@@ -1,0 +1,2669 @@
+{
+    "paper_id": "aadc3e716b6cb0e898953dff056124378b31483c",
+    "metadata": {
+        "title": "Voltammetric-based immunosensor for the detection of SARS-CoV-2 nucleocapsid antigen",
+        "authors": [
+            {
+                "first": "Shimaa",
+                "middle": [],
+                "last": "Eissa",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hani",
+                "middle": [
+                    "A"
+                ],
+                "last": "Alhadrami",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Maha",
+                "middle": [],
+                "last": "Al-Mozaini",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ahmed",
+                "middle": [
+                    "M"
+                ],
+                "last": "Hassan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Mohammed",
+                "middle": [],
+                "last": "Zourob",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Since the COVID-19 disease caused by the novel severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) was declared a pandemic, it has spread rapidly, causing one of the most serious outbreaks in the last century. Reliable and rapid diagnostic tests for COVID-19 are crucial to control and manage the outbreak. Here, a label-free square wave voltammetry-based biosensing platform for the detection of SARS-CoV-2 in nasopharyngeal samples is reported. The sensor was constructed on screen-printed carbon electrodes coated with gold nanoparticles. The electrodes were functionalized using 11-mercaptoundecanoic acid (MUA) which was used for the immobilization of an antibody against SARS-CoV-2 nucleocapsid protein (N protein). The binding of the immunosensor with the N protein caused a change in the electrochemical signal. The detection was realised by measuring the change in reduction peak current of a redox couple using square wave voltammetry at 0.04 V versus Ag ref. electrode on the immunosensor upon binding with the N protein. The electrochemical immunosensor showed high sensitivity with a linear range from 1.0 pg.mL \u22121 to 100 ng.mL \u22121 and a limit of detection of 0.4 pg.mL \u22121 for the N protein in PBS buffer pH 7.4. Moreover, the immunosensor did not exhibit significant response with other viruses such as HCoV, MERS-CoV, Flu A and Flu B, indicating the high selectivity of the sensor for SARS-CoV-2. However, cross reactivity of the biosensor with SARS-CoV is indicated, which gives ability of the sensor to detect both SARS-CoV and SARS-CoV-2. The biosensor was successfully applied to detect the SARS-CoV-2 virus in clinical samples showing good correlation between the biosensor response and the RT-PCR cycle threshold values. We believe that the capability of miniaturization, low-cost and fast response of the proposed label-free electrochemical immunosensor will facilitate the point-of-care diagnosis of COVID 19 and help prevent further spread of infection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "New emerging viruses have been always a major threat to public health. Many viruses have appeared, leading to pandemics such as influenza H1N1, severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS) corona viruses, Ebola, human immune deficiency virus (HIV), polio and Zika.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The novel coronavirus 2019 (COVID-19) disease caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the latest threat to global health. COVID-19 was first recognised in December 2019 in China. It was then spread rapidly across the globe and was declared pandemic in March 2020 by the World Health Organization. This outbreak has affected billions of people worldwide. COVID-19 infections can be asymptomatic and may show several symptoms ranging from moderate flu-like symptoms such as cough, fever and tiredness to severe life-threatening complications that can lead to death [1] [2] [3] . Asymptomatic individuals can transmit the disease and thus, it is highly important to identify and isolate them.",
+            "cite_spans": [
+                {
+                    "start": 601,
+                    "end": 604,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 605,
+                    "end": 608,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 609,
+                    "end": 612,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Hence, the development of low-cost and rapid diagnostic tools to perform accurate and widespread testing is urgently needed in this stage to enable the infection control and suppress the spread of the disease. Two main approaches are currently used for testing: the molecular methods based on the detection of the virus RNA via reverse transcriptase realtime polymerase chain reaction (RT-PCR) and the immunological and serological assays that focus on the detection of the virus antigens or antibodies [2] . The primary utilized method for the diagnosis of COVID 19 infection worldwide is the RT-PCR because of its sensitivity and selectivity. However, the high cost, time consumption and need for highly trained personnel and specialized laboratory equipment and reagents limit its use for population-wide testing particularly in lowresourced areas [4] . The immunological methods are mainly relying on the detection of the viral antibody that appears in the patient blood after few days of COVID-19 infection. However, this method is not useful for the early diagnosis of infection for the purpose of isolation or treatment [5] . Thus, detection methods for the antigens of the virus are more reliable for diagnosis.",
+            "cite_spans": [
+                {
+                    "start": 503,
+                    "end": 506,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 851,
+                    "end": 854,
+                    "text": "[4]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1127,
+                    "end": 1130,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Biosensors are promising detection tools that have shown variety of successful diagnostic applications for point-of-care testing in the recent years [6] . Various biosensors have been developed previously for the diagnosis of viral infections using different optical [7] , colorimetric [8] and electrochemical [9] techniques employing different nanomaterials [10] .",
+            "cite_spans": [
+                {
+                    "start": 149,
+                    "end": 152,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 267,
+                    "end": 270,
+                    "text": "[7]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 286,
+                    "end": 289,
+                    "text": "[8]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 310,
+                    "end": 313,
+                    "text": "[9]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 359,
+                    "end": 363,
+                    "text": "[10]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Electrochemical biosensors are attractive choices in several point-of-care diagnostic platforms because of their low cost, high sensitivity, simplicity, capability of miniaturization and ease of use. Electrochemical sensors can be easily integrated in very small potentiostats and connected to cell phone for data collection. Many electrochemical biosensors have been elaborated to detect variety of viruses such as influenza [11] , human enterovirus [12] , hepatitis B [13] , herpes [14] , Citrus tristeza [15] , Zika, dengue [16] and human papillomavirus [17] . Voltammetric-based immunosensor have been developed recently for the determination of the Middle East respiratory syndrome corona virus (MERS-CoV) using competitive assay [18] showing excellent sensitivity.",
+            "cite_spans": [
+                {
+                    "start": 426,
+                    "end": 430,
+                    "text": "[11]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 451,
+                    "end": 455,
+                    "text": "[12]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 470,
+                    "end": 474,
+                    "text": "[13]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 484,
+                    "end": 488,
+                    "text": "[14]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 507,
+                    "end": 511,
+                    "text": "[15]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 527,
+                    "end": 531,
+                    "text": "[16]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 557,
+                    "end": 561,
+                    "text": "[17]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 735,
+                    "end": 739,
+                    "text": "[18]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To date, considerable attention has been devoted to the development of biosensors for COVID-19 [19] . Lateral flow assay (LFA) has been reported for the detection of N antigen of the SARS-CoV-2 [20] . Graphene-based field effect transistor biosensor for the determination of the SARS-CoV-2 spike S1 protein was reported [21] . An optical dual-functional plasmonic photothermal biosensor was developed based on the nucleic acid hybridization technique [22] . Despite of the sensitivity of the LFA, they can provide only semi-quantitative results. The optical and transistor-based biosensors exhibited good sensitivity. However, they still require either an RNA extraction step or expensive instruments which limit their practical use for diagnosis.",
+            "cite_spans": [
+                {
+                    "start": 95,
+                    "end": 99,
+                    "text": "[19]",
+                    "ref_id": null
+                },
+                {
+                    "start": 194,
+                    "end": 198,
+                    "text": "[20]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 320,
+                    "end": 324,
+                    "text": "[21]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 451,
+                    "end": 455,
+                    "text": "[22]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A DNA-based electrochemical biosensor for SARS-CoV-2 has been recently reported based on the hybridization of the virus RNA of the N gene with complementary DNA-modified electrode [23] . An isothermal rolling circle amplification method coupled with differential pulse voltammetry detection for the RNA of N and S genes was also reported [24] . An amperometric sensor based on functionalized TiO 2 nanotube was also developed for the detection of the spike receptor binding domain (S-RBD) present on the surface of the SARS-CoV-2 virus [25] . The sensor was able to detect the S-RBD protein at 14 nM in nasal and saliva samples. The S protein was also detected using SWV-based immunosensor in serum using a graphene oxide paper-based electrode [26] . The N protein is the most abundant protein of the coronavirus. It is a highly conserved immunogenic phosphoprotein that is implicated in modulating cell signalling pathways and in viral genome replication and thus, has the potential to be used as a specific biomarker for COVID-19 diagnosis [27] . Molecular imprinted-based electrochemical biosensor was reported recently for the detection of N protein [28] . Two other magnetic-based electrochemical immunosensors were also developed recently for the detection of N protein in serum [29] and saliva [30] . We have recently reported a cottoncoated carbon nanofiber-based competitive biosensor for the detection of N protein [31] . These biosensors have shown good sensitivity and simplicity compared with other conventional assays. Yet, we believe that the development of more easy-to-use and accurate electrochemical biosensors with improved performance plays a major role in stopping the pandemic.",
+            "cite_spans": [
+                {
+                    "start": 180,
+                    "end": 184,
+                    "text": "[23]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 338,
+                    "end": 342,
+                    "text": "[24]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 536,
+                    "end": 540,
+                    "text": "[25]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 744,
+                    "end": 748,
+                    "text": "[26]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1042,
+                    "end": 1046,
+                    "text": "[27]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1154,
+                    "end": 1158,
+                    "text": "[28]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1285,
+                    "end": 1289,
+                    "text": "[29]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1301,
+                    "end": 1305,
+                    "text": "[30]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1425,
+                    "end": 1429,
+                    "text": "[31]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Here, we report the development of a label-free voltammetric-based immunosensor for the determination of SARS-CoV-2 N antigen using gold nanoparticles-modified screen-printed carbon electrodes. The immunosensor exhibited excellent sensitivity due to the large surface area and the high conductivity of the gold nanoparticles as well as high selectivity due to the specificity of the anti-N antibody. Moreover, initial testing of the immunosensor to detect the COVID infection in positive and negative samples indicated good correlation with the RT-PCR results. Therefore, this immunosensor is considered a promising low-cost, fast and sensitive diagnostic tool for COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The antigen for SARS-CoV-2 N protein (REC31812) and its antibody (MAB12184) were obtained from Native Antigens (Oxfordshire, UK) (https://thenativeantigencompany.com/). The MERS-CoV antigen (725 Spike protein S1) and its antibody were obtained from Sino Biological (Beijing, China) 6 ]), 30 wt% gold (III) chloride solution in dilute HCl, 11-mercaptoundecanoic acid, absolute ethanol, phosphate buffer saline (PBS) and bovine serum albumin (BSA) were obtained from Sigma (Ontario, Canada) (http://www.sigmaaldrich.com/canada-english.html).",
+            "cite_spans": [
+                {
+                    "start": 282,
+                    "end": 283,
+                    "text": "6",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Materials and reagents"
+        },
+        {
+            "text": "1-Ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) were obtained from Fisher Scientific (Ontario, Canada). The EDC/ NHS solution utilized for the activation step was prepared in1X PBS buffer, pH 5.5. The solutions of the antigens and antibodies were prepared in 1X PBS buffer, pH 7.4 which was also used for the washing steps. Milli-Q water was utilized for the preparation of all the reagents throughout the study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and reagents"
+        },
+        {
+            "text": "All the electrochemical measurements (the square wave voltammetry (SWV) and cyclic voltammetry (CV)) were performed by a multichannel AUTOLAB potentiostat PGSTAT302N obtained from Metrohm, Netherlands. The potentiostat was connected to a personnel computer and operated by the Nova 1.11 software. Dual screen-printed carbon electrodes (C1110) were purchased from Metrohm DropSens. (Spain). Each electrode includes a silver reference electrode, one carbon counter electrode and two elliptic carbon working electrodes. The electrodes were connected to the potentiostat via a specific connector purchased from Metrohm DropSens and are capable of detecting two signals simultaneously, allowing (differential) measurements of two samples (the control and the patient samples). Scanning electron microscopy images were taken using JEOL JSM-6300F at a working distance of 4.8 mm with an acceleration voltage of 5 kV, and magnification = 50,000\u00d7.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Instrumentation"
+        },
+        {
+            "text": "Coating of the carbon screen-printed electrodes with gold nanoparticles Electrodeposition procedure was performed to coat the carbon surface of the screen-printed working electrodes with gold nanoparticles (AuNPs) according to the protocol optimized previously [18, [32] [33] [34] [35] . The electrodeposition was achieved by adding a 100 \u03bcl of gold chloride (HAuCl 4 . 3H 2 O) solution (6 mM) in 0.1 M potassium nitrate onto the electrode to cover the entire electrode surface. The electrode was then connected to the potentiostat and 10 CV scans were applied between \u22120.2 and \u22121.4 V at a scan rate of 50 mV/s. After deposition, a change in the colour of the working electrode from black to yellow is observed, indicating the success of the deposition process. The electrodes were then rinsed with water and dried before subjected to surface characterization. The surface characterization was performed using X-ray photoelectron spectroscopy (XPS) and scanning electron microscopy (SEM) for the working electrodes before and after the electrodeposition process.",
+            "cite_spans": [
+                {
+                    "start": 261,
+                    "end": 265,
+                    "text": "[18,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 266,
+                    "end": 270,
+                    "text": "[32]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 271,
+                    "end": 275,
+                    "text": "[33]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 276,
+                    "end": 280,
+                    "text": "[34]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 281,
+                    "end": 285,
+                    "text": "[35]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "To functionalize the electrodes, 20 \u03bcl of MUA (1 mM in ethanol) were placed over the dual AuNPs-modified working electrodes and incubated for 20 h in a watersaturated atmosphere at room temperature. Ethanol was then used to rinse the electrodes to remove the excess MUA. Then, the modified electrodes were dried and incubated in 100 mM EDC and 20 mM NHS in PBS buffer pH 5.5 for 60 min for activation. After washing with buffer, 20 \u03bcl of anti-N antibody solution and 20 \u03bcl of 1% BSA in PBS buffer pH 7.4 were added individually onto the dual activated electrodes and incubated at room temperature for 3 h to prepare the sample testing (W1) and control (W2) electrodes on the same chip, respectively (Scheme 1 B). The electrodes were then washed with PBS buffer pH 7.4 and incubated in 0.1% BSA solution in PBS buffer pH 7.4 for blocking. Finally, the excess BSA was then removed by washing the electrodes with PBS buffer. The prepared immunosensors can be used immediately or stored at 4\u00b0C until further testing. The characterization of the fabricated electrodes were performed using CV scanning between 0.5 and \u22120.5 V at a scan rate of 100 mV/s and SWV from 0.3 to \u22120.3 V, frequency 25 Hz, interval time 0.04 s, step potential \u22125 mV, scan rate 125 mV/s and amplitude 20 mV.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Functionalization of the gold nanoparticles-modified electrodes and attachment of the anti-nucleocapsid antibody"
+        },
+        {
+            "text": "To determine the analytical range of the SARS-CoV-2 immunosensor, 20 \u03bcl of different concentrations of the N protein in PBS buffer, pH 7.4 (0.1 pg.mL \u2212 1 to 100 ng.mL \u22121 ) were incubated for 15 min on the dual electrode (the testing and the control electrodes on the same chip) at room temperature. The electrodes were then rinsed with PBS buffer pH 7.4 and the square wave voltammetry measurements (SWV) were carried out.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Detection experiments of nucleocapsid protein on the immunosensor"
+        },
+        {
+            "text": "A 5-mM solution of ferri/ferrocyanide (1:1 M ratio) in PBS buffer pH 7.4 was used as redox solution to perform all the electrochemical measurements. One hundred microlitres of the redox solution was added onto the immunosensor and the SWV measurements were acquired at the parameters described above. Baseline corrections were performed for all the SWV curves using the Nova software. The electrochemical detection (the immunosensor response; (i-i o )/i %) was determined based on the change percentage of the reduction peak current of the SWV signals, where i o is current of the blank sensor and i is the current after incubating the SARS-CoV-2 immunosensor in the N protein solutions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Electrochemical detection"
+        },
+        {
+            "text": "To assess the selectivity of the immunosensor, the dual SARS-CoV-2 immunosensor was incubated with 1 ng.mL \u22121 solution of SARS-CoV-2 N protein, MERS-CoV, HCoV, Flu B and Flu A antigens in PBS buffer pH 7.4 for 15 min. The SARS-CoV-2 immunosensors were then rinsed with PBS buffer and then subjected to SWV measurements in the redox couple solution as explained above.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Selectivity testing of the immunosensor"
+        },
+        {
+            "text": "Nasopharyngeal swabs were collected from patient and normal individuals and transferred into universal transport media (UTM). The approval to use patient samples (IRB: H-02-K-076-00520-298) was obtained from the Saudi Ministry of Health. RT-PCR was performed for all the samples to confirm the negative and positive ones. PowerChekTM 2019-nCoV Real-time PCR Kit (Cat No. R6900TD-100 Samples) was used to perform the RT-PCR tests. The kit was purchased from Kogenebiotech Co., Ltd., Republic of Korea, and it was approved by the FDA. One SARS-CoV-2 negative sample was used as control. Two samples showed low cycle threshold (Ct) value in the RT-PCR analysis, indicating a high number of virus copies and three samples showed high CT value, indicating a low number of virus copies. The samples were used immediately or kept at \u221280\u00b0C until further use in the detection experiments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Clinical samples testing using the SARS-CoV-2 immunosensor"
+        },
+        {
+            "text": "The detection experiment was performed by incubating the samples solutions after 1:10 dilution in PBS buffer pH 7.4 on the sensor for 15 min at room temperature. The sensors were then rinsed with PBS buffer and the SWV measurements were carried out as explained above. The immunosensor results were then compared to the RT-PCR results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Clinical samples testing using the SARS-CoV-2 immunosensor"
+        },
+        {
+            "text": "The principle of the SARS-CoV-2 biosensor",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results and discussion"
+        },
+        {
+            "text": "The biosensor was designed as shown in Scheme 1 on a dual AuNPs-modified screen-printed carbon electrode which consists of two individually addressed working electrodes. The anti-N antibody is immobilized on one of the working electrodes and the other electrode is blocked with BSA to be used as a control electrode. The binding of the N protein to its specific antibody would then cause a change in the electrochemical signal which represents the basis of the detection while, no signal will be obtained from the control electrode.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results and discussion"
+        },
+        {
+            "text": "Coating of the dual carbon screen-printed electrodes with gold nanoparticles",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Scheme 1"
+        },
+        {
+            "text": "The electrodes were first coated with AuNPs via electrodeposition. Figure 1a , b shows the SEM characterization of the carbon electrodes before (a) and after (b) the AuNPs deposition. Quasi-spherical gold particles were obtained with an average particle diameter of 50 \u00b1 10 nm. To characterize the chemical composition of the electrode surface, XPS measurements were also carried out for the carbon electrode and the AuNPs-modified electrode. As shown in Fig. 1c , the bare carbon electrode (black curve) exhibited the typical peaks for the graphite surface with C 1s and O1s peaks at 284.5 and 532 eV, respectively. However, the AuNPs-modified electrode showed an extra peak at 82.5 eV characteristic of the Au 4f, confirming the successful deposition of the AuNPs on the carbon electrode.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 67,
+                    "end": 76,
+                    "text": "Figure 1a",
+                    "ref_id": null
+                },
+                {
+                    "start": 455,
+                    "end": 462,
+                    "text": "Fig. 1c",
+                    "ref_id": null
+                }
+            ],
+            "section": "Scheme 1"
+        },
+        {
+            "text": "Corona viruses exhibit four structural antigens: nucleocapsid (N), matrix (M), envelope (E) and spike (S) antigens. It was reported that, the N and S antigens have the potential to be used as biomarkers for diagnosis of SARS-CoV-2 as they can distinguish the various types of corona viruses [36] . Here, we used the N antigen as the most abundant protein in coronavirus [27] .",
+            "cite_spans": [
+                {
+                    "start": 291,
+                    "end": 295,
+                    "text": "[36]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 370,
+                    "end": 374,
+                    "text": "[27]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Electrochemical characterization of the steps of the construction of the SARS-CoV-2 nucleocapsid immunosensor"
+        },
+        {
+            "text": "The fabrication steps of the immunosensor were investigated using CV and SWV scans in a ferro/ferricyanide redox couple solution. As shown in Fig. 2a , the bare carbon electrode exhibited the characteristic CV with welldefined anodic and cathodic peaks of the redox couple with a peak-to-peak separation (\u0394E) of 0.24 V. After the deposition of the AuNPs on the carbon surface, the CV showed significant enhancement in the peaks current and a decrease of the \u0394E to 0.12 V. This enhancement in the current and decrease in the \u0394E indicate the increase in the electrochemical surface area and enhancement of the electron transfer rate of the electrode because of the AuNPs deposition. On the other hand, the functionalization of the AuNPs-modified electrodes with MUA led to a diminishing in the peak current and an increase in the \u0394E. This is likely due to the shielding of the electrode surface with the negatively charged carboxylic groups of the MUA causing repulsion of the redox anions from the surface. Then, after the activation of the carboxylic groups with EDC/NHS and the attachment of the anti-N antibody on the functionalized electrode, a slight increase in the cathodic peak current and diminishing of the \u0394E were observed. This could be attributed to the neutralization of some of the negatively charged carboxy moieties on the surface of the electrode with the antibodies. Binding Energy (eV) Fig. 1 Images of the electrodes by scanning electron microscopy (SEM) for the bare carbon before (a) and after deposition of gold nanoparticles using 10 CV scans (b). The SEM measurements were done using an acceleration voltage of 5 kV, magnification = 50,000\u00d7 and a working distance of 4.8 mm. c XPS survey spectra of the bare carbon (black) and gold nanoparticles-modified electrodes (red line) SWV were then used as a more sensitive technique because it eliminates the capacitive current. SWV measurements were recorded after each modification steps of the electrode, showing consistent results with CV. Figure 2b shows a remarkable increase in the reduction peak current on the AuNPs-modified electrode (red curve) in comparison to the bare carbon electrode (black curve). A decrease in the current was then observed after the functionalization with MUA, indicating the successful attachment of the thiol terminals of the MUA on the gold surface. An increase in the current was then observed after the antibody attachment on the working electrode W1 from the dual sensor followed by further decrease after the blocking of the sensors with BSA. The other working electrode (W2) was used as a control on which BSA was immobilized instead of the antibody. Thus, both CV and SWV results confirmed the successful fabrication of the immunosensor.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 142,
+                    "end": 149,
+                    "text": "Fig. 2a",
+                    "ref_id": null
+                },
+                {
+                    "start": 1405,
+                    "end": 1411,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 2012,
+                    "end": 2021,
+                    "text": "Figure 2b",
+                    "ref_id": null
+                }
+            ],
+            "section": "Electrochemical characterization of the steps of the construction of the SARS-CoV-2 nucleocapsid immunosensor"
+        },
+        {
+            "text": "It was crucial to optimize the binding time of the N protein on the developed immunosensor to find out the condition which achieves the best performance and the fastest detection. Figure 3a shows the SWVs of the biosensor before (black voltammogram) and after (red voltammogram) incubation with 1 ng.mL \u22121 of the N protein solution. It was observed that the peak current was remarkably enhanced after the binding of the N protein to the immunosensor surface. This is likely attributed to the positive surface charge of the N protein at pH 7.4 which has an isoelectric point (IP) of 10.07 [37] . Therefore, the binding of the protein to the immunosensors causes an increase of the positive charges on the surface which in turn, attracts the redox anion and enhances the electron transfer. Similar behaviour has been previously reported with other positively charged proteins such as lysozyme [38] . Figure 3b shows the effect of the incubation time of the N protein with the immunosensor on the sensor response. The SARS-CoV-2 immunosensor response was calculated as the percentage of the increase in the SWV reduction peak current of the immunosensor upon binding with the N protein ((i-i o )/i %). It can be clearly seen that the immunosensor response to the binding to the N protein was increasing gradually with the incubation period until 15 min where the binding has almost reached plateau. Only a slight increase was observed after that. Therefore, 15 min was selected as the optimum time for further experiments.",
+            "cite_spans": [
+                {
+                    "start": 588,
+                    "end": 592,
+                    "text": "[37]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 891,
+                    "end": 895,
+                    "text": "[38]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 180,
+                    "end": 189,
+                    "text": "Figure 3a",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 898,
+                    "end": 907,
+                    "text": "Figure 3b",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Studying and optimization of the binding time of the protein on the immunosensor"
+        },
+        {
+            "text": "The analytical performance of the SARS-CoV-2 immunosensor was investigated by incubating the Figure 4a shows SWV results of the immunosensor at various concentrations of the N protein. A gradual increase in the reduction peak current was seen after incubation of the immunosensor with an increased concentration of the protein likely due to the surface charge offered by the N protein as explained above. Figure 4b shows the SARS-CoV-2 immunosensor calibration plot (the immunosensor response ((i-i o )/i %) versus the logarithm of the N protein concentration. A straight line was observed with a linear regression equation: (i-i o )/i % = 119.3 + 33.2 log C [ng.mL \u22121 ] and correlation coefficient (R) of 0.998. The limit of detection (LOD) and the limit of quantification (LOQ) of the immunosensor were determined to be 0.4 and 1.3 pg.mL \u22121 , respectively. The LOD is calculated as 3S/b where S is the standard deviation of the blank signal and b is the slope of the calibration plot. This LOD is much lower than the ELISA for SARS-CoV-2 N protein from Bioss Inc. which has a reported LOD of 0.4 ng.mL \u22121 , implying very good sensitivity of our SARS-CoV-2 immunosensor. The detection experiments were performed in triplicates and the error bars in the calibration plot represent the standard deviations. The relative standard deviations (RSD%) of the experiments were ranging from 3.0 to 6.1%, implying very good reproducibility of the SARS-CoV-2 immunosensor. The stability of the biosensor was also tested by performing detection experiments after the storage of the immunosensor at 4\u00b0C for 10 days. There was no significant change in the biosensor response (1%) after storage and the RSD % were in the same range, 3.0 to 6.1%. It is worth noting that the immunosensor is easier to use compared with the other biosensors that needs an extraction step for the RNA [23, 24] . Moreover, the LOD of the SARS-CoV-2 N protein immunosensor was lower than all the other reported electrochemical biosensors for the same protein [28] [29] [30] [31] as shown in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 1867,
+                    "end": 1871,
+                    "text": "[23,",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1872,
+                    "end": 1875,
+                    "text": "24]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 2023,
+                    "end": 2027,
+                    "text": "[28]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 2028,
+                    "end": 2032,
+                    "text": "[29]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 2033,
+                    "end": 2037,
+                    "text": "[30]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 2038,
+                    "end": 2042,
+                    "text": "[31]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 93,
+                    "end": 102,
+                    "text": "Figure 4a",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 405,
+                    "end": 414,
+                    "text": "Figure 4b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 2055,
+                    "end": 2062,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Dose response of the SARS-CoV-2 immunosensor"
+        },
+        {
+            "text": "It is crucial to study the specificity of the immunosensor to minimize any possibility of false-positive results. To this end, a control electrode (W2) was used on each sensor on which BSA was immobilized instead of the specific antibody for the SARS-CoV-2 N protein as shown in Scheme 1. Figure 5a shows the response of the immunosensor (W1) versus the response of the control electrode (W2) upon incubation of the sensor with 10 ng.mL \u22121 of the N protein solution. No significant response was seen in the case of the control electrode compared with the immunosensor response, indicating that the signal is generated from the specific binding of the antibody to the antigen and not due to any nonspecific adsorption. Moreover, it was highly important to study the cross reactivity of our immunosensor with antigens from other viruses that can show similar symptoms such as HCoV, MERS-CoV, Flu A and Flu B. Figure 5b shows the response of the immunosensor towards the SARS-CoV-2 N protein was much higher than the non-significant response against the other nonspecific antigens. These results indicate very good selectivity for our immunosensor. It is worth noting that the cross reactivity of the immunosensor with SARS-CoV is expected because there is more than 90% conserved similarity in protein sequences between SARS-CoV and SARS-CoV-2 [39] . Th manufacturer of the antibody used in this study (Sino Biological) has also reported cross reactivity with SARS-CoV. This cross reactivity has been previously reported for all the immunoassays using the N protein [29] . However, we believe that this cross reactivity does not have an impact on the current COVID 19 diagnosis because there are no new reported SARS-CoV outbreaks since 2004 [40] .",
+            "cite_spans": [
+                {
+                    "start": 1342,
+                    "end": 1346,
+                    "text": "[39]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1564,
+                    "end": 1568,
+                    "text": "[29]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1740,
+                    "end": 1744,
+                    "text": "[40]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 289,
+                    "end": 298,
+                    "text": "Figure 5a",
+                    "ref_id": null
+                },
+                {
+                    "start": 907,
+                    "end": 916,
+                    "text": "Figure 5b",
+                    "ref_id": null
+                }
+            ],
+            "section": "Selectivity of the SARS-CoV-2 immunosensor"
+        },
+        {
+            "text": "It was also important to study the stability of the biosensors after storage in the fridge for several days. Figure 5c shows the biosensor response towards binding with 1 ng.mL \u22121 of the N protein after storage for different number of days from 0 to 10 days. It can be clearly seen that there is no significant Figure 5d shows the electrochemical immunosensor response obtained for the negative and five patient samples. It was observed that the negative sample showed very minor response (below 5%), whereas the five patient samples showed higher response. Moreover, the two samples with the low Ct values showed higher immunosensor response compared with the three samples with the high Ct values. These initial results indicate the capability of our immunosensor to distinguish the positive and negative samples with strong correlation between the biosensor response and the RT-PCR results.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 109,
+                    "end": 118,
+                    "text": "Figure 5c",
+                    "ref_id": null
+                },
+                {
+                    "start": 311,
+                    "end": 320,
+                    "text": "Figure 5d",
+                    "ref_id": null
+                }
+            ],
+            "section": "Selectivity of the SARS-CoV-2 immunosensor"
+        },
+        {
+            "text": "An electrochemical biosensor was developed for SARS-CoV-2 detection. The biosensor relies on the attachment of the anti-SARS-CoV-2 nucleocapsid antibody on gold nanoparticlesmodified carbon screen-printed electrodes. The detection was achieved in a label-free format via monitoring the change in the voltammetric reduction current upon binding of the immunosensor with the virus. Very good sensitivity was achieved, likely due to the fast electron transfer rate and the high surface area of the gold nanoparticles. Our immunosensor has lower cost, faster and showed lower detection limit than ELISA. The immunosensor showed a very good degree of selectivity for SARS-CoV-2 against other viruses such as HCoV, MERS-CoV, Flu A and Flu B. Cross reactivity of the biosensor with SARS-CoV is expected because of their similar structure. Initial application of our immunosensor in clinical samples showed good agreement with the RT-PCR results. Thus, the SARS-COV-2 immunosensor is considered a rapid, low-cost, selective and sensitive diagnostic method that has the capability to be integrated in a handheld potentiostat and controlled via regular cell phone for point-of-care testing. This work focuses on the detection of the nucleocapsid protein. However, the best antigen target for the detection of SARS-COV-2 has not been identified yet. Therefore, future work should focus on comparing the sensitivities using other target antigens such as spike and membrane proteins. Redox dye-incorporated silica nanoparticles N and S genes RNA from Nasopharyngeal sample Isothermal rolling circle amplification-Sandwich hybridization assay with differential pulse voltammetry 1 copy/\u03bcL [ 24] Cobalt-TiO 2 nanotubes S-RBD Nasal and saliva samples [30] Carbon nanofiber N antigen Nasopharyngeal sample Competitive detection using SWV 0.8 pg.mL \u22121 [31] AuNPs N antigen Fig. 5 a The response as percentage change in the reduction current of the control sensor (the sensor prepared by immobilization of the MERS-CoV antibody) and the N protein sensor after incubation with 10 ng.mL \u22121 of the N protein solution in PBS buffer pH 7.4. b",
+            "cite_spans": [
+                {
+                    "start": 1675,
+                    "end": 1680,
+                    "text": "[ 24]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1735,
+                    "end": 1739,
+                    "text": "[30]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1834,
+                    "end": 1838,
+                    "text": "[31]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1855,
+                    "end": 1861,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The cross reactivity responses of the N protein biosensor towards the binding with 1 ng.mL \u22121 of N protein, Flu B, Flu A, HCoV and MERS-CoV antigens. c Biosensor response towards binding with 1 ng.mL \u22121 of the N protein after storage for different number of days. d Immunosensor response obtained for the negative and five patient samples with their corresponding Ct values",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Review of analytical performance of COVID-19 detection methods",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Giri",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pandey",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Shrestha",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pokharel",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ligler",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Neupane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anal Bioanal Chem",
+            "volume": "413",
+            "issn": "",
+            "pages": "1--14",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00216-020-02889-x"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Diagnostic techniques for COVID-19 and new developments",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sheikhzadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ismail",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zourob",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Talanta",
+            "volume": "220",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.talanta.2020.121392"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A review of coronavirus disease-2019",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Real-time RT-PCR in COVID-19 detection: issues affecting the results",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tahamtan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ardebili",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Expert Rev Mol Diagn",
+            "volume": "20",
+            "issn": "5",
+            "pages": "453--454",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/14737159.2020.1757437"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Antibody detection assays for COVID-19 diagnosis: an early overview",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ejazi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Immunology & Cell Biology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/imcb.12397"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Nanobiosensors as new diagnostic tools for SARS, MERS and COVID-19: from past to perspectives",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Antiochia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Optical biosensors for virus detection: prospects for SARS-CoV-2/COVID-19",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Maddali",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Miles",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kohn",
+                    "suffix": ""
+                },
+                {
+                    "first": "O&apos;",
+                    "middle": [],
+                    "last": "Carroll",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Colorimetric biosensors for point-of-care virus detections",
+            "authors": [
+                {
+                    "first": "Vxt",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Mater Sci Energ Technol",
+            "volume": "3",
+            "issn": "",
+            "pages": "237--249",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.mset.2019.10.002"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Electrochemical detection of viruses and antibodies: a mini review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "De Eguilaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Cumba",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Forster",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Electrochem Commun",
+            "volume": "116",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.elecom.2020.106762"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Electrochemical virus detections with nanobiosensors. Nanosensors for Smart Cities",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Kaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Karadurmus",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ozcelikay",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Bakirhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ozkan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "303--326",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/b978-0-12-819870-4.00017-7"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Electrochemical biosensors for influenza virus a detection: the potential of adaptation of these devices to POC systems",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tepeli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "\u00dclk\u00fc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Sensors Actuators B Chem",
+            "volume": "254",
+            "issn": "",
+            "pages": "377--384",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.snb.2017.07.126"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "A colorimetric and electrochemical immunosensor for point-of-care detection of enterovirus 71",
+            "authors": [
+                {
+                    "first": "Y-H",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y-Z",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-L",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Biosens Bioelectron",
+            "volume": "99",
+            "issn": "",
+            "pages": "186--192",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2017.07.035"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Application of nanomaterials for the electrical and optical detection of the hepatitis B virus",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Oliveira",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jmr",
+                    "middle": [],
+                    "last": "Flauzino",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ach",
+                    "middle": [],
+                    "last": "Castro",
+                    "suffix": ""
+                },
+                {
+                    "first": "Acr",
+                    "middle": [],
+                    "last": "Mo\u00e7o",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mmcn",
+                    "middle": [],
+                    "last": "Soares",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Madurro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Brito-Madurro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Anal Biochem",
+            "volume": "549",
+            "issn": "",
+            "pages": "157--163",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ab.2018.03.023"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Portable bioactive paper based genosensor incorporated with Zn-Ag nanoblooms for herpes detection at the point-of-care",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Narang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mathur",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Singla",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Pundir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Electrochemical detection of plant virus using gold nanoparticle-modified electrodes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Khater",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "De La Escosura-Mu\u00f1iz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Quesada-Gonz\u00e1lez",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Merko\u00e7i",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Anal Chim Acta",
+            "volume": "1046",
+            "issn": "",
+            "pages": "123--131",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.aca.2018.09.031"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Langmuir-Blodgett nanoassemblies of the MoS2-Au composite at the air-water interface for dengue detection",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Solanki",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Soni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pandey",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Biradar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sumana",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "ACS Appl Mater Interfaces",
+            "volume": "10",
+            "issn": "3",
+            "pages": "3020--3028",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acsami.7b14391"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Advancements in electrochemical DNA sensor for detection of human papilloma virus-a review",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rasouli",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Shahnavaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Basirun",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rezayi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Avan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ghayour-Mobarhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khandanlou",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Johan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Anal Biochem",
+            "volume": "556",
+            "issn": "",
+            "pages": "136--144",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ab.2018.07.002"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "An electrochemical immunosensor for the corona virus associated with the Middle East respiratory syndrome using an array of gold nanoparticle-modified carbon electrodes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Layqah",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Microchim Acta",
+            "volume": "186",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00604-019-3345-5"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "COVID-19 biosensing technologies",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Merko\u00e7i",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lechuga",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ozcan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Biosens Bioelectron",
+            "volume": "178",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2021.113046"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "SARS-CoV-2 coronavirus nucleocapsid antigen-detecting half-strip lateral flow assay toward the development of point of care tests using commercially available reagents",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Grant",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Williford",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Alonzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Glukhova",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Boyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Weigl",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Nichols",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anal Chem",
+            "volume": "92",
+            "issn": "16",
+            "pages": "11305--11309",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.analchem.0c01975"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Rapid detection of COVID-19 causative virus (SARS-CoV-2) in human nasopharyngeal swab specimens using fieldeffect transistor-based biosensor",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-H",
+                    "middle": [],
+                    "last": "Baek",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ku",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jun",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ACS Nano",
+            "volume": "14",
+            "issn": "4",
+            "pages": "5135--5142",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acsnano.0c02823"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Dual-functional plasmonic photothermal biosensors for highly accurate severe acute respiratory syndrome coronavirus 2 detection",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Gai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schmitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kullak-Ublick",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ACS Nano",
+            "volume": "14",
+            "issn": "5",
+            "pages": "5268--5277",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acsnano.0c02439"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Rapid, ultrasensitive, and quantitative detection of SARS-CoV-2 using antisense oligonucleotides directed electrochemical biosensor chip",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Alafeef",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dighe",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Moitra",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ACS Nano",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acsnano.0c06392"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Rapid electrochemical detection of coronavirus SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chaibun",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Puenpa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ngamdee",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Boonapatcharoen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Athamanolap",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "O&apos;mullane",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vongpunsawad",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Poovorawan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lertanantawong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nat Commun",
+            "volume": "12",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41467-021-21121-7"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Functionalized TiO2 nanotube-based electrochemical biosensor for rapid detection of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Vadlamani",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Uppal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Verma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Misra",
+                    "suffix": ""
+                }
+            ],
+            "year": 1920,
+            "venue": "Sensors",
+            "volume": "20",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/s20205871"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Paper-based electrochemical biosensor for diagnosing COVID-19: detection of SARS-CoV-2 antibodies and antigen",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yakoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Pimpitak",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rengpipat",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hirankarn",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Chailapakul",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chaiyo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Biosens Bioelectron",
+            "volume": "176",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2020.112912"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "The nucleocapsid protein of the SARS coronavirus: structure, function and therapeutic potential",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Surjit",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Molecular Biology of the SARS-Coronavirus",
+            "volume": "",
+            "issn": "",
+            "pages": "129--151",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-642-03683-5_9"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Development of a portable MIP-based electrochemical sensor for detection of SARS-CoV-2 antigen",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Raziq",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kidakova",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Boroznjak",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Reut",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "\u00d6pik",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Syritski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Biosens Bioelectron",
+            "volume": "178",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2021.113029"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Microfluidic magneto immunosensor for rapid, high sensitivity measurements of SARS-CoV-2 Nucleocapsid protein in serum",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lillehoj",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "ACS Sensors",
+            "volume": "6",
+            "issn": "",
+            "pages": "1270--1278",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acssensors.0c02561"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Magnetic beads combined with carbon black-based screenprinted electrodes for COVID-19: a reliable and miniaturized electrochemical immunosensor for SARS-CoV-2 detection in saliva",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fabiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saroglia",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Galat\u00e0",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Santis",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Luca",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Biosens Bioelectron",
+            "volume": "171",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2020.112686"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Development of a low-cost cotton-tipped electrochemical immunosensor for the detection of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zourob",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Anal Chem",
+            "volume": "93",
+            "issn": "3",
+            "pages": "1826--1833",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.analchem.0c04719"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Competitive voltammetric morphine immunosensor using a gold nanoparticle decorated graphene electrode",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zourob",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Microchim Acta",
+            "volume": "184",
+            "issn": "7",
+            "pages": "2281--2289",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00604-017-2261-9"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Multiplexed detection of DOCK8, PGM3 and STAT3 proteins for the diagnosis of hyper-immunoglobulin E syndrome using gold nanoparticles-based immunosensor array platform",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Abdulkarim",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dasouki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al",
+                    "middle": [],
+                    "last": "Mousa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Arnout",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al",
+                    "middle": [],
+                    "last": "Saud",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Biosens Bioelectron",
+            "volume": "117",
+            "issn": "",
+            "pages": "613--619",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2018.06.058"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Disposable electrochemical immunosensor array for the multiplexed detection of the drug metabolites morphine, tetrahydrocannabinol and benzoylecgonine",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Almthen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zourob",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Microchim Acta",
+            "volume": "186",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00604-019-3646-8"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Ultrasensitive peptide-based multiplexed electrochemical biosensor for the simultaneous detection of Listeria monocytogenes and Staphylococcus aureus",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eissa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zourob",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Microchim Acta",
+            "volume": "187",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00604-020-04423-3"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Diagnostic methods and potential portable biosensors for coronavirus disease 2019",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Biosens Bioelectron",
+            "volume": "165",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bios.2020.112349"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Physicochemical properties of SARS-CoV-2 for drug targeting, virus inactivation and attenuation, vaccine formulation and quality control",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Scheller",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Krebs",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Minkner",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Astner",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gil-Moles",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "W\u00e4tzig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ELECTROPHORESIS",
+            "volume": "41",
+            "issn": "",
+            "pages": "1137--1151",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/elps.202000121"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Aptamer-based biosensors for label-free voltammetric detection of lysozyme",
+            "authors": [
+                {
+                    "first": "Akh",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ge",
+                    "suffix": ""
+                },
+                {
+                    "first": "H-Z",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Anal Chem",
+            "volume": "79",
+            "issn": "14",
+            "pages": "5158--5164",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ac062214q"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Biochemical characterization of SARS-CoV-2 nucleocapsid protein",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Weng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jin",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Biochem Biophys Res Commun",
+            "volume": "527",
+            "issn": "3",
+            "pages": "618--623",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bbrc.2020.04.136"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Viral epitope profiling of COVID-19 patients reveals crossreactivity and correlates of severity",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Shrock",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Fujimura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kula",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Timms",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Leng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "370",
+            "issn": "6520",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abd4250"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "Square wave voltammograms of the N protein immunosensor before (black curve) and after (red curve) incubation with 1 ng.mL \u22121 of the N protein solution in PBS buffer pH 4.7 for 15 min. b Binding time optimization of the nucleocapsid protein sensor (a plot of biosensor response as the percentage change in the reduction peak current versus the binding time immunosensor with varying concentrations of the N protein ranging from 0.1 pg.mL \u22121 to 100 ng.mL \u22121 in PBS buffer pH 7.4.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Square wave voltammograms of the N protein biosensor incubated in different concentrations of the N protein solutions from 1 pg.mL \u22121 to 100 ng.mL \u22121 in PBS buffer solution pH 7.4. b Calibration plot of the biosensor (the biosensor response (the percentage of the change in the reduction peak current) is plotted versus the protein concentration). The SWV measurements were carried out in 5 mM ferro/ferricyanide redox couple solution in PBS buffer pH 7.4. The error bars represent the standard deviations of triplicate measurements change in the sensor response after storage, indicating good stability of the immunosensor.Application of the SARS-CoV-2 immunosensor in clinical samplesNasopharyngeal swab samples were collected from healthy and patient individuals and kept in UTM. The samples were first analysed with a RT-PCR kit which has a Ct cut-off value of 35. Two samples exhibited low Ct values(21 and 24), indicating a high number of virus copies and three samples showed high Ct values(33,32,31), indicating a low number of virus copies. The healthy sample is PCR negative. The samples were 1:10 diluted in PBS buffer pH 7.4 and then incubated on the immunosensors for 15 min.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "An overview on recently reported nanomaterial-based electrochemical methods for the determination of covid-19",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Magnetic beads with carbon black S and N antigens Saliva and nasopharyngeal sample Differential pulse voltammetry 19 ng.mL \u22121 and 8 ng.mL \u22121",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Conflict of interest The authors declare no competing financial interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        }
+    ]
+}

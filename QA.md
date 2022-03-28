@@ -45,7 +45,7 @@ to start the server.
 
 In this step we will build Elasticsearch indexer.
 
-For CORD-19 dataset we used the data in json format for index, which is in `document_parses/pdf_json`.
+For CORD-19 dataset we used the data in json format for index, which is in `document_parses/pdf_json`. We also include a sample data folder for testing code which is located in `data/document_parses/sample_pdf_json`.
 
 You can change the config of ElasticSearch in `examples/pipeline/indexer/config.yml`. Then run
 
