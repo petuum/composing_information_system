@@ -35,7 +35,7 @@ from ft.onto.base_ontology import Sentence, PredicateLink
 from composable_source.processors.elasticsearch_query_creator import (
     ElasticSearchQueryCreator,
 )
-from onto.clinical import MedicalEntityMention
+from ftx.onto.clinical import MedicalEntityMention
 from composable_source.processors.response_creator import ResponseCreator
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
